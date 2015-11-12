@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title id="htitleID">Mario Cannistrà - Web Developer and Programmer - Resume</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<!--Calculate and display my age based on current date-->
+<script type="text/javascript">
+var today = new Date();
+var mm = today.getMonth()+1; //January is 0
+var yyyy = today.getFullYear();
+var age = 0;
+
+if(mm<7){
+	age = yyyy-1992;
+	}
+else{
+	age = yyyy-1991;
+	}
+	
+window.onload = function() {
+   document.body.innerHTML = document.body.innerHTML.replace('24', age);
+} 
+</script>
+
+<!--Translates in Italian-->
+<script type="text/javascript">
+function toItalian(){
+	document.getElementById("downloadID").innerHTML = "<a title=\"Scarica una versione leggera del curriculum.\" href=\"index.html\" download=\"Mario Cannistrà - Web Developer e Programmatore - Curriculum.html\">Scarica il mio Curriculum<span class=\"glyphicon glyphicon-download-alt\" aria-hidden=\"true\"></span></a>";
+	document.getElementById("htitleID").innerHTML = "Mario Cannistrà - Web Developer e Programmatore - Curriculum";
+	document.getElementById("profile2ID").innerHTML = "Dopo essermi diplomato, ho approfondito il mio interesse per le scienze informatiche e ho iniziato a studiare per migliorare le mie abilità nello sviluppo di siti Web e nella programmazione di software. <br> Ho lavorato a diversi piccoli progetti, e stò ancora raffinando e espandendo le mie conoscenze in un ampia varietà di materie.";
+	document.getElementById("educationID").innerHTML = "Educazione";
+	document.getElementById("schoolID").innerHTML = "Liceo Scientifico";
+	document.getElementById("highschoolID").innerHTML = "Scuola superiore";
+    document.getElementById("profileID").innerHTML = "<h2 id=\"titleID\" class=\"media-heading\">Sviluppatore Web/Programmatore</h2>Sono un programmatore e sviluppatore di siti Web di "+ age +" anni. <br>Vivo in Italia ma parlo Inglese quotidianamente.<br>Ho una buona conoscenza di sviluppo front-end e back-end, e di sviluppo di applicazioni per computer e smartphone.<br><br>Credo che il codice, come il design dev'essere semplice e efficente, perchè un sito o un applicazione veloce e intuitiva è piacevole da usare."
+	document.getElementById("skillsID").innerHTML = "Abilità";
+	document.getElementById("locationID").innerHTML = "<span class=\"glyphicon glyphicon-map-marker\" aria-hidden=\"true\"></span> : Catanzaro, Italia";
+	document.getElementById("githubID").innerHTML = "Il mio profilo GitHub";
+}
+</script>
+
+<!--Translates in English-->
+<script type="text/javascript">
+function toEnglish(){
+	document.getElementById("downloadID").innerHTML = "<a title=\"Downloads a light version of the resume.\" href=\"index.html\" download=\"Mario Cannistrà - Web Developer and Programmer - Resume.html\">Download my Resume<span class=\"glyphicon glyphicon-download-alt\" aria-hidden=\"true\"></span></a>";
+	document.getElementById("htitleID").innerHTML = "Mario Cannistrà - Web Developer and Programmer - Resume";
+	document.getElementById("profile2ID").innerHTML = "After graduating, I became increascingly interested in computer science and started studying to improve my skills in Web Development and Programming.<br> I worked on several small projects, and I am still refining and expanding my knowledge on a wide variety of subjects.";
+	document.getElementById("educationID").innerHTML = "Education";
+	document.getElementById("schoolID").innerHTML = "Scientific Lyceum";
+	document.getElementById("highschoolID").innerHTML = "High school";
+	document.getElementById("profileID").innerHTML = "<h2 id=\"titleID\" class=\"media-heading\">Web Developer/Programmer</h2>I am a "+ age + " year old Web Developer and Programmer. <br>I live in Italy, but I speak English daily.<br>I have good knowledge of both front-end and back-end development, as well as mobile and desktop app development.<br><br>I believe code, like design, should be simple and effective because a fast and intuitive website or software feels good to use.";
+	document.getElementById("skillsID").innerHTML = "Skill Set";
+	document.getElementById("locationID").innerHTML = "<span class=\"glyphicon glyphicon-map-marker\" aria-hidden=\"true\"></span> : Catanzaro, Italy";
+	document.getElementById("githubID").innerHTML = "My GitHub profile";
+}
+</script>
+</head>
+
+<body>
+<div class="container">
+    <hr>
+    <div class="row">
+<div class="col-xs-6">
+      <h1>Mario Cannistrà</h1>
+      </div>
+<div class="col-xs-6">
+      <p id="downloadID" class="text-right"><a title="Downloads a light version of the resume." href="index.html" download="Mario Cannistrà - Web Developer and Programmer - Resume.html">Download my Resume<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a></p>
+      </div>
+      <div class="col-sm-offset-9">
+      <input id="English" style="float: right; margin-left:10px" type="button" class="btn btn-primary" title="Translates this page to English." value="English" onclick="toEnglish();"/>
+      <input id="Italiano" style="float: right" type="button" class="btn btn-primary" title="Traduce questa pagina in Italiano." value="Italiano" onClick="toItalian();" />
+  	  </div>
+  </div>
+<hr>
+    <div class="row">
+      <div class="col-xs-7">
+        <div class="media">
+          <div class="media-left"> <a href="img\profilePic.jpg"> <img class="media-object img-rounded" src="img/115X115.jpg" alt="..."> </a> </div>
+          <div id="profileID" class="media-body">
+            <h2 id="titleID" class="media-heading">Web Developer/Programmer</h2>
+            I am a 24 year old Web Developer and Programmer. <br>
+			I live in Italy, but I speak English daily.<br>
+            I have good knowledge of both front-end and back-end development, as well as mobile and desktop app development.<br><br>        I believe code, like design, should be simple and effective because a fast and intuitive website or software feels good to use.</div>
+</div>
+      </div>
+      <div class="col-xs-5 well">
+        <div class="row">
+          <div class="col-lg-7">
+            <h4><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> : mariocannistra@hotmail.it</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <h4 id="locationID"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> : Catanzaro, Italy</h4>
+          </div>
+                    <div class="col-lg-6 col-md-6">
+            <h4><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> : 324 9857227</h4>
+          </div>
+</div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-8 col-lg-7">
+        <h2 id="educationID">Education</h2>
+        <hr>
+        <div class="row">
+        	<div class="col-xs-6">
+        	  <h4 id="schoolID">Scientific Lyceum</h4>
+        	</div>
+</div>
+        <h4><span id="highschoolID" class="label label-default">High school</span></h4>
+        <p id="profile2ID">After graduating, I became increascingly interested in computer science and started studying to improve my skills in Web Development and Programming. <br>
+          I worked on several small projects, and I am still refining and expanding my knowledge on a wide variety of subjects. </p>
+          <br>
+          <a id="githubID" href="https://github.com/Metsuryu" class="btn btn-info" target="_blank">My GitHub profile</a>
+      </div>
+      <div class="col-sm-4 col-lg-5">
+        <h2 id="skillsID">Skill Set</h2>
+        <hr>
+        <!-- Skill bars -->
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 90%"> HTML</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%"> CSS</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%">Javascript </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 75%"> C++</div>
+        </div>        
+        <div class="progress">
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%"> Python</div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 70%"> Qt</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">Visual Studio </div>
+        </div>
+</div>
+    </div>
+  </div>
+<hr>
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
