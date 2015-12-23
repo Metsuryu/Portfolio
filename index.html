@@ -8,31 +8,52 @@
 <link rel="stylesheet" href="css/bootstrap.css"> 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-1.11.3.min.js"></script>
-<!--Calculate and display my age based on current date-->
-<script type="text/javascript">
-var today = new Date();
-var mm = today.getMonth()+1; //January is 0
-var yyyy = today.getFullYear();
-var age = 0;
-
-if(mm<7){
-	age = yyyy-1992;
-	}else{
-	age = yyyy-1991;
-	};
-	
-window.onload = function() {
-   document.body.innerHTML = document.body.innerHTML.replace('24', age);
-} 
-</script>
 
 <script>
 $(document).ready(function(){
 var userLang = navigator.language || navigator.userLanguage; 
 if(userLang == "it-IT" || userLang == "it"){toItalian();};
+
+$("#htmlBTN").click(function(){
+        $("#htmlDESC").toggle("fast");
+		$("#htmlSPAN").toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
+    });
+$("#jsBTN").click(function(){
+        $("#jsDESC").toggle("fast");
+		$("#jsSPAN").toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
+    });
+$("#jqBTN").click(function(){
+        $("#jqDESC").toggle("fast");
+		$("#jqSPAN").toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
+    });
+$("#angBTN").click(function(){
+        $("#angDESC").toggle("fast");
+		$("#angSPAN").toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
+    });
+$("#cppBTN").click(function(){
+        $("#cppDESC").toggle("fast");
+		$("#cppSPAN").toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
+    });
+$("#pyBTN").click(function(){
+        $("#pyDESC").toggle("fast");
+		$("#pySPAN").toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
+    });
+$("#sqlBTN").click(function(){
+        $("#sqlDESC").toggle("fast");
+		$("#sqlSPAN").toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
+    });
+$("#qtBTN").click(function(){
+        $("#qtDESC").toggle("fast");
+		$("#qtSPAN").toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
+    });
+$("#vsBTN").click(function(){
+        $("#vsDESC").toggle("fast");
+		$("#vsSPAN").toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
+    });
+
+
 });
 </script>
-
 
 <!--Translates to Italian-->
 <script type="text/javascript">
@@ -43,7 +64,7 @@ function toItalian(){
 	document.getElementById("educationID").innerHTML = "Educazione";
 	document.getElementById("schoolID").innerHTML = "Liceo Scientifico";
 	document.getElementById("highschoolID").innerHTML = "Scuola superiore";
-    document.getElementById("profileID").innerHTML = "<h2 id=\"titleID\" class=\"media-heading\">Sviluppatore Web/Programmatore</h2>Sono un programmatore e sviluppatore di siti Web di "+ age +" anni. <br>Vivo in Italia ma parlo Inglese quotidianamente.<br>Ho una buona conoscenza di sviluppo front-end e back-end, e di sviluppo di applicazioni per computer e smartphone.<br><br>Credo che il codice, come il design dev'essere semplice e efficente, perchè un sito o un applicazione veloce e intuitiva è piacevole da usare."
+    document.getElementById("profileID").innerHTML = "<h2 id=\"titleID\" class=\"media-heading\">Sviluppatore Web/Programmatore</h2>Sono un programmatore e sviluppatore di siti Web di 24 anni. <br>Vivo in Italia ma parlo Inglese quotidianamente.<br>Ho una buona conoscenza di sviluppo front-end e back-end, e di sviluppo di applicazioni per computer e smartphone.<br><br>Credo che il codice, come il design dev'essere semplice e efficente, perchè un sito o un applicazione veloce e intuitiva è piacevole da usare."
 	document.getElementById("skillsID").innerHTML = "Abilità";
 	document.getElementById("locationID").innerHTML = "<span class=\"glyphicon glyphicon-map-marker\" aria-hidden=\"true\"></span> : Catanzaro, Italia";
 	document.getElementById("githubID").innerHTML = "Il mio profilo GitHub";
@@ -59,7 +80,7 @@ function toEnglish(){
 	document.getElementById("educationID").innerHTML = "Education";
 	document.getElementById("schoolID").innerHTML = "Scientific Lyceum";
 	document.getElementById("highschoolID").innerHTML = "High school";
-	document.getElementById("profileID").innerHTML = "<h2 id=\"titleID\" class=\"media-heading\">Web Developer/Programmer</h2>I am a "+ age + " year old Web Developer and Programmer. <br>I live in Italy, but I speak English daily.<br>I have good knowledge of both front-end and back-end development, as well as mobile and desktop app development.<br><br>I believe code, like design, should be simple and effective because a fast and intuitive website or software feels good to use.";
+	document.getElementById("profileID").innerHTML = "<h2 id=\"titleID\" class=\"media-heading\">Web Developer/Programmer</h2>I am a 24 year old Web Developer and Programmer. <br>I live in Italy, but I speak English daily.<br>I have good knowledge of both front-end and back-end development, as well as mobile and desktop app development.<br><br>I believe code, like design, should be simple and effective because a fast and intuitive website or software feels good to use.";
 	document.getElementById("skillsID").innerHTML = "Skill Set";
 	document.getElementById("locationID").innerHTML = "<span class=\"glyphicon glyphicon-map-marker\" aria-hidden=\"true\"></span> : Catanzaro, Italy";
 	document.getElementById("githubID").innerHTML = "My GitHub profile";
@@ -93,7 +114,7 @@ function toEnglish(){
             I am a 24 year old Web Developer and Programmer. <br>
 			I live in Italy, but I speak English daily.<br>
             I have good knowledge of both front-end and back-end development, as well as mobile and desktop app development.<br><br>        I believe code, like design, should be simple and effective because a fast and intuitive website or software feels good to use.</div>
-</div>
+</div>     
       </div>
       <div class="col-xs-5 well">
         <div class="row">
@@ -130,43 +151,60 @@ function toEnglish(){
       <div class="col-sm-4 col-lg-5">
         <h2 id="skillsID">Skill Set</h2>
         <hr>
-        <!-- Skill bars -->
-        <div class="progress">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">HTML / CSS</div>
-        </div>
+<!-- Skill bars -->
+<button id="htmlBTN" type="button" class="btn btn-success btn-xs" style="border: 0px; position: absolute; font-size: 1em;">
+HTML / CSS <span id="htmlSPAN" class="glyphicon glyphicon-collapse-down" style="color:#FFF;"></span></button> 
+<div class="progress">
+<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div></div>
+<p hidden id="htmlDESC"> <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a> is the main language used to make web pages, and <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS</a> is used to set their visual style.</p>
 
-        <div class="progress">
-          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">JavaScript</div>
-        </div>
-        
-        <div class="progress">
-          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">jQuery</div>
-        </div>      
-        
-          <div class="progress">
-          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">Angular JS</div>
-        </div>      
+<button id="jsBTN" type="button" class="btn btn-info btn-xs" style="border: 0px; position: absolute; font-size: 1em;">
+JavaScript <span id="jsSPAN" class="glyphicon glyphicon-collapse-down" style="color:#FFF;"></span></button>
+<div class="progress">
+<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div></div>
+<p hidden id="jsDESC"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Javascript</a> is the most popular programming language used in websites. It allows pages to be interactive.</p>
 
-        <div class="progress">
-          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">C++</div>
-        </div>        
-        <div class="progress">
-          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">Python</div>
-        </div>
-        
-  		<div class="progress">
-          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">SQL</div>
-        </div>  
+<button id="jqBTN" type="button" class="btn btn-info btn-xs" style="border: 0px; position: absolute; font-size: 1em;">
+jQuery <span id="jqSPAN" class="glyphicon glyphicon-collapse-down" style="color:#FFF;"></span></button> 
+<div class="progress">
+<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div></div>      
+<p hidden id="jqDESC"><a href="https://en.wikipedia.org/wiki/JQuery" target="_blank">jQuery</a> is a popular library for Javascript, it makes Javascript simpler and more efficient.</p>
 
-        <div class="progress">
-          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">Qt</div>
-        </div>
-        <div class="progress">
-          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">Visual Studio </div>
-        </div>
-</div>
-    </div>
-  </div>
-<hr>
-</body>
-</html>
+<button id="angBTN" type="button" class="btn btn-info btn-xs" style="border: 0px; position: absolute; font-size: 1em;">
+Angular JS <span id="angSPAN" class="glyphicon glyphicon-collapse-down" style="color:#FFF;"></span></button> 
+<div class="progress">
+<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div></div>
+<p hidden id="angDESC"><a href="https://en.wikipedia.org/wiki/AngularJS" target="_blank">AngularJS</a> is a web application framework.</p> 
+
+<button id="cppBTN" type="button" class="btn btn-info btn-xs" style="border: 0px; position: absolute; font-size: 1em;">
+C++ <span id="cppSPAN" class="glyphicon glyphicon-collapse-down" style="color:#FFF;"></span></button> 
+<div class="progress">
+<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div></div>
+<p hidden id="cppDESC"><a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">C++</a> is a general-purpose programming language, used to write fast and versatile applications.</p>
+
+<button id="pyBTN" type="button" class="btn btn-info btn-xs" style="border: 0px; position: absolute; font-size: 1em;">
+Python <span id="pySPAN" class="glyphicon glyphicon-collapse-down" style="color:#FFF;"></span></button>               
+<div class="progress">
+<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div></div>
+<p hidden id="pyDESC"><a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29" target="_blank">Python</a> is one of the most popular general-purpose programming languages.</p>
+
+<button id="sqlBTN" type="button" class="btn btn-info btn-xs" style="border: 0px; position: absolute; font-size: 1em;">
+SQL <span id="sqlSPAN" class="glyphicon glyphicon-collapse-down" style="color:#FFF;"></span></button> 
+<div class="progress">
+<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div></div>
+<p hidden id="sqlDESC"><a href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a> is a special-purpose programming language designed for managing data held in databases.</p>
+
+<button id="qtBTN" type="button" class="btn btn-warning btn-xs" style="border: 0px; position: absolute; font-size:1em;">
+Qt <span id="qtSPAN" class="glyphicon glyphicon-collapse-down" style="color:#FFF;"></span></button> 
+<div class="progress">
+<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div></div>
+<p hidden id="qtDESC"><a href="https://en.wikipedia.org/wiki/Qt_%28software%29" target="_blank">Qt</a> is a cross-platform application framework that is widely used for developing software that 
+can be run on various software and hardware platforms with little or no change in the underlying codebase.</p>
+        
+<button id="vsBTN" type="button" class="btn btn-warning btn-xs" style="border: 0px; position: absolute; font-size:1em;">
+Visual Studio <span id="vsSPAN" class="glyphicon glyphicon-collapse-down" style="color:#FFF;"></span></button> 
+<div class="progress">
+<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div></div>
+<p hidden id="vsDESC"><a href="https://en.wikipedia.org/wiki/Microsoft_Visual_Studio" target="_blank">Microsoft Visual Studio</a> is an integrated development environment (IDE) from Microsoft.</p>
+
+</div></div></div><hr></body></html>
