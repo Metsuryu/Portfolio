@@ -10,6 +10,14 @@
 <title id="htitleID">Mario Cannistrà - Web Developer and Programmer - Resume</title>
 <link rel="stylesheet" href="css/bootstrap.css"> 
 <link rel="icon" type="image/png" href="img/favicon.ico"/>
+<style type="text/css">
+.skillTag{
+    background-color:#348EF9; 
+	color:white; 
+	text-shadow:1px 1px #000000; 
+	display:inline;
+} 
+</style>
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-1.11.3.min.js"></script>
@@ -50,7 +58,7 @@ function toItalian(){
 	trTxt("educationID","Educazione");
 	trTxt("schoolID","Liceo Scientifico");
 	trTxt("highschoolID","Scuola superiore");
-	trTxt("profileID","<h2 id=\"titleID\">Sviluppatore Web/Programmatore</h2>Sono un programmatore e sviluppatore di siti Web di 24 anni. <br>Vivo in Italia ma parlo Inglese quotidianamente.<br>Ho una buona conoscenza di sviluppo front-end e back-end, e di sviluppo di applicazioni per computer e smartphone.<br><br>Credo che il codice, come il design dev'essere semplice e efficente, perchè un sito o un applicazione veloce e intuitiva è piacevole da usare.");
+	trTxt("profileID","Sono un programmatore e sviluppatore di siti Web di 24 anni. <br>Vivo in Italia ma parlo Inglese quotidianamente.<br>Ho una buona conoscenza di sviluppo front-end e back-end, e di sviluppo di applicazioni per computer e smartphone.<br><br>Credo che il codice, come il design dev'essere semplice e efficente, perchè un sito o un applicazione veloce e intuitiva è piacevole da usare.");
 	trTxt("skillsID","Abilità");
 	trTxt("locationID","<span class=\"glyphicon glyphicon-map-marker\" aria-hidden=\"true\"></span> : Catanzaro, Italia");
 	trTxt("githubID","Il mio profilo GitHub");
@@ -73,6 +81,9 @@ function toItalian(){
 	trTxt("swcrDescID","Creo programmi per computer in C++ o Python. <br>Con Qt, posso creare applicazioni multi-piattaforma funzionanti su sistemi Windows, Mac, e Linux.");
 	trTxt("andID","Creazione App Android");
 	trTxt("andDescID","Creo apps Android in C++ con Qt.");
+	trTxt("titleID","Sviluppatore Web e Programmatore");
+	trTxt("SolSysDescID","Animazione del Sistema Solare che ho realizzato usando la Canvas di HTML5 e Javascript.");
+	trTxt("StStfDescID","Un gioco realizzato in C++ con Qt. Ancora incompleto e in non in sviluppo attivo per il momento.");
 };
 
 
@@ -84,7 +95,7 @@ function toEnglish(){
 	trTxt("educationID","Education");
 	trTxt("schoolID","Scientific Lyceum");
 	trTxt("highschoolID","High school");
-	trTxt("profileID","<h2 id=\"titleID\">Web Developer/Programmer</h2>I am a 24 year old Web Developer and Programmer. <br>I live in Italy, but I speak English daily.<br>I have good knowledge of both front-end and back-end development, as well as mobile and desktop app development.<br><br>I believe code, like design, should be simple and effective because a fast and intuitive website or software feels good to use.");
+	trTxt("profileID","I am a 24 year old Web Developer and Programmer. <br>I live in Italy, but I speak English daily.<br>I have good knowledge of both front-end and back-end development, as well as mobile and desktop app development.<br><br>I believe code, like design, should be simple and effective because a fast and intuitive website or software feels good to use.");
 	trTxt("skillsID","Skill Set");
 	trTxt("locationID","<span class=\"glyphicon glyphicon-map-marker\" aria-hidden=\"true\"></span> : Catanzaro, Italy");
 	trTxt("githubID","My GitHub profile");
@@ -107,12 +118,15 @@ function toEnglish(){
 	trTxt("swcrDescID","I write computer programs using C++ or Python. <br>With Qt, I can write cross-platform applications that can run on Windows, Mac, and Linux.");
 	trTxt("andID","Android App creation");
 	trTxt("andDescID","I write Android apps in C++ with Qt.");
+	trTxt("titleID","Web Developer and Programmer");
+	trTxt("SolSysDescID","Animation of the Solar system I made using HTML5's Canvas and Javascript.");
+	trTxt("StStfDescID","A game made in C++ with Qt. Still incomplete and on hold for the moment.");
 };
 </script>
 
 </head>
 
-<body>
+<body style="font-family: Verdana, Arial">
 <div class="container">
     <hr>
     <div class="row">
@@ -131,12 +145,12 @@ function toEnglish(){
     <div class="row">
       <div class="col-xs-7">
         <div class="media">
-          <div class="media-left"> <a href="img/profilePic.jpg"> <img class="media-object img-rounded" src="img/115X115.jpg" alt="..."> </a> </div>
-          <div style="word-wrap: break-word;" id="profileID">
-            <h2 id="titleID">Web Developer/Programmer</h2>
-            I am a 24 year old Web Developer and Programmer. <br>
+          <div class="media-left"> <a href="img/profilePic.jpg"> <img class="media-object img-rounded" src="img/115X115.jpg" alt="..."></a></div>
+          <div style="word-wrap: break-word;">
+            <h3 id="titleID">Web Developer and Programmer</h3>
+            <p id="profileID">I am a 24 year old Web Developer and Programmer. <br>
 			I live in Italy, but I speak English daily.<br>
-            I have good knowledge of both front-end and back-end development, as well as mobile and desktop app development.<br><br>        I believe code, like design, should be simple and effective because a fast and intuitive website or software feels good to use.</div>
+            I have good knowledge of both front-end and back-end development, as well as mobile and desktop app development.<br><br>        I believe code, like design, should be simple and effective because a fast and intuitive website or software feels good to use.</p></div>
 </div>     
       </div>
 
@@ -255,4 +269,23 @@ With Qt, I can write cross-platform applications that can run on Windows, Mac, a
 
 <h3 align="center" id="andID">Android App creation</h3>
 <p align="center" id="andDescID">I write Android apps in C++ with Qt.</p>
+<!-- Projects -->
+<h2 align="center" id="projectsID">Projects</h2>
+<hr>
+
+<h3 align="center"><a href="https://github.com/Metsuryu/Solar_System">Solar System</a></h3>
+<div align="center">
+<p class="skillTag"><strong>Javascript</strong></p>
+<p class="skillTag"><strong>HTML5</strong></p>
+<p class="skillTag"><strong>CSS</strong></p>
+</div>
+<p align="center" id="SolSysDescID">Animation of the Solar system I made using HTML5's Canvas and Javascript.</p>
+
+<h3 align="center"><a href="https://github.com/Metsuryu/Star_Stuff">Star Stuff</a></h3>
+<div align="center">
+<p class="skillTag"><strong>C++</strong></p>
+<p class="skillTag"><strong>Qt</strong></p>
+</div>
+<p align="center" id="StStfDescID">A game made in C++ with Qt. Still incomplete and on hold for the moment.</p>
+
 </div></div><hr></body></html>
