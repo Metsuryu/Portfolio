@@ -1,0 +1,61 @@
+.skillTag{
+    background-color:#348EF9; 
+	color:white; 
+	text-shadow:1px 1px #000000; 
+	display:inline;
+}
+
+body{
+	font-family: Verdana, Arial;
+	color:#2d2e2e;	
+}
+
+h1 {
+	font-family: Cambria, Verdana, Arial;
+}
+
+.btn {
+	font-size: 1em;
+	border: 0px; 
+	position: absolute; 
+	color: #2d2e2e;
+}
+
+#githubID {
+	position: static; 
+	font-weight: bold;
+}
+
+
+#English {
+	float: right; margin-left:10px;
+	color: white;
+	position: static; 
+}
+#Italiano {
+	float: right;
+	color: white;
+	position: static;
+}
+
+#skillsID {
+	text-align: center;
+}
+
+.progress {
+	height: 1.67em;
+}
+
+#skillsSection {
+	width: 100%;
+}
+
+#servicesSection {
+	width: 50%;
+	float: right;
+}
+
+#projectsSection {
+	width: 100%;
+	float: right;
+}
