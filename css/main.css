@@ -1,9 +1,16 @@
 .skillTag{
+    /*Decoration for text-only tags
     background-color:#348EF9; 
 	color:white; 
-	text-shadow:1px 1px #000000; 
+	text-shadow:1px 1px #000000;
+	*/
 	display:inline;
 }
+
+.skillTag img{
+	max-height: 40px;
+}
+
 
 body{
 	font-family: Verdana, Arial;
@@ -58,4 +65,8 @@ h1 {
 #projectsSection {
 	width: 100%;
 	float: right;
+}
+
+#email{
+word-wrap: break-word;
 }

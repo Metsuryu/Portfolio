@@ -35,7 +35,7 @@ function toItalian(){
 	trTxt("htitleID","Mario Cannistrà - Web Developer e Programmatore - Curriculum");
 	trTxt("profileID","Sono un programmatore e sviluppatore di siti Web di 25 anni. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Ho esperienza di sviluppo front-end, back-end, e di applicazioni per computer e smartphone.");
 	trTxt("skillsID","Abilità");
-	trTxt("locationID","<span class=\"glyphicon glyphicon-map-marker\" aria-hidden=\"true\"></span> : Catanzaro, Italia");
+	trTxt("locationID","<span class=\"glyphicon glyphicon-map-marker\" aria-hidden=\"true\"></span> Catanzaro, Italia");
 	trTxt("githubID","Il mio profilo GitHub");
 	trTxt("htmlDESC","<a href=\"https://it.wikipedia.org/wiki/HTML\" target=\"_blank\">HTML</a> è il principale linguaggio utilizzato per sviluppare pagine web, e <a href=\"https://it.wikipedia.org/wiki/CSS\" target=\"_blank\">CSS</a> è utilizzato per migliorare l'aspetto e lo stile delle pagine.");
 	trTxt("jsDESC","<a href=\"https://it.wikipedia.org/wiki/JavaScript\" target=\"_blank\">Javascript</a> è il linguaggio di programmazione più popolare per lo sviluppo di siti web. Viene utilizzato per rendere le pagine interattive.");
@@ -74,7 +74,7 @@ function toEnglish(){
 	trTxt("htitleID","Mario Cannistrà - Web Developer and Programmer - Resume");
 	trTxt("profileID","I am a 25 year old Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I have worked on the development of front-end, back-end, as well as mobile and desktop software.");
 	trTxt("skillsID","Skills");
-	trTxt("locationID","<span class=\"glyphicon glyphicon-map-marker\" aria-hidden=\"true\"></span> : Catanzaro, Italy");
+	trTxt("locationID","<span class=\"glyphicon glyphicon-map-marker\" aria-hidden=\"true\"></span> Catanzaro, Italy");
 	trTxt("githubID","My GitHub profile");
 	trTxt("htmlDESC","<a href=\"https://en.wikipedia.org/wiki/HTML\" target=\"_blank\">HTML</a> is the main language used to make web pages, and <a href=\"https://en.wikipedia.org/wiki/Cascading_Style_Sheets\" target=\"_blank\">CSS</a> is used to set their visual style.");	
 	trTxt("jsDESC","<a href=\"https://en.wikipedia.org/wiki/JavaScript\" target=\"_blank\">Javascript</a> is the most popular programming language used in websites. It allows pages to be interactive.");
