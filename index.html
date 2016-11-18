@@ -16,56 +16,48 @@
 	<script type="text/javascript" src="js/translation.js"></script>
 </head>
 <body>
-
 	<div class="container">
-		<hr>
-		<div class="row">
-			<div class="col-xs-6">
-				<h1>Mario Cannistrà</h1>
-			</div>
-			<div class="col-xs-6">
-				<p id="downloadID" class="text-right"><a title="Downloads a light version of the resume." href="indexCompact.html" download="Mario Cannistrà - Web Developer and Programmer - Resume.html">Download my Resume<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a></p>
-			</div>
-			<div class="col-sm-offset-9">
+
+			<div id="buttons">
 				<input id="English" type="button" class="btn btn-primary" title="Translates this page to English." value="English" onclick="toEnglish();"/>
 				<input id="Italiano" type="button" class="btn btn-primary" title="Traduce questa pagina in Italiano." value="Italiano" onclick= "toItalian();"/>
 			</div>
-		</div>
+			<div align="right" style="clear:both;">
+				<p id="downloadID" class="text-right">
+				<a title="Downloads a light version of the resume." href="indexCompact.html" download="Mario Cannistrà - Web Developer and Programmer - Resume.html">Download my Resume<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+				</a>
+				</p>
+			</div>
 		<hr>
-		<div class="row">
-			<div class="col-xs-7">
+		<div align="center">
+			<div align="center">
 				<div class="media">
 					<div class="media-left"> <a href="img/profilePic.jpg"> <img class="media-object img-rounded" src="img/115X115.jpg" alt="..."></a></div>
 					<div style="word-wrap: break-word;">
+					<div id="name">	<h1>Mario Cannistrà</h1> </div>
 						<h3 id="titleID">Web Developer and Programmer</h3>
 						<p id="profileID">I am a 25 year old Web Developer and Programmer. <br>
 							I live in Italy, and I speak English fluently.<br>
-							I have worked on the development of front-end, back-end, as well as mobile and desktop software.</p></div>
-						</div>     
+							I have worked on the development of front-end, back-end, as well as mobile and desktop software.</p>
+
+							<div id="contacts">
+								<div class="field">
+									<h4 id="email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+										<a href="mailto:mariocannistra@hotmail.it"><p  style="display: inline; word-break: break-all;">  mariocannistra@hotmail.it</p></a></h4>
+									</div>
+									<div class="field">
+										<h4 id="locationID"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Catanzaro, Italy</h4>
+									</div>
+									<div class="field">
+									<h4><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 324 9857227</h4>
+									</div>
+								</div>
+							</div>
+						</div>   
 					</div>
 				</div>
 
-
-<div class="row">
-<div class="col-xs-6 well">
-<div class="row">
-          <div class="col-lg-7">
-            <h4 id="email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-            <a href="mailto:mariocannistra@hotmail.it"><p style="display: inline;">  mariocannistra@hotmail.it</p></a></h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <h4 id="locationID"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Catanzaro, Italy</h4>
-          </div>
-          </div>
-           <div class="row">
-                    <div class="col-lg-6 col-md-6">
-            <h4><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 324 9857227</h4>
-          </div>
-          </div>
-</div>
-</div>
+				<div class="row"></div>
 
 <div id="skillsSection">
 <div class="col-sm-4 col-lg-5">
@@ -183,7 +175,9 @@ Visual Studio <span id="vsSPAN" class="glyphicon glyphicon-collapse-down"></span
 <!-- I'm using a blank character " " before and after each text tag for a better look. -->
 <!-- Solar System -->
 <h3 align="center"><a href="https://github.com/Metsuryu/Solar_System">Solar System</a></h3>
-<center><a href="https://github.com/Metsuryu/Solar_System" target="_blank"> <img src="img/screenshots/solsys.jpg" alt="Solar System"></a></center>
+<div align="center">
+<a href="https://github.com/Metsuryu/Solar_System" target="_blank"> <img src="img/screenshots/solsys.jpg" alt="Solar System"></a>
+</div>
 <br>
 <div align="center">
 <p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript"></p>
@@ -195,7 +189,9 @@ Visual Studio <span id="vsSPAN" class="glyphicon glyphicon-collapse-down"></span
 
 <!-- Star Stuff -->
 <h3 align="center"><a href="https://github.com/Metsuryu/Star_Stuff">Star Stuff</a></h3>
-<center><a href="https://github.com/Metsuryu/Star_Stuff" target="_blank"> <img src="img/screenshots/starStuff.jpg" alt="Star Stuff"></a></center>
+<div align="center">
+<a href="https://github.com/Metsuryu/Star_Stuff" target="_blank"> <img src="img/screenshots/starStuff.jpg" alt="Star Stuff"></a>
+</div>
 <br>
 <div align="center">
 <p class="skillTag"><img src="img/icons/cpp.jpg" alt="C++"></p>
@@ -206,7 +202,9 @@ Visual Studio <span id="vsSPAN" class="glyphicon glyphicon-collapse-down"></span
 
 <!-- Crawler -->
 <h3 align="center"><a href="https://github.com/Metsuryu/Crawler">Crawler</a></h3>
-<center><a href="https://github.com/Metsuryu/Crawler" target="_blank"> <img src="img/screenshots/CrawlerScreen.jpg" alt="Crawler"></a></center>
+<div align="center">
+<a href="https://github.com/Metsuryu/Crawler" target="_blank"> <img src="img/screenshots/CrawlerScreen.jpg" alt="Crawler"></a>
+</div>
 <br>
 <div align="center">
 <p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript"></p>
@@ -223,9 +221,9 @@ Visual Studio <span id="vsSPAN" class="glyphicon glyphicon-collapse-down"></span
 
 <br>
 <hr>
-<center>
+<div align="center">
 <a id="githubID" href="https://github.com/Metsuryu" class="btn btn-info" target="_blank">My GitHub profile</a>
-</center>
+</div>
 </div>
 
 </div></div><hr></body></html>

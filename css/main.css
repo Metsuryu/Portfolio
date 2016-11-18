@@ -14,7 +14,8 @@
 
 body{
 	font-family: Verdana, Arial;
-	color:#2d2e2e;	
+	color:#2d2e2e;
+	padding-top: 5px;
 }
 
 h1 {
@@ -69,4 +70,20 @@ h1 {
 
 #email{
 word-wrap: break-word;
+}
+
+#contacts{
+	background-color: #eeeeee;
+	max-width: 22em;
+	border: 2px solid gray;
+}
+
+.field{
+	margin: 10px;
+	padding-top: 1px;
+	text-align: left;
+}
+
+#name{
+	text-align: center;
 }
