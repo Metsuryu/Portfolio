@@ -64,7 +64,7 @@ function toItalian(){
 	trTxt("projectsID","Progetti");
 	trTxt("SolSysDescID","Animazione del Sistema Solare che ho realizzato usando la Canvas di HTML5 e Javascript.");
 	trTxt("StStfDescID","Un gioco realizzato in C++ con Qt. Ancora incompleto e non in sviluppo attivo per il momento.");
-	trTxt("crawlerDescID","Un clone del gioco Snake. Ho scritto questa pagina per dimostrare le technologie <a href=\"https://en.wikipedia.org/wiki/MEAN_(software_bundle)\" target=\"_blank\"> MEAN</a>.")
+	trTxt("crawlerDescID","Un clone del gioco Snake. Ho sviluppato questa pagina per dimostrare le tecnologie <a href=\"https://en.wikipedia.org/wiki/MEAN_(software_bundle)\" target=\"_blank\"> MEAN</a>.")
 };
 
 

@@ -1,16 +1,10 @@
-.skillTag{
-    /*Decoration for text-only tags
-    background-color:#348EF9; 
-	color:white; 
-	text-shadow:1px 1px #000000;
-	*/
+.skillTag {
 	display:inline;
 }
 
-.skillTag img{
+.skillTag img {
 	max-height: 40px;
 }
-
 
 body{
 	font-family: Verdana, Arial;
@@ -34,12 +28,12 @@ h1 {
 	font-weight: bold;
 }
 
-
 #English {
 	float: right; margin-left:10px;
 	color: white;
 	position: static; 
 }
+
 #Italiano {
 	float: right;
 	color: white;
@@ -58,9 +52,12 @@ h1 {
 	width: 100%;
 }
 
-#servicesSection {
-	width: 50%;
-	float: right;
+/*This makes it so the services section becomes centered on smaller screens*/
+@media screen and (min-width: 768px) {
+    #servicesSection {
+    	width: 50%;
+    	float: right;
+    }
 }
 
 #projectsSection {
@@ -68,22 +65,60 @@ h1 {
 	float: right;
 }
 
-#email{
-word-wrap: break-word;
+#email {
+	word-wrap: break-word;
 }
 
-#contacts{
+#contacts {
 	background-color: #eeeeee;
 	max-width: 22em;
 	border: 2px solid gray;
+	border-radius: 5px;
 }
 
-.field{
+.field {
 	margin: 10px;
 	padding-top: 1px;
 	text-align: left;
 }
 
-#name{
+#name {
 	text-align: center;
+}
+
+#grid {
+	width: 100%;
+	text-align: center;
+}
+
+.gridSquare {
+	width: 550px;
+    height: 550px;
+    max-height: 550px;
+    max-width: 550px;
+    min-height: 500px;
+    min-width: 500px;
+    border: 2px solid black;
+    padding: 1px;
+    border-radius: 15px;
+    float: left;
+    margin: 10px;
+}
+
+/*Last square is centered to make it look even.*/
+.centeredGridSquare{
+	float: none;
+	display: inline-block;
+}
+
+/*Show projects in a single column if screen is too small.*/
+@media screen and (max-width: 1199px) {
+	.gridSquare {
+		float: none;
+		display: inline-block;
+	}
+}
+
+#gitHub{
+	clear: both;
 }
