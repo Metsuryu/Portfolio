@@ -1,6 +1,10 @@
 $(document).ready(function(){
 var userLang = navigator.language || navigator.userLanguage; 
-if(userLang == "it-IT" || userLang == "it"){toItalian();};
+if(userLang == "it-IT" || userLang == "it"){
+	toItalian();
+}else {
+	toEnglish();
+};
 
 function toggleDesc(btn, desc, span){
 	$(btn).click(function(){
