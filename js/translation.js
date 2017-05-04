@@ -56,7 +56,7 @@ function toItalian(){
 	trTxt("vsDESC","Al momento non ho progetti pubblici sviluppati in <a href='https://it.wikipedia.org/wiki/Microsoft_Visual_Studio' target='_blank'>Microsoft Visual Studio</a>.");
 	trTxt("servicesID","Servizi");
 	trTxt("wbcrID","Sviluppo Sito internet");
-	trTxt("wbcrDescID","Uso HTML e CSS per sviluppare il sito secondo le tue specificazioni, e Javascript per renderlo interattivo.");
+	trTxt("wbcrDescID","Uso HTML e CSS per sviluppare il sito secondo le tue specificazioni, e Javascript per aggiungere funzionalità.");
 	trTxt("trslID","Traduzione Inglese-Italiano");
 	trTxt("trslDescID","Traduco siti Web, e Programmi in Inglese e Italiano.");
 	trTxt("seoDescID","Search engine optimization (Ottimizzazione motore di ricerca) serve a fare apparire il tuo sito più in alto nei risultati dei motori di ricerca, così che sia più visibile e sarà visitato da più gente.");
@@ -71,7 +71,6 @@ function toItalian(){
 	trTxt("crawlerDescID","Un clone del gioco Snake. Ho sviluppato questa pagina per dimostrare le tecnologie <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a>.")
 	trTxt("ICDMDescID","Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a> per pescatori subacquei. Permette agli utenti di condividere la propria posizine tramite geolocalizzazione, e di chattare tra di loro.");
 };
-
 
 //Translates to English
 function toEnglish(){
@@ -93,12 +92,13 @@ function toEnglish(){
 	trTxt("sqlDESC","Currently I have no public projects developed using <a href='https://en.wikipedia.org/wiki/SQL' target='_blank'>SQL</a>.");
 	trTxt("mongoDESC","<a href='https://en.wikipedia.org/wiki/MongoDB' target='_blank'>MongoDB</a> is used to manage the database of <a href='#projectsSection'>Crawler</a>.");
 	trTxt("qtDESC","<a href='#projectsSection'>Star Stuff</a> was developed with <a href='https://en.wikipedia.org/wiki/Qt_%28software%29' target='_blank'>Qt</a>.");
-	trTxt("vsDESC","Currently I have no public projects developed using <a href='https://en.wikipedia.org/wiki/Microsoft_Visual_Studio' target='_blank'>Microsoft Visual Studio</a>.");	trTxt("servicesID","Services");
+	trTxt("vsDESC","Currently I have no public projects developed using <a href='https://en.wikipedia.org/wiki/Microsoft_Visual_Studio' target='_blank'>Microsoft Visual Studio</a>.");	
+	trTxt("servicesID","Services");
 	trTxt("wbcrID","Website development");
-	trTxt("wbcrDescID","I use HTML and CSS to develope the website following your specifications, and Javascript to make it interactive.");
+	trTxt("wbcrDescID","I use HTML and CSS to develop the website following your specifications, and Javascript add functionality.");
 	trTxt("trslID","Italian-English Translation");
 	trTxt("trslDescID","I translate Websites and Software in English and Italian.");
-	trTxt("seoDescID","Search engine optimization serves the purpose of making your website appear higher in search engine results, so that it will be more visible and it will be visited by more people.");
+	trTxt("seoDescID","Search engine optimization serves the purpose of making your website appear higher in search engine results, so that it will be visible to more people.");
 	trTxt("swcrID","Software development");
 	trTxt("swcrDescID","I write computer programs using C++, Python, or Java for Windows, Mac, or Linux.");
 	trTxt("andID","Android App development");
