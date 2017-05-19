@@ -95,9 +95,9 @@ function toEnglish(){
 	trTxt("vsDESC","Currently I have no public projects developed using <a href='https://en.wikipedia.org/wiki/Microsoft_Visual_Studio' target='_blank'>Microsoft Visual Studio</a>.");	
 	trTxt("servicesID","Services");
 	trTxt("wbcrID","Website development");
-	trTxt("wbcrDescID","I use HTML and CSS to develop the website following your specifications, and Javascript add functionality.");
+	trTxt("wbcrDescID","I use HTML and CSS to develop the website following your specifications, and Javascript to add functionality.");
 	trTxt("trslID","Italian-English Translation");
-	trTxt("trslDescID","I translate Websites and Software in English and Italian.");
+	trTxt("trslDescID","I translate websites, software, and documents in English and Italian.");
 	trTxt("seoDescID","Search engine optimization serves the purpose of making your website appear higher in search engine results, so that it will be visible to more people.");
 	trTxt("swcrID","Software development");
 	trTxt("swcrDescID","I write computer programs using C++, Python, or Java for Windows, Mac, or Linux.");
