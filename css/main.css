@@ -119,6 +119,20 @@ h1 {
 	}
 }
 
+/*Make projects smaller if screen is too small.*/
+@media screen and (max-width: 600px) {
+	.gridSquare {
+		width: 95%;
+    	min-width: 200px;
+    	height: auto;
+    	overflow: auto;
+	}
+	.screenshots{
+		width: 90%;
+	}
+}
+
+
 #gitHub{
 	clear: both;
 }
