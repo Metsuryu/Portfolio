@@ -5,29 +5,35 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Resumee of Web Developer, Programmer and Translator Mario Cannistrà">
-	<meta name="keywords" content="HTML,HTML5,CSS,JavaScript,JS,C++,Cpp,Python,Jquery,AngularJS,Programmer,Programmatore,Sviluppatore,Sviluppo web,Siti web,Websites,mobile,app,apps,WebDev, Web Development, Programming,qt">
+	<meta name="keywords" content="HTML,HTML5,CSS,JavaScript,JS,C++,Cpp,Python,Jquery,AngularJS,Node,node.js,Programmer,Programmatore,Sviluppatore,Sviluppo web,Siti web,Websites,mobile,app,apps,WebDev,Web Development,Programming,qt">
 	<meta name="author" content="Mario Cannistrà">
 	<title id="htitleID">Mario Cannistrà - Web Developer and Programmer - Resume</title>
 	<link rel="icon" type="image/png" href="img/favicon.ico"/>
 	<link rel="stylesheet" href="css/bootstrap.css"> 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/translation.js"></script>
+	<script src="js/translation.js"></script>
+	<script src="js/themes.js"></script>
 </head>
 <body>
 	<div class="container">
 
-			<div id="buttons">
-				<input id="English" type="button" class="btn btn-primary" title="Translates this page to English." value="English" onclick="toEnglish();"/>
-				<input id="Italiano" type="button" class="btn btn-primary" title="Traduce questa pagina in Italiano." value="Italiano" onclick= "toItalian();"/>
-			</div>
-			<div align="right" style="clear:both;">
-				<p id="downloadID" class="text-right">
-				<a title="Downloads a light version of the resume." href="indexCompact.html" download="Mario Cannistrà - Web Developer and Programmer - Resume.html">Download my Resume<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-				</a>
-				</p>
-			</div>
+		<div id="themes">
+			<input id="light" type="button" title="Use light theme." value="&#9788; Light Theme" onclick="toLight();"/>
+			<input id="dark" type="button" title="Use dark theme." value="&#9790; Dark Theme" onclick= "toDark();"/>
+		</div>
+		
+		<div id="buttons">
+			<input id="English" type="button" class="btn btn-primary" title="Translates this page to English." value="English" onclick="toEnglish();"/>
+			<input id="Italiano" type="button" class="btn btn-primary" title="Traduce questa pagina in Italiano." value="Italiano" onclick= "toItalian();"/>
+		</div>
+		<div align="right" style="clear:both;">
+			<p id="downloadID" class="text-right">
+			<a title="Downloads a light version of the resume." href="indexCompact.html" download="Mario Cannistrà - Web Developer and Programmer - Resume.html">Download my Resume<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+			</a>
+			</p>
+		</div>
 		<hr>
 		<div align="center">
 			<div align="center">
@@ -42,15 +48,15 @@
 
 							<div id="contacts">
 								<div class="field">
-									<h4 id="email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-										<a href="mailto:mariocannistra@hotmail.it"><p  style="display: inline; word-break: break-all;">  mariocannistra@hotmail.it</p></a></h4>
-									</div>
-									<div class="field">
-										<h4 id="locationID"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Catanzaro, Italy</h4>
-									</div>
-									<div class="field">
+								<h4 id="email"> <span class="glyphicon glyphicon-envelope"></span>
+									<a href="mailto:mariocannistra@hotmail.it"><p style="">  mariocannistra@hotmail.it</p></a></h4>
+								</div>
+								<div class="field">
+									<h4 id="locationID"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Catanzaro, Italy</h4>
+								</div>
+								<div class="field">
 									<h4><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 324 9857227</h4>
-									</div>
+								</div>
 								</div>
 							</div>
 						</div>   
@@ -184,7 +190,7 @@ Visual Studio <span id="vsSPAN" class="glyphicon glyphicon-collapse-down"></span
 				<a href="https://github.com/Metsuryu/Crawler" target="_blank"> <img class="screenshots" src="img/screenshots/CrawlerScreen.jpg" alt="Crawler"></a>
 			</div>
 			<br>
-			<div align="center">
+			<div class="skillTags">
 				<p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript" title="Javascript"></p>
 				<p class="skillTag"><img src="img/icons/html5.png" alt="HTML5" title="HTML5"></p>
 				<p class="skillTag"><img src="img/icons/css3.png" alt="CSS3" title="CSS3"></p>
@@ -202,7 +208,7 @@ Visual Studio <span id="vsSPAN" class="glyphicon glyphicon-collapse-down"></span
 				<a href="https://github.com/Metsuryu/ICDM" target="_blank"> <img class="screenshots" src="img/screenshots/ICDMScreen.jpg" alt="I Cecchini Del Mare"></a>
 			</div>
 			<br>
-			<div align="center">
+			<div class="skillTags">
 				<p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript" title="Javascript"></p>
 				<p class="skillTag"><img src="img/icons/html5.png" alt="HTML5" title="HTML5"></p>
 				<p class="skillTag"><img src="img/icons/css3.png" alt="CSS3" title="CSS3"></p>
@@ -220,7 +226,7 @@ Visual Studio <span id="vsSPAN" class="glyphicon glyphicon-collapse-down"></span
 				<a href="https://github.com/Metsuryu/Solar_System" target="_blank"> <img class="screenshots" src="img/screenshots/solsys.jpg" alt="Solar System"></a>
 			</div>
 			<br>
-			<div align="center">
+			<div class="skillTags">
 				<p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript" title="Javascript"></p>
 				<p class="skillTag"><img src="img/icons/html5.png" alt="HTML5" title="HTML5"></p>
 				<p class="skillTag"><img src="img/icons/css3.png" alt="CSS3" title="CSS3"></p>
@@ -236,7 +242,7 @@ Visual Studio <span id="vsSPAN" class="glyphicon glyphicon-collapse-down"></span
 				<a href="https://github.com/Metsuryu/Star_Stuff" target="_blank"> <img class="screenshots" src="img/screenshots/starStuff.jpg" alt="Star Stuff"></a>
 			</div>
 			<br>
-			<div align="center">
+			<div class="skillTags">
 				<p class="skillTag"><img src="img/icons/cpp.jpg" alt="C++" title="C++"></p>
 				<p class="skillTag"><img src="img/icons/qt.png" alt="Qt" title="Qt"></p>
 			</div>

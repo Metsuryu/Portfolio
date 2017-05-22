@@ -8,12 +8,36 @@
 
 body{
 	font-family: Verdana, Arial;
-	color:#2d2e2e;
+	/*color:#2d2e2e;*/
 	padding-top: 5px;
+	background-color: rgb(21, 21, 21);
+	color: rgb(0, 216, 255);
 }
 
 h1 {
 	font-family: Cambria, Verdana, Arial;
+}
+
+#themes {
+	float: left;
+}
+
+#themes input {
+	border: 0px; 
+	position: static;
+	color: white;
+	margin: 0 auto;
+	display: inline-block;
+	background-color: rgb(70, 70, 70);
+	border-radius: 5px;
+	margin: 5px;
+	padding: 2px 5px 2px 5px;
+}
+
+@media screen and (max-width: 500px) {
+	#themes input {
+		display: block;
+	}
 }
 
 .btn {
@@ -23,21 +47,36 @@ h1 {
 	color: #2d2e2e;
 }
 
+p{
+	color: white;
+}
+
+a{
+	color: rgb(0, 216, 255);
+}
+
+hr{
+	border-color: rgb(0, 216, 255);
+}
+
 #githubID {
 	position: static; 
 	font-weight: bold;
+	color: #000;
 }
 
 #English {
-	float: right; margin-left:10px;
+	float: right;
 	color: white;
-	position: static; 
+	position: static;
+	margin: 5px;
 }
 
 #Italiano {
 	float: right;
 	color: white;
 	position: static;
+	margin: 5px;
 }
 
 #skillsID {
@@ -70,10 +109,15 @@ h1 {
 }
 
 #contacts {
-	background-color: #eeeeee;
+	background-color: rgba(0, 0, 0, 0.9);
 	max-width: 22em;
 	border: 2px solid gray;
 	border-radius: 5px;
+	color: #fff;
+}
+
+#contacts a p {
+	color: rgb(0, 216, 255);
 }
 
 .field {
@@ -99,10 +143,46 @@ h1 {
     min-height: 500px;
     min-width: 500px;
     border: 2px solid black;
-    padding: 1px;
+    padding: 5px;
     border-radius: 15px;
     float: left;
     margin: 10px;
+    background-color: rgb(60, 60, 60);
+}
+
+/*Only for Chrome*/
+.gridSquare::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+.gridSquare::-webkit-scrollbar-track
+{
+  background: rgba(100, 100, 100, 0.1);
+}
+
+.gridSquare::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 216, 255, 0.5);
+}
+
+
+.gridSquare a img {
+	border: 1px solid black;
+}
+
+.field a p {
+	display: inline; 
+	word-break: break-all;
+}
+
+.skillTags{
+	background-color: white;
+	border-radius: 20px;
+	width: 55%;
+	margin: 0 auto;
+	padding: 5px;
+	box-shadow: 0px 2px 5px black;
 }
 
 /*Last square is centered to make it look even.*/
@@ -131,7 +211,6 @@ h1 {
 		width: 90%;
 	}
 }
-
 
 #gitHub{
 	clear: both;
