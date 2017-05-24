@@ -47,6 +47,16 @@ h1 {
 	color: #2d2e2e;
 }
 
+.more {
+	border: 0px; 
+}
+
+.moreTxt{
+	margin-top: 2em;
+	padding: 1em;
+	text-align: left;
+}
+
 p{
 	color: white;
 }
@@ -143,11 +153,12 @@ hr{
     min-height: 500px;
     min-width: 500px;
     border: 2px solid black;
-    padding: 5px;
+    padding: 1em;
     border-radius: 15px;
     float: left;
     margin: 10px;
     background-color: rgb(60, 60, 60);
+    overflow: auto;
 }
 
 /*Only for Chrome*/

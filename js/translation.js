@@ -6,54 +6,70 @@ if(userLang == "it-IT" || userLang == "it"){
 	toEnglish();
 };
 
-function toggleDesc(btn, desc, span){
+function toggleDesc(btn, desc){
 	$(btn).click(function(){
-        $(desc).toggle("fast");
-		$(span).toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
+		var project = $(btn).parent();
+        $(desc).toggle("fast", function() {
+        	project.scrollTop( project.height() );
+        });
+		$(btn).find("span").toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
     });
 };
 
-toggleDesc("#htmlBTN", "#htmlDESC", "#htmlSPAN");
-toggleDesc("#jsBTN", "#jsDESC", "#jsSPAN");
-toggleDesc("#nodeBTN", "#nodeDESC", "#nodeSPAN");
-toggleDesc("#expressBTN","#expressDESC","#expressSPAN");
-toggleDesc("#jqBTN", "#jqDESC", "#jqSPAN");
-toggleDesc("#angBTN", "#angDESC", "#angSPAN");
-toggleDesc("#cppBTN", "#cppDESC", "#cppSPAN");
-toggleDesc("#pyBTN", "#pyDESC", "#pySPAN");
-toggleDesc("#javaBTN", "#javaDESC", "#javaSPAN");
-toggleDesc("#sqlBTN", "#sqlDESC", "#sqlSPAN");
-toggleDesc("#mongoBTN", "#mongoDESC", "#mongoSPAN");
-toggleDesc("#qtBTN", "#qtDESC", "#qtSPAN");
-toggleDesc("#vsBTN", "#vsDESC", "#vsSPAN");
+toggleDesc("#crawlerMore", "#crawlerMoreTxt");
+toggleDesc("#icdmMore", "#icdmMoreTxt");
+toggleDesc("#solsysMore", "#solsysMoreTxt");
+toggleDesc("#starStuffMore", "#starStuffMoreTxt");
+
 
 });
 
-function trTxt(id,string){
-		document.getElementById(id).innerHTML = string;
-	};
+function trTxt(id, string){
+	$("#"+id).html(string);
+};
 
 //Translates to Italian
 function toItalian(){
+	$(".more").html('Dettagli <span class="glyphicon glyphicon-collapse-down"></span>');
 	trTxt("downloadID","<a title='Scarica una versione leggera del curriculum.' href='indexCompact.html' download='Mario Cannistrà - Web Developer e Programmatore - Curriculum.html'>Scarica il mio Curriculum<span class='glyphicon glyphicon-download-alt' aria-hidden='true'></span></a>");
 	trTxt("htitleID","Mario Cannistrà - Web Developer e Programmatore - Curriculum");
 	trTxt("profileID","Sono un programmatore e sviluppatore di siti Web di 25 anni. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Ho esperienza di sviluppo front-end, back-end, e di applicazioni per computer e smartphone.");
 	trTxt("skillsID","Abilità");
 	trTxt("locationID","<span class='glyphicon glyphicon-map-marker' aria-hidden='true'></span> Catanzaro, Italia");
 	trTxt("githubID","Il mio profilo GitHub");
-	trTxt("htmlDESC","Con <a href='https://it.wikipedia.org/wiki/HTML' target='_blank'>HTML</a> e <a href='https://it.wikipedia.org/wiki/CSS' target='_blank'>CSS</a> ho sviluppato questo curriculum, <a href='#projectsSection'>Crawler</a>, <a href='#projectsSection'>I Cecchini Del Mare</a>, e <a href='#projectsSection'>Solar System</a>.");
-	trTxt("jsDESC","Ho utilizzato <a href='https://it.wikipedia.org/wiki/JavaScript' target='_blank'>Javascript</a> principalmente per la traduzione instantanea in questo sito, lo sviluppo del gioco e delle funzionalità back e front-end di <a href='#projectsSection'>Crawler</a>, <a href='#projectsSection'>I Cecchini Del Mare</a>, e le animazioni e funzionalità di <a href='#projectsSection'>Solar System</a>.");
-	trTxt("nodeDESC","<a href='https://it.wikipedia.org/wiki/Node.js' target='_blank'>Node.js</a> è utilizzato da <a href='#projectsSection'>Crawler</a>, e <a href='#projectsSection'>I Cecchini Del Mare</a>.");
-	trTxt("expressDESC","<a href='https://en.wikipedia.org/wiki/Express.js' target='_blank'>Express.js</a> è utilizzato da <a href='#projectsSection'>Crawler</a>, e <a href='#projectsSection'>I Cecchini Del Mare</a>,.");
-	trTxt("jqDESC","<a href='https://it.wikipedia.org/wiki/JQuery' target='_blank'>jQuery</a> è utilizzato da <a href='#projectsSection'>Crawler</a>, <a href='#projectsSection'>I Cecchini Del Mare</a>, e da questo curriculum.");
-	trTxt("angDESC","<a href='http://www.html.it/pag/52588/angularjs-e-un-framework-non-una-libreria' target='_blank'>AngularJS</a>  è utilizzato da <a href='#projectsSection'>Crawler</a>, e <a href='#projectsSection'>I Cecchini Del Mare</a>.");
-	trTxt("cppDESC","<a href='#projectsSection'>Star Stuff</a> è realizzato in <a href='https://it.wikipedia.org/wiki/C%2B%2B' target='_blank'>C++</a>.");
-	trTxt("pyDESC","Al momento non ho progetti pubblici sviluppati in <a href='https://it.wikipedia.org/wiki/Python' target='_blank'>Python</a>.");
-	trTxt("javaDESC","Al momento non ho progetti pubblici sviluppati in <a href='https://it.wikipedia.org/wiki/Java_(linguaggio_di_programmazione)' target='_blank'>Java</a>.");
-	trTxt("sqlDESC","Al momento non ho progetti pubblici che fanno uso di <a href='https://it.wikipedia.org/wiki/SQL' target='_blank'>SQL</a>.");
-	trTxt("mongoDESC","<a href='https://it.wikipedia.org/wiki/MongoDB' target='_blank'>MongoDB</a> è utilizzato per la gestione del database di <a href='#projectsSection'>Crawler</a>, e <a href='#projectsSection'>I Cecchini Del Mare</a>.");
-	trTxt("qtDESC","<a href='#projectsSection'>Star Stuff</a> è stato sviluppato in <a href='https://it.wikipedia.org/wiki/Qt_%28toolkit%29' target='_blank'>Qt</a>.");
-	trTxt("vsDESC","Al momento non ho progetti pubblici sviluppati in <a href='https://it.wikipedia.org/wiki/Microsoft_Visual_Studio' target='_blank'>Microsoft Visual Studio</a>.");
+	trTxt("icdmMoreTxt",
+		"I Cecchini Del Mare è stato commissionato dall'\
+		<a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>omonimo gruppo di Facebook.</a><br>\
+		Il sito permete agli utenti di trasmettere la propria posizione e chattare con tutti gli utenti connessi.\
+		Per fare queso, le coordinate e altre informazioni (nome, immagine del profilo...) di ogni utente sono aggiunte\
+		a un database Mongo, e sono vengono in seguito utilizzate da ogni client per mostrare gli utenti sulla mappa\
+		e nella lista di utenti online.<br>\
+		La chat è fatta con Socket.IO, ed è abbastanza basilare. Permette agli utenti di inviare messaggi privati, \
+		salva la cronologia della chat nei Cookies, ha funzionalità per controllare se il messaggio è stato inviato\
+		correttamente, e quando viene aperta, mostra la distanza tra i due utenti se possibile.<br>\
+		Lo sviluppo non ha presentato molti problemi tecnici, ma mi ha aiutato comunque a migliorare le mie abilità.");
+	trTxt("crawlerMoreTxt","Crawler usa poco HTML e CSS, dato che la maggior parte del lavoro si è concetrato sulla \
+		realizzazione del gioco, per questo motivo ha un aspetto molto semplice.<br>\
+		Ho iniziato con l'intenzione di realizzare una web-app su pagina singola molto semplice, ma in seguito\
+		ho deciso di incentrare il sito sul gioco.<br>\
+		Ho usato la funzionalità <code>ng-repeat</code> di Angular per realizzare la tabbella dei punteggi dinamicamente, \
+		utilizzando i risultati ricevuti da MongoDB, e mostrare 10 risultati per ogni pagina che è anche generata dinamicamente \
+		in base al numero totale di punteggi. \
+		Uso anche <code>filter</code> di Angular per implementare una semplice funzionalità di ricerca.<br>\
+		Il gioco è sviluppato con la libreria p5js, ed è per la maggior parte una basilare versione di snake.\
+		Una delle parti più complicate dello sviluppo è stata fare si che il cibo non comparisse sul serpente.\
+		Sono riuscito a risolvere il problema aggiornando periodicamente un array con la posizione di ogni \
+		sezione del serpente, e permettere al cibo di comparire solo nelle sezioni della mappa non occupate dal serpente.\
+		Penso che con le mie abilità attuali, questo problema sarebbe stato semplice da risolvere.");
+	trTxt("solsysMoreTxt",
+		"Questa è solo una semplice animazione che ho fatto per imparare a usare la <code>canvas</code> di HTML5.<br>\
+		Ci ho lavorato quando stavo ancora imparando Javascript, quindi è molto basilare al momento,\
+		ma penso di migliorarla in futuro, e aggiungere gli altri pianeti quando avrò del tempo libero.");
+	trTxt("starStuffMoreTxt",
+		"Ho iniziato a sviluppare questo gioco per imparare a usare Qt, ma ho acquisito molta esperienza di programmazione\
+		in generale grazie a questo progetto.<br>\
+		Ho sospeso lo sviluppo per il momento, da quando ho deciso di concentrarmi principalmente sullo sviluppo web\
+		ma potrei continuare a lavorarci eventualmente.");
 	trTxt("servicesID","Servizi");
 	trTxt("wbcrID","Sviluppo Sito internet");
 	trTxt("wbcrDescID","Uso HTML e CSS per sviluppare il sito secondo le tue specificazioni, e Javascript per aggiungere funzionalità.");
@@ -69,30 +85,51 @@ function toItalian(){
 	trTxt("SolSysDescID","Animazione del Sistema Solare che ho realizzato usando la Canvas di HTML5 e Javascript.");
 	trTxt("StStfDescID","Un gioco realizzato in C++ con Qt. Ancora incompleto e non in sviluppo attivo per il momento.");
 	trTxt("crawlerDescID","Un clone del gioco Snake. Ho sviluppato questa pagina per dimostrare le tecnologie <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a>.")
-	trTxt("ICDMDescID","Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a> per pescatori subacquei. Permette agli utenti di condividere la propria posizine tramite geolocalizzazione, e di chattare tra di loro.");
+	trTxt("ICDMDescID","Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a> per pescatori subacquei. Permette di condividere la propria posizine tramite geolocalizzazione, e di chattare.");
 };
 
 //Translates to English
 function toEnglish(){
-	trTxt("downloadID","<a title='Downloads a light version of the resume.' href='indexCompact.html' download='Mario Cannistrà - Web Developer and Programmer - Resume.html'>Download my Resume<span class='glyphicon glyphicon-download-alt' aria-hidden='true'></span></a>");
-	trTxt("htitleID","Mario Cannistrà - Web Developer and Programmer - Resume");
+	$(".more").html('Details <span class="glyphicon glyphicon-collapse-down"></span>');
+	trTxt("downloadID","<a title='Downloads a light version of the portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer and Programmer - portfolio.html'>Download my Portfolio<span class='glyphicon glyphicon-download-alt' aria-hidden='true'></span></a>");
+	trTxt("htitleID","Mario Cannistrà - Web Developer and Programmer - Portfolio");
 	trTxt("profileID","I am a 25 year old Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I have worked on the development of front-end, back-end, as well as mobile and desktop software.");
 	trTxt("skillsID","Skills");
 	trTxt("locationID","<span class='glyphicon glyphicon-map-marker' aria-hidden='true'></span> Catanzaro, Italy");
 	trTxt("githubID","My GitHub profile");
-	trTxt("htmlDESC"," With <a href='https://en.wikipedia.org/wiki/HTML' target='_blank'>HTML</a> and <a href='https://en.wikipedia.org/wiki/Cascading_Style_Sheets' target='_blank'>CSS</a> I developed this resumee, <a href='#projectsSection'>Crawler</a>, <a href='#projectsSection'>I Cecchini Del Mare</a>, and <a href='#projectsSection'>Solar System</a>.");	
-	trTxt("jsDESC","I used <a href='https://en.wikipedia.org/wiki/JavaScript' target='_blank'>Javascript</a> mainly for the instant translation of this website, the development of the game and the back-end and front-end functionality of <a href='#projectsSection'>Crawler</a>, <a href='#projectsSection'>I Cecchini Del Mare</a>, and the animations of <a href='#projectsSection'>Solar System</a>.");
-	trTxt("nodeDESC","<a href='https://en.wikipedia.org/wiki/Node.js' target='_blank'>Node.js</a> is used by <a href='#projectsSection'>Crawler</a>, and <a href='#projectsSection'>I Cecchini Del Mare</a>.");
-	trTxt("expressDESC","<a href='https://en.wikipedia.org/wiki/Express.js' target='_blank'>Express.js</a> is used by <a href='#projectsSection'>Crawler</a>, and <a href='#projectsSection'>I Cecchini Del Mare</a>.");
-	trTxt("jqDESC","<a href='https://en.wikipedia.org/wiki/JQuery' target='_blank'>jQuery</a> is used by <a href='#projectsSection'>Crawler</a>, <a href='#projectsSection'>I Cecchini Del Mare</a>, and this website.");
-	trTxt("angDESC","<a href='https://en.wikipedia.org/wiki/AngularJS' target='_blank'>AngularJS</a> is used by <a href='#projectsSection'>Crawler</a>, and <a href='#projectsSection'>I Cecchini Del Mare</a>.");
-	trTxt("cppDESC","<a href='#projectsSection'>Star Stuff</a> is written in <a href='https://en.wikipedia.org/wiki/C%2B%2B' target='_blank'>C++</a>.");
-	trTxt("pyDESC","Currently I have no public projects developed using <a href='https://en.wikipedia.org/wiki/Python_%28programming_language%29' target='_blank'>Python</a>.");
-	trTxt("javaDESC","Currently I have no public projects developed using <a href='https://en.wikipedia.org/wiki/Java_(programming_language)' target='_blank'>Java</a>.");
-	trTxt("sqlDESC","Currently I have no public projects developed using <a href='https://en.wikipedia.org/wiki/SQL' target='_blank'>SQL</a>.");
-	trTxt("mongoDESC","<a href='https://en.wikipedia.org/wiki/MongoDB' target='_blank'>MongoDB</a> is used to manage the database of <a href='#projectsSection'>Crawler</a>, and <a href='#projectsSection'>I Cecchini Del Mare</a>.");
-	trTxt("qtDESC","<a href='#projectsSection'>Star Stuff</a> was developed with <a href='https://en.wikipedia.org/wiki/Qt_%28software%29' target='_blank'>Qt</a>.");
-	trTxt("vsDESC","Currently I have no public projects developed using <a href='https://en.wikipedia.org/wiki/Microsoft_Visual_Studio' target='_blank'>Microsoft Visual Studio</a>.");	
+	trTxt("icdmMoreTxt",
+		"I Cecchini Del Mare (Snipers of the Sea in Italian) was commissioned by \
+		<a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>the Facebook group of the same name.</a><br>\
+		The website allows people to share their current location, so that everyone connected will be able \
+		to see them on the map, and chat with them.\
+		To do this, the coordinates and other data (name, profile picture...) of each user are added to a Mongo database, \
+		and they are retrived by each client to be displayed on the map, and in the list of online users.<br>\
+		The chat is made with Socket.IO, and is fairly basic. It allows users to send private messages to eachother, \
+		it saves the chat history in the cookies, has functionality to check if the message was sent correctly,\
+		and when opened, shows the distance between the two users if possible.<br>\
+		The development didn't present too many technical problems, but it helped me gain quite a lot of experience.");
+	trTxt("crawlerMoreTxt",
+		"Crawler uses little HTML and CSS, as most of the work went into the game, that's why it might not look very fancy.<br>\
+		I started with the intention to make a very simple single-page web application, but \
+		then I decided to make the game the focus of the page.<br>\
+		I used Angular's <code>ng-repeat</code> functionality to build the highscores table dynamically, by retriving the \
+		entries from a Mongo server, and displaying 10 entries for each page that is also generated dynamically \
+		based on the total number of highscores.\
+		I also use Angular's <code>filter</code> to implement a basic search function.<br>\
+		The game is built with the p5js library, and is mostly a basic version of snake.\
+		One of the most challenging parts of development was making it so when food spawned, it wouldn't spawn on \
+		top of the snake. \
+		I finally did it by periodically updating an array with the position of each piece of the snake, \
+		and allowing the food to spawn only on coordinates that are not occupied by the snake. \
+		I think that with my current skils, it would have been a trivial problem.");
+	trTxt("solsysMoreTxt",
+		"This is just a simple animation that I made in order to learn how to use HTML5's <code>canvas</code>.<br>\
+		I made it when I was first learning Javascript, so it's very basic at the moment, but I plan to improve it\
+		and add the rest of the planets when I have some free time.");
+	trTxt("starStuffMoreTxt",
+		"I started making this game to try my hand at Qt, but I've gained a lot of programming experience from this project.<br>\
+		I suspended development for the foreseeable future, when I decided to focus on web development, but I might \
+		resume working on this project at some point.");
 	trTxt("servicesID","Services");
 	trTxt("wbcrID","Website development");
 	trTxt("wbcrDescID","I use HTML and CSS to develop the website following your specifications, and Javascript to add functionality.");
