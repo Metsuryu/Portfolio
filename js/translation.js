@@ -21,7 +21,6 @@ toggleDesc("#icdmMore", "#icdmMoreTxt");
 toggleDesc("#solsysMore", "#solsysMoreTxt");
 toggleDesc("#starStuffMore", "#starStuffMoreTxt");
 
-
 });
 
 function trTxt(id, string){
@@ -36,7 +35,7 @@ function toItalian(){
 	trTxt("profileID","Sono un programmatore e sviluppatore di siti Web di 25 anni. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Ho esperienza di sviluppo front-end, back-end, e di applicazioni per computer e smartphone.");
 	trTxt("skillsID","Abilità");
 	trTxt("locationID","<span class='glyphicon glyphicon-map-marker' aria-hidden='true'></span> Catanzaro, Italia");
-	trTxt("githubID","Il mio profilo GitHub");
+	trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> Il mio profilo GitHub');
 	trTxt("icdmMoreTxt",
 		"I Cecchini Del Mare è stato commissionato dall'\
 		<a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>omonimo gruppo di Facebook.</a><br>\
@@ -96,7 +95,7 @@ function toEnglish(){
 	trTxt("profileID","I am a 25 year old Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I have worked on the development of front-end, back-end, as well as mobile and desktop software.");
 	trTxt("skillsID","Skills");
 	trTxt("locationID","<span class='glyphicon glyphicon-map-marker' aria-hidden='true'></span> Catanzaro, Italy");
-	trTxt("githubID","My GitHub profile");
+	trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> My GitHub profile');
 	trTxt("icdmMoreTxt",
 		"I Cecchini Del Mare (Snipers of the Sea in Italian) was commissioned by \
 		<a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>the Facebook group of the same name.</a><br>\
