@@ -47,6 +47,8 @@ h1 {
 	color: #2d2e2e;
 }
 
+
+
 .more {
 	border: 0px; 
 }
@@ -70,6 +72,7 @@ hr{
 }
 
 #githubID {
+	background-color: lightgrey;
 	position: static; 
 	font-weight: bold;
 	color: #000;
