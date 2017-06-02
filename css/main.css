@@ -150,8 +150,8 @@ hr{
 
 .gridSquare {
 	width: 550px;
-    height: 550px;
-    max-height: 550px;
+    height: 560px;
+    max-height: 560px;
     max-width: 550px;
     min-height: 500px;
     min-width: 500px;
@@ -163,23 +163,6 @@ hr{
     background-color: rgb(60, 60, 60);
     overflow: auto;
 }
-
-/*Only for Chrome*/
-.gridSquare::-webkit-scrollbar
-{
-  width: 12px;  /* for vertical scrollbars */
-  height: 12px; /* for horizontal scrollbars */
-}
-.gridSquare::-webkit-scrollbar-track
-{
-  background: rgba(100, 100, 100, 0.1);
-}
-
-.gridSquare::-webkit-scrollbar-thumb
-{
-  background: rgba(0, 216, 255, 0.5);
-}
-
 
 .gridSquare a img {
 	border: 1px solid black;
