@@ -43,23 +43,23 @@ function toItalian(){
 		Per fare queso, le coordinate e altre informazioni (nome, immagine del profilo...) di ogni utente sono aggiunte\
 		a un database Mongo, e sono vengono in seguito utilizzate da ogni client per mostrare gli utenti sulla mappa\
 		e nella lista di utenti online.<br>\
-		La chat è fatta con Socket.IO, ed è abbastanza basilare. Permette agli utenti di inviare messaggi privati, \
+		La chat è fatta con Socket.IO, ed è abbastanza leggera e veloce. Permette agli utenti di inviare messaggi privati, \
 		salva la cronologia della chat nei Cookies, ha funzionalità per controllare se il messaggio è stato inviato\
 		correttamente, e quando viene aperta, mostra la distanza tra i due utenti se possibile.<br>\
 		Lo sviluppo non ha presentato molti problemi tecnici, ma mi ha aiutato comunque a migliorare le mie abilità.");
 	trTxt("crawlerMoreTxt","Crawler usa poco HTML e CSS, dato che la maggior parte del lavoro si è concetrato sulla \
-		realizzazione del gioco, per questo motivo ha un aspetto molto semplice.<br>\
+		realizzazione del gioco.<br>\
 		Ho iniziato con l'intenzione di realizzare una web-app su pagina singola molto semplice, ma in seguito\
 		ho deciso di incentrare il sito sul gioco.<br>\
 		Ho usato la funzionalità <code>ng-repeat</code> di Angular per realizzare la tabbella dei punteggi dinamicamente, \
 		utilizzando i risultati ricevuti da MongoDB, e mostrare 10 risultati per ogni pagina che è anche generata dinamicamente \
 		in base al numero totale di punteggi. \
-		Uso anche <code>filter</code> di Angular per implementare una semplice funzionalità di ricerca.<br>\
+		Uso anche <code>filter</code> di Angular per implementare una funzionalità di ricerca.<br>\
 		Il gioco è sviluppato con la libreria p5js, ed è per la maggior parte una basilare versione di snake.\
 		Una delle parti più complicate dello sviluppo è stata fare si che il cibo non comparisse sul serpente.\
 		Sono riuscito a risolvere il problema aggiornando periodicamente un array con la posizione di ogni \
 		sezione del serpente, e permettere al cibo di comparire solo nelle sezioni della mappa non occupate dal serpente.\
-		Penso che con le mie abilità attuali, questo problema sarebbe stato semplice da risolvere.");
+		Penso che con le mie abilità attuali, questo problema sarebbe stato facile da risolvere.");
 	trTxt("solsysMoreTxt",
 		"Questa è solo una semplice animazione che ho fatto per imparare a usare la <code>canvas</code> di HTML5.<br>\
 		Ci ho lavorato quando stavo ancora imparando Javascript, quindi è molto basilare al momento,\
@@ -103,7 +103,7 @@ function toEnglish(){
 		to see them on the map, and chat with them.\
 		To do this, the coordinates and other data (name, profile picture...) of each user are added to a Mongo database, \
 		and they are retrived by each client to be displayed on the map, and in the list of online users.<br>\
-		The chat is made with Socket.IO, and is fairly basic. It allows users to send private messages to eachother, \
+		The chat is made with Socket.IO, and is fairly lightweight. It allows users to send private messages to eachother, \
 		it saves the chat history in the cookies, has functionality to check if the message was sent correctly,\
 		and when opened, shows the distance between the two users if possible.<br>\
 		The development didn't present too many technical problems, but it helped me gain quite a lot of experience.");
@@ -114,8 +114,8 @@ function toEnglish(){
 		I used Angular's <code>ng-repeat</code> functionality to build the highscores table dynamically, by retriving the \
 		entries from a Mongo server, and displaying 10 entries for each page that is also generated dynamically \
 		based on the total number of highscores.\
-		I also use Angular's <code>filter</code> to implement a basic search function.<br>\
-		The game is built with the p5js library, and is mostly a basic version of snake.\
+		I also use Angular's <code>filter</code> to implement a search function.<br>\
+		The game is built with the p5js library, and is mostly a standard version of snake.\
 		One of the most challenging parts of development was making it so when food spawned, it wouldn't spawn on \
 		top of the snake. \
 		I finally did it by periodically updating an array with the position of each piece of the snake, \
