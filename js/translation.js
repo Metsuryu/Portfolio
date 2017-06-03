@@ -57,9 +57,8 @@ function toItalian(){
 		Uso anche <code>filter</code> di Angular per implementare una funzionalità di ricerca.<br>\
 		Il gioco è sviluppato con la libreria p5js, ed è per la maggior parte una basilare versione di snake.\
 		Una delle parti più complicate dello sviluppo è stata fare si che il cibo non comparisse sul serpente.\
-		Sono riuscito a risolvere il problema aggiornando periodicamente un array con la posizione di ogni \
-		sezione del serpente, e permettere al cibo di comparire solo nelle sezioni della mappa non occupate dal serpente.\
-		Penso che con le mie abilità attuali, questo problema sarebbe stato facile da risolvere.");
+		Ho risolto il problema aggiornando periodicamente un array con la posizione di ogni \
+		sezione del serpente, e permettendo al cibo di comparire solo nelle sezioni della mappa non occupate dal serpente.");
 	trTxt("solsysMoreTxt",
 		"Questa è solo una semplice animazione che ho fatto per imparare a usare la <code>canvas</code> di HTML5.<br>\
 		Ci ho lavorato quando stavo ancora imparando Javascript, quindi è molto basilare al momento,\
@@ -117,10 +116,10 @@ function toEnglish(){
 		I also use Angular's <code>filter</code> to implement a search function.<br>\
 		The game is built with the p5js library, and is mostly a standard version of snake.\
 		One of the most challenging parts of development was making it so when food spawned, it wouldn't spawn on \
-		top of the snake. \
-		I finally did it by periodically updating an array with the position of each piece of the snake, \
-		and allowing the food to spawn only on coordinates that are not occupied by the snake. \
-		I think that with my current skils, it would have been a trivial problem.");
+		top of the snake, mostly because I was trying to find a clever solution. \
+		I finally realized that sometimes, the best solution is the most obvious one, so I did it by periodically \
+		updating an array with the position of each piece of the snake, \
+		and allowing the food to spawn only on coordinates that are not occupied by the snake.");
 	trTxt("solsysMoreTxt",
 		"This is just a simple animation that I made in order to learn how to use HTML5's <code>canvas</code>.<br>\
 		I made it when I was first learning Javascript, so it's very basic at the moment, but I plan to improve it\
