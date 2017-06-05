@@ -12,7 +12,7 @@ function toggleDesc(btn, desc){
         $(desc).toggle("fast", function() {
         	project.scrollTop( project.height() );
         });
-		$(btn).find("span").toggleClass("glyphicon glyphicon-collapse-down, glyphicon glyphicon-collapse-up");
+		$(btn).find("span").toggleClass("icon-plus-square icon-minus-square");
     });
 };
 
@@ -29,12 +29,12 @@ function trTxt(id, string){
 
 //Translates to Italian
 function toItalian(){
-	$(".more").html('Dettagli <span class="glyphicon glyphicon-collapse-down"></span>');
-	trTxt("downloadID","<a title='Scarica una versione leggera del curriculum.' href='indexCompact.html' download='Mario Cannistrà - Web Developer e Programmatore - Curriculum.html'>Scarica il mio Curriculum<span class='glyphicon glyphicon-download-alt' aria-hidden='true'></span></a>");
-	trTxt("htitleID","Mario Cannistrà - Web Developer e Programmatore - Curriculum");
-	trTxt("profileID","Sono un programmatore e sviluppatore di siti Web di 25 anni. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Ho esperienza di sviluppo front-end, back-end, e di applicazioni per computer e smartphone.");
+	$(".more").html('Dettagli <span class="icon-plus-square"></span>');
+	trTxt("downloadID","<a title='Scarica una versione leggera del portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer e Programmatore - Portfolio.html'>Scarica il mio Portfolio <span class='icon-download'></span></a>");
+	trTxt("htitleID","Mario Cannistrà - Web Developer e Programmatore - Portfolio");
+	trTxt("profileID","Sono un programmatore e sviluppatore di siti Web di 25 anni. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Ho esperienza di sviluppo front-end, back-end, e di applicazioni per computer.");
 	trTxt("skillsID","Abilità");
-	trTxt("locationID","<span class='glyphicon glyphicon-map-marker' aria-hidden='true'></span> Catanzaro, Italia");
+	trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>");
 	trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> Il mio profilo GitHub');
 	trTxt("icdmMoreTxt",
 		"I Cecchini Del Mare è stato commissionato dall'\
@@ -69,15 +69,9 @@ function toItalian(){
 		Ho sospeso lo sviluppo per il momento, da quando ho deciso di concentrarmi principalmente sullo sviluppo web\
 		ma potrei continuare a lavorarci eventualmente.");
 	trTxt("servicesID","Servizi");
-	trTxt("wbcrID","Sviluppo Sito internet");
-	trTxt("wbcrDescID","Uso HTML e CSS per sviluppare il sito secondo le tue specificazioni, e Javascript per aggiungere funzionalità.");
-	trTxt("trslID","Traduzione Inglese-Italiano");
-	trTxt("trslDescID","Traduco siti Web, e Programmi in Inglese e Italiano.");
-	trTxt("seoDescID","Search engine optimization (Ottimizzazione motore di ricerca) serve a fare apparire il tuo sito più in alto nei risultati dei motori di ricerca, così che sia più visibile e sarà visitato da più gente.");
-	trTxt("swcrID","Sviluppo Software");
-	trTxt("swcrDescID","Sviluppo programmi per computer in C++, Python, o Java per Windows, Mac, o Linux.");
-	trTxt("andID","Sviluppo App Android");
-	trTxt("andDescID","Sviluppo apps per Android in Java o in C++ con Qt.");
+	trTxt("wbID","Tecnologie web");
+	trTxt("swID","Tecnologie Software");
+	trTxt("otherID","Altro");
 	trTxt("titleID","Sviluppatore Web e Programmatore");
 	trTxt("projectsID","Progetti");
 	trTxt("SolSysDescID","Animazione del Sistema Solare che ho realizzato usando la Canvas di HTML5 e Javascript.");
@@ -88,12 +82,12 @@ function toItalian(){
 
 //Translates to English
 function toEnglish(){
-	$(".more").html('Details <span class="glyphicon glyphicon-collapse-down"></span>');
-	trTxt("downloadID","<a title='Downloads a light version of the portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer and Programmer - portfolio.html'>Download my Portfolio<span class='glyphicon glyphicon-download-alt' aria-hidden='true'></span></a>");
+	$(".more").html('Details <span class="icon-plus-square"></span>');
+	trTxt("downloadID","<a title='Downloads a light version of the portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer and Programmer - portfolio.html'>Download my Portfolio <span class='icon-download'></span></a>");
 	trTxt("htitleID","Mario Cannistrà - Web Developer and Programmer - Portfolio");
-	trTxt("profileID","I am a 25 year old Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I have worked on the development of front-end, back-end, as well as mobile and desktop software.");
+	trTxt("profileID","I am a 25 year old Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I have worked on the development of the front-end and back-end of websites, and software.");
 	trTxt("skillsID","Skills");
-	trTxt("locationID","<span class='glyphicon glyphicon-map-marker' aria-hidden='true'></span> Catanzaro, Italy");
+	trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>");
 	trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> My GitHub profile');
 	trTxt("icdmMoreTxt",
 		"I Cecchini Del Mare (Snipers of the Sea in Italian) was commissioned by \
@@ -129,15 +123,9 @@ function toEnglish(){
 		I suspended development for the foreseeable future, when I decided to focus on web development, but I might \
 		resume working on this project at some point.");
 	trTxt("servicesID","Services");
-	trTxt("wbcrID","Website development");
-	trTxt("wbcrDescID","I use HTML and CSS to develop the website following your specifications, and Javascript to add functionality.");
-	trTxt("trslID","Italian-English Translation");
-	trTxt("trslDescID","I translate websites, software, and documents in English and Italian.");
-	trTxt("seoDescID","Search engine optimization serves the purpose of making your website appear higher in search engine results, so that it will be visible to more people.");
-	trTxt("swcrID","Software development");
-	trTxt("swcrDescID","I write computer programs using C++, Python, or Java for Windows, Mac, or Linux.");
-	trTxt("andID","Android App development");
-	trTxt("andDescID","I write Android apps in Java or in C++ with Qt.");
+	trTxt("wbID","Website development");
+	trTxt("swID","Software development");
+	trTxt("otherID","Other");
 	trTxt("titleID","Web Developer and Programmer");
 	trTxt("projectsID","Projects");
 	trTxt("SolSysDescID","Animation of the Solar system I made using HTML5's Canvas and Javascript.");
