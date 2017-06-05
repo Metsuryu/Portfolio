@@ -11,6 +11,7 @@
 	<link rel="icon" type="image/png" href="img/favicon.ico"/>
 	<link rel="stylesheet" href="css/bootstrap.css"> 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/translation.js"></script>
@@ -20,94 +21,66 @@
 	<div class="container">
 
 		<div id="themes">
-			<input id="light" type="button" title="Use light theme." value="&#9788; Light Theme" onclick="toLight();"/>
-			<input id="dark" type="button" title="Use dark theme." value="&#9790; Dark Theme" onclick= "toDark();"/>
+		<button id="toggleLights" class="icon-lightbulb-o" title="Toggle lights" onclick= "toDark();"> </button>
 		</div>
 		
 		<div id="buttons">
-			<input id="English" type="button" class="btn btn-primary" title="Translates this page to English." value="English" onclick="toEnglish();"/>
-			<input id="Italiano" type="button" class="btn btn-primary" title="Traduce questa pagina in Italiano." value="Italiano" onclick= "toItalian();"/>
+			<button id="English" class="btn btn-primary" title="Translates this page to English." onclick="toEnglish();">English</button>
+			<button id="Italiano" class="btn btn-primary" title="Traduce questa pagina in Italiano." onclick="toItalian();">Italiano</button>
 		</div>
 		<div align="right" style="clear:both;">
 			<p id="downloadID" class="text-right">
-			<a title="Downloads a light version of the portfolio." href="indexCompact.html" download="Mario Cannistrà - Web Developer and Programmer - Portfolio.html">Download my Portfolio<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+			<a title="Downloads a light version of the portfolio." href="indexCompact.html" download="Mario Cannistrà - Web Developer and Programmer - Portfolio.html">Download my Portfolio <span class="icon-download"></span>
 			</a>
 			</p>
 		</div>
 		<hr>
-		<div align="center">
-			<div align="center">
-				<div class="media">
-					<div class="media-left"> <a href="img/profilePic.jpg"> <img class="media-object img-rounded" src="img/115X115.jpg" alt="..."></a></div>
-					<div style="word-wrap: break-word;">
-					<div id="name">	<h1>Mario Cannistrà</h1> </div>
-						<h3 id="titleID">Web Developer and Programmer</h3>
-						<p id="profileID">I am a 25 year old Web Developer and Programmer. <br>
-							I live in Italy, and I speak English fluently.<br>
-							I have worked on the development of front-end, back-end, as well as mobile and desktop software.</p>
 
-							<div id="contacts">
-								<div class="field">
-								<h4 id="email"> <span class="glyphicon glyphicon-envelope"></span>
-									<a href="mailto:mariocannistra.work@gmail.com"><p style="">  mariocannistra.work@gmail.com</p></a></h4>
-								</div>
-								<div class="field">
-									<h4 id="locationID"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Catanzaro, Italy</h4>
-								</div>
-								<div class="field">
-									<h4><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 324 9857227</h4>
-								</div>
-								</div>
-							</div>
-						</div>   
-					</div>
+		<div id="bio">
+			<img src="img/115X115.jpg" alt="Profile picture">
+			<h1>Mario Cannistrà</h1>
+			<h2 id="titleID">Web Developer and Programmer</h2>
+			<p id="profileID">I am a 25 year old Web Developer and Programmer. <br>
+				I live in Italy, and I speak English fluently.<br>
+				I have worked on the development of the front-end and back-end of websites, and software.
+			</p>
+
+			<div id="contacts">
+				<div class="field" id="email">
+					<span class="glyphicon glyphicon-envelope"></span>
+					<a href="mailto:mariocannistra.work@gmail.com"><p>  mariocannistra.work@gmail.com</p></a>
 				</div>
-
-<hr>
+				<div class="field" id="locationID">
+					<span class="glyphicon glyphicon-map-marker"></span> 
+					<p>Catanzaro, Italy</p>
+				</div>
+			</div>
+		</div>
+<br>
 
 <div id="skillsSection">
-<div class="col-sm-4 col-lg-5">
+<div>
         <h2 id="skillsID">Skills</h2>
-        <hr>
+        <br>
 <!-- Skill bars -->
-<div align="center">
-<h4>Web Development</h4>
-<p>HTML5 / CSS3 - Bootstrap, Sass, Less</p>
-<p>JavaScript - jQuery, Node.js, AngularJS, Express.js, Socket.IO</p>
+<div>
+<ul id="wbID">Web Development</ul>
+<li>HTML5 / CSS3 - Bootstrap, Sass, Less</li>
+<li>JavaScript - jQuery, Node.js, AngularJS, Express.js, Socket.IO</li>
 
-<h4>Software Development</h4>
-<p>C++</p>
-<p>Python</p>
-<p>Java</p>
+<ul id="swID">Software Development</ul>
+<li>C++</li>
+<li>Python</li>
+<li>Java</li>
 
-<h4>Other</h4>
-<p>MongoDB</p>
-<p>SQL</p>
-<p>Qt</p>
-<p>Visual Studio</p>
+<ul id="otherID">Other</ul>
+<li>MongoDB</li>
+<li>SQL</li>
+<li>Qt</li>
+<li>Visual Studio</li>
 </div>
 
 </div>
-</div>
-
-<!-- Services -->
-<div id="servicesSection">
-<h2 align="center" id="servicesID">Services</h2>
-<hr>
-<h4 align="center" id="wbcrID">Website development</h4>
-<p align="center" id="wbcrDescID">I use HTML and CSS to develop the website following your specifications, and Javascript to add functionality.</p>
-
-<h4 align="center" id="trslID">Italian-English Translation</h4>
-<p align="center" id="trslDescID">I translate websites, software, and documents in English and Italian.</p>
-
-<h4 align="center" id="seoID">SEO</h4>
-<p align="center" id="seoDescID">Search engine optimization serves the purpose of making your website appear higher in search engine results, so that it will be visible to more people.</p>
-
-<h4 align="center" id="swcrID">Software development</h4>
-<p align="center" id="swcrDescID">I write computer programs using C++, Python, or Java for Windows, Mac, or Linux.</p>
-
-<h4 align="center" id="andID">Android App development</h4>
-<p align="center" id="andDescID">I write Android apps in Java or in C++ with Qt.</p>
 </div>
 
 <!-- Projects Use gridSquare centeredGridSquare on last one if the number of projects is odd-->
@@ -120,14 +93,16 @@
 	<img src="img/GitHub-Mark-32px.png"> My GitHub profile</a>
 	</div>
 
-	<hr>
+<br>
+
+
 	<div id="grid">
 
 		<!-- I Cecchini Del Mare -->
 		<div class="gridSquare">	
-			<h3 align="center"><a href="https://github.com/Metsuryu/ICDM">I Cecchini Del Mare</a></h3>
+			<h3 align="center"><a href="https://github.com/Metsuryu/ICDM">I Cecchini Del Mare </a></h3> 
 			<div align="center">
-				<a href="https://github.com/Metsuryu/ICDM" target="_blank"> <img class="screenshots" src="img/screenshots/ICDMScreen.jpg" alt="I Cecchini Del Mare"></a>
+				<a href="https://icecchinidelmare.herokuapp.com" target="_blank"> <img class="screenshots" src="img/screenshots/ICDMScreen.jpg" alt="I Cecchini Del Mare"></a>
 			</div>
 			<br>
 			<div class="skillTags">
@@ -149,7 +124,7 @@
 		<div class="gridSquare">	
 			<h3 align="center"><a href="https://github.com/Metsuryu/Crawler">Crawler</a></h3>
 			<div align="center">
-				<a href="https://github.com/Metsuryu/Crawler" target="_blank"> <img class="screenshots" src="img/screenshots/CrawlerScreen.jpg" alt="Crawler"></a>
+				<a href="http://crawler.cloudno.de/" target="_blank"> <img class="screenshots" src="img/screenshots/CrawlerScreen.jpg" alt="Crawler"></a>
 			</div>
 			<br>
 			<div class="skillTags">
@@ -171,7 +146,7 @@
 		<div class="gridSquare">
 			<h3 align="center"><a href="https://github.com/Metsuryu/Solar_System">Solar System</a></h3>
 			<div align="center">
-				<a href="https://github.com/Metsuryu/Solar_System" target="_blank"> <img class="screenshots" src="img/screenshots/solsys.jpg" alt="Solar System"></a>
+				<a href="http://solsys.co.nf/" target="_blank"> <img class="screenshots" src="img/screenshots/solsys.jpg" alt="Solar System"></a>
 			</div>
 			<br>
 			<div class="skillTags">
@@ -209,4 +184,4 @@
 	</div>
 </div>
 
-</div></div><hr></body></html>
+</div></div></body></html>
