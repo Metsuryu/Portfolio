@@ -85,7 +85,7 @@ function toEnglish(){
 	$(".more").html('Details <span class="icon-plus-square"></span>');
 	trTxt("downloadID","<a title='Downloads a light version of the portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer and Programmer - portfolio.html'>Download my Portfolio <span class='icon-download'></span></a>");
 	trTxt("htitleID","Mario Cannistrà - Web Developer and Programmer - Portfolio");
-	trTxt("profileID","I am a 25 year old Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I have worked on the development of the front-end and back-end of websites, and software.");
+	trTxt("profileID","I am a 25 year old Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I have experience with front-end and back-end web development, and software development.");
 	trTxt("skillsID","Skills");
 	trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>");
 	trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> My GitHub profile');
