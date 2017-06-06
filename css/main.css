@@ -81,14 +81,14 @@ hr{
 	margin: 5px;
 }
 
-#skillsID {
-	text-align: center;
+#downloadDiv{
+	clear: both;
+	text-align: right;
 }
 
 ul{
 	padding: 0;
 	padding-top: .2em;
-	font-size: 1.3em;
 }
 
 li{
@@ -224,6 +224,11 @@ li{
 
 #gitHub{
 	clear: both;
+	text-align: center;
+}
+
+.alignCenter{
+	text-align: center;
 }
 
 #bio{
