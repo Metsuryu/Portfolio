@@ -28,7 +28,7 @@
 			<button id="English" class="btn btn-primary" title="Translates this page to English." onclick="toEnglish();">English</button>
 			<button id="Italiano" class="btn btn-primary" title="Traduce questa pagina in Italiano." onclick="toItalian();">Italiano</button>
 		</div>
-		<div align="right" style="clear:both;">
+		<div id="downloadDiv">
 			<p id="downloadID" class="text-right">
 			<a title="Downloads a light version of the portfolio." href="indexCompact.html" download="Mario Cannistrà - Web Developer and Programmer - Portfolio.html">Download my Portfolio <span class="icon-download"></span>
 			</a>
@@ -61,37 +61,42 @@
 
 <div id="skillsSection">
 <div>
-        <h2 id="skillsID">Skills</h2>
+        <h2 id="skillsID" class="alignCenter">Skills</h2>
         <br>
 <!-- Skill bars -->
 <div>
-<ul id="wbID">Web Development</ul>
-<li>HTML5 / CSS3 - Bootstrap, Sass, Less</li>
-<li>JavaScript - jQuery, Node.js, AngularJS, Express.js, Socket.IO</li>
+	<h4 id="wbID">Web Development</h4> 
+	<ul>
+		<li>HTML5 / CSS3 - Bootstrap, Sass, Less</li>
+		<li>JavaScript - jQuery, Node.js, AngularJS, Express.js, Socket.IO</li>
+	</ul>
 
-<ul id="swID">Software Development</ul>
-<li>C++</li>
-<li>Python</li>
-<li>Java</li>
-
-<ul id="otherID">Other</ul>
-<li>MongoDB</li>
-<li>SQL</li>
-<li>Qt</li>
-<li>Visual Studio</li>
+	<h4 id="swID">Software Development</h4>
+	<ul>
+		<li>C++</li>
+		<li>Python</li>
+		<li>Java</li>
+	</ul>
+	
+	<h4 id="otherID">Other</h4>
+	<ul>
+		<li>MongoDB</li>
+		<li>SQL</li>
+		<li>Qt</li>
+		<li>Visual Studio</li>
+	</ul>
 </div>
-
 </div>
 </div>
 
 <!-- Projects Use gridSquare centeredGridSquare on last one if the number of projects is odd-->
 <div id="projectsSection">
 
-	<h2 align="center" id="projectsID">Projects</h2>
+	<h2 id="projectsID" class="alignCenter">Projects</h2>
 
-	<div id="gitHub" align="center">
+	<div id="gitHub">
 	<a id="githubID" href="https://github.com/Metsuryu" class="btn" target="_blank">
-	<img src="img/GitHub-Mark-32px.png"> My GitHub profile</a>
+	<img src="img/GitHub-Mark-32px.png" alt="GitHub logo"> My GitHub profile</a>
 	</div>
 
 <br>
@@ -101,8 +106,8 @@
 
 		<!-- I Cecchini Del Mare -->
 		<div class="gridSquare">	
-			<h3 align="center"><a href="https://github.com/Metsuryu/ICDM">I Cecchini Del Mare </a></h3> 
-			<div align="center">
+			<h3 class="alignCenter"><a href="https://github.com/Metsuryu/ICDM">I Cecchini Del Mare </a></h3> 
+			<div class="alignCenter">
 				<a href="https://icecchinidelmare.herokuapp.com" target="_blank"> <img class="screenshots" src="img/screenshots/ICDMScreen.jpg" alt="I Cecchini Del Mare"></a>
 			</div>
 			<br>
@@ -114,7 +119,7 @@
 				<p class="skillTag"><img src="img/icons/mean.png" alt="MEAN" title="MongoDB Express AngularJS NodeJS"></p>
 			</div>
 			<br>
-			<p align="center" id="ICDMDescID">A <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" target="_blank">MEAN</a> social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.</p>
+			<p class="alignCenter" id="ICDMDescID">A <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" target="_blank">MEAN</a> social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.</p>
 
 			<button id="icdmMore" type="button" class="more btn-primary">
 			Details <span class="glyphicon glyphicon-collapse-down"></span></button>
@@ -123,8 +128,8 @@
 
 		<!-- Crawler -->
 		<div class="gridSquare">	
-			<h3 align="center"><a href="https://github.com/Metsuryu/Crawler">Crawler</a></h3>
-			<div align="center">
+			<h3 class="alignCenter"><a href="https://github.com/Metsuryu/Crawler">Crawler</a></h3>
+			<div class="alignCenter">
 				<a href="http://crawler.cloudno.de/" target="_blank"> <img class="screenshots" src="img/screenshots/CrawlerScreen.jpg" alt="Crawler"></a>
 			</div>
 			<br>
@@ -136,7 +141,7 @@
 				<p class="skillTag"><img src="img/icons/mean.png" alt="MEAN" title="MongoDB Express AngularJS NodeJS"></p>
 			</div>
 			<br>
-			<p align="center" id="crawlerDescID">A clone of the game Snake. I made this to demonstrate the <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" target="_blank">MEAN stack</a> technologies.</p>
+			<p class="alignCenter" id="crawlerDescID">A clone of the game Snake. I made this to demonstrate the <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" target="_blank">MEAN stack</a> technologies.</p>
 
 			<button id="crawlerMore" type="button" class="more btn-primary">
 			Details <span id="crawlerSPAN" class="glyphicon glyphicon-collapse-down"></span></button>
@@ -145,8 +150,8 @@
 
 		<!-- Solar System -->
 		<div class="gridSquare">
-			<h3 align="center"><a href="https://github.com/Metsuryu/Solar_System">Solar System</a></h3>
-			<div align="center">
+			<h3 class="alignCenter"><a href="https://github.com/Metsuryu/Solar_System">Solar System</a></h3>
+			<div class="alignCenter">
 				<a href="http://solsys.co.nf/" target="_blank"> <img class="screenshots" src="img/screenshots/solsys.jpg" alt="Solar System"></a>
 			</div>
 			<br>
@@ -156,7 +161,7 @@
 				<p class="skillTag"><img src="img/icons/css3.png" alt="CSS3" title="CSS3"></p>
 			</div>
 			<br>
-			<p align="center" id="SolSysDescID">Animation of the Solar system I made using HTML5's Canvas and Javascript.</p>
+			<p class="alignCenter" id="SolSysDescID">Animation of the Solar system I made using HTML5's Canvas and Javascript.</p>
 
 			<button id="solsysMore" type="button" class="more btn-primary">
 			Details <span class="glyphicon glyphicon-collapse-down"></span></button>
@@ -165,8 +170,8 @@
 
 		<!-- Star Stuff -->
 		<div class="gridSquare">
-			<h3 align="center"><a href="https://github.com/Metsuryu/Star_Stuff">Star Stuff</a></h3>
-			<div align="center">
+			<h3 class="alignCenter"><a href="https://github.com/Metsuryu/Star_Stuff">Star Stuff</a></h3>
+			<div class="alignCenter">
 				<a href="https://github.com/Metsuryu/Star_Stuff" target="_blank"> <img class="screenshots" src="img/screenshots/starStuff.jpg" alt="Star Stuff"></a>
 			</div>
 			<br>
@@ -175,7 +180,7 @@
 				<p class="skillTag"><img src="img/icons/qt.png" alt="Qt" title="Qt"></p>
 			</div>
 			<br>
-			<p align="center" id="StStfDescID">A game made in C++ with Qt. Still incomplete and on hold for the moment.</p>
+			<p class="alignCenter" id="StStfDescID">A game made in C++ with Qt. Still incomplete and on hold for the moment.</p>
 		
 			<button id="starStuffMore" type="button" class="more btn-primary">
 			Details <span class="glyphicon glyphicon-collapse-down"></span></button>
@@ -185,4 +190,6 @@
 	</div>
 </div>
 
-</div></div></body></html>
+</div>
+
+</body></html>
