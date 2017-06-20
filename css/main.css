@@ -98,11 +98,15 @@ li{
 .progress {
 	height: 1.67em;
 }
-
-#skillsSection {
-	width: 100%;
+#bio{
+	text-align: center;
+	word-wrap: break-word;
+	display: inline-block;
 }
-
+#skillsSection {
+	width: 40%;
+	display: inline-block;
+}
 /*This makes it so the services section becomes centered on smaller screens*/
 @media screen and (min-width: 768px) {
     #servicesSection {
@@ -207,6 +211,12 @@ li{
 		float: none;
 		display: inline-block;
 	}
+	#skillsSection {
+		width: 100%;
+	}
+	#bio{
+		width: 100%;
+	}
 }
 
 /*Make projects smaller if screen is too small.*/
@@ -231,11 +241,7 @@ li{
 	text-align: center;
 }
 
-#bio{
-	text-align: center;
-	word-wrap: break-word;
 
-}
 #titleID{
 	font-size: 1.5em;
 }
