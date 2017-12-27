@@ -169,10 +169,10 @@ li{
 
 .gridSquare {
 	width: 550px;
-    height: 560px;
-    max-height: 560px;
+    height: 590px;
+    max-height: 590px;
     max-width: 550px;
-    min-height: 500px;
+    min-height: 550px;
     min-width: 500px;
     border: 2px solid black;
     padding: 1em;
@@ -192,7 +192,7 @@ li{
 
 .skillTags{
 	background-color: #fff;
-	border-radius: 20px;
+	border-radius: 10px;
 	width: 55%;
 	margin: 0 auto;
 	padding: 5px;

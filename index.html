@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -20,7 +20,7 @@
 	<div class="container">
 
 		<div id="themes">
-		<button id="toggleLights" class="icon-lightbulb-o" title="Toggle lights" onclick= "toDark();"> </button>
+			<button id="toggleLights" class="icon-lightbulb-o" title="Toggle lights" onclick= "toDark();"> </button>
 		</div>
 		
 		<div id="buttons">
@@ -29,8 +29,9 @@
 		</div>
 		<div id="downloadDiv">
 			<p id="downloadID" class="text-right">
-			<a title="Downloads a light version of the portfolio." href="indexCompact.html" download="Mario Cannistrà - Web Developer and Programmer - Portfolio.html">Download my Portfolio <span class="icon-download"></span>
-			</a>
+				<a title="Downloads a light version of the portfolio." href="indexCompact.html" download="Mario Cannistrà - Web Developer and Programmer - Portfolio.html">Download my Portfolio 
+					<span class="icon-download"></span>
+				</a>
 			</p>
 		</div>
 		<hr>
@@ -39,7 +40,7 @@
 			<img src="img/115X115.jpg" alt="Profile picture">
 			<h1>Mario Cannistrà</h1>
 			<h2 id="titleID">Web Developer and Programmer</h2>
-			<p id="profileID">I am a 26 year old Web Developer and Programmer. <br>
+			<p id="profileID">I'm a 26 year old Web Developer and Programmer. <br>
 				I live in Italy, and I speak English fluently.<br>
 				I have experience with front-end and back-end web development, and software development.
 				Feel free to contact me if you have questions.
@@ -56,139 +57,171 @@
 				</div>
 			</div>
 		</div>
-<br>
+		<br>
 
-<div id="skillsSection">
-<div>
-        <h2 id="skillsID" class="alignCenter">Skills</h2>
-        <br>
-<!-- Skill bars -->
-<div>
-	<h4 id="wbID">Web Development</h4> 
-	<ul>
-		<li>HTML5 / CSS3 - Bootstrap, Sass, Less</li>
-		<li>JavaScript - jQuery, Node.js, AngularJS, Express.js, Socket.IO</li>
-	</ul>
+		<div id="skillsSection">
+			<div>
+				<h2 id="skillsID" class="alignCenter">Skills</h2>
+				<br>
+				<!-- Skills -->
+				<div>
+					<h4 id="wbID">Web Development</h4> 
+					<ul>
+						<li>HTML5 / CSS3 - Bootstrap, Less, Sass</li>
+						<li>JavaScript - jQuery, Node.js, AngularJS, Express.js, Socket.IO</li>
+						<li>Typescript - Angular 2/4/5, Firebase</li>
+					</ul>
 
-	<h4 id="swID">Software Development</h4>
-	<ul>
-		<li>C++</li>
-		<li>Python</li>
-		<li>Java</li>
-		<li>C#</li>
-	</ul>
-	
-	<h4 id="otherID">Other</h4>
-	<ul>
-		<li>MongoDB</li>
-		<li>SQL</li>
-		<li>Qt</li>
-		<li>Visual Studio</li>
-	</ul>
-</div>
-</div>
-</div>
+					<h4 id="swID">Software Development</h4>
+					<ul>
+						<li>C++</li>
+						<li>Python</li>
+						<li>Java</li>
+						<li>C#</li>
+					</ul>
 
-<div id="projectsSection">
+					<h4 id="otherID">Other</h4>
+					<ul>
+						<li>MongoDB</li>
+						<li>SQL</li>
+						<li>Qt</li>
+						<li>Visual Studio</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-	<h2 id="projectsID" class="alignCenter">Projects</h2>
+		<div id="projectsSection">
 
-	<div id="gitHub">
-	<a id="githubID" href="https://github.com/Metsuryu" class="btn" target="_blank">
-	<img src="img/GitHub-Mark-32px.png" alt="GitHub logo"> My GitHub profile</a>
+			<h2 id="projectsID" class="alignCenter">Projects</h2>
+
+			<div id="gitHub">
+				<a id="githubID" href="https://github.com/Metsuryu" class="btn" target="_blank">
+					<img src="img/GitHub-Mark-32px.png" alt="GitHub logo"> My GitHub profile
+				</a>
+			</div>
+
+			<br>
+
+			<div id="grid">
+
+				<!-- Lantea -->
+				<div class="gridSquare">	
+					<h3 class="alignCenter"><a href="#">Lantea </a></h3> 
+					<div class="alignCenter">
+						<a href="#" target="_blank"> <img class="screenshots" src="img/screenshots/LanteaScreen.jpg" alt="Lantea"></a>
+					</div>
+					<br>
+					<div class="skillTags">
+						<p class="skillTag"><img src="img/icons/typescript.png" alt="Typescript" title="Typescript"></p>
+						<p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript" title="Javascript"></p>
+						<p class="skillTag"><img src="img/icons/html5.png" alt="HTML5" title="HTML5"></p>
+						<p class="skillTag"><img src="img/icons/less.jpg" alt="LESS" title="LESS"></p>
+						<p class="skillTag"><img src="img/icons/css3.png" alt="CSS3" title="CSS3"></p>
+						<p class="skillTag"><img src="img/icons/jquery.png" alt="jQuery" title="JQuery"></p>
+						<p class="skillTag"><img src="img/icons/nodeJS.png" alt="NodeJS" title="NodeJS"></p>
+						<p class="skillTag"><img src="img/icons/angular.png" alt="Angular" title="Angular"></p>
+						<p class="skillTag"><img src="img/icons/firebase.png" alt="Firebase" title="Firebase"></p>
+					</div>
+					<br>
+					<p class="alignCenter" id="LanteaDescID">A platform for writers.<br>It allows authors to earn money by writing articles.</p>
+
+					<button id="lanteaMore" type="button" class="more btn-primary">
+						Details <span class="icon-plus-square"></span>
+					</button>
+					<p hidden class="moreTxt" id="lanteaMoreTxt"></p>
+				</div>
+
+
+				<!-- I Cecchini Del Mare -->
+				<div class="gridSquare">	
+					<h3 class="alignCenter"><a href="https://github.com/Metsuryu/ICDM">I Cecchini Del Mare </a></h3> 
+					<div class="alignCenter">
+						<a href="https://icecchinidelmare.herokuapp.com" target="_blank"> <img class="screenshots" src="img/screenshots/ICDMScreen.jpg" alt="I Cecchini Del Mare"></a>
+					</div>
+					<br>
+					<div class="skillTags">
+						<p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript" title="Javascript"></p>
+						<p class="skillTag"><img src="img/icons/html5.png" alt="HTML5" title="HTML5"></p>
+						<p class="skillTag"><img src="img/icons/css3.png" alt="CSS3" title="CSS3"></p>
+						<p class="skillTag"><img src="img/icons/jquery.png" alt="jQuery" title="JQuery"></p>
+						<p class="skillTag"><img src="img/icons/mean.png" alt="MEAN" title="MongoDB Express AngularJS NodeJS"></p>
+					</div>
+					<br>
+					<p class="alignCenter" id="ICDMDescID">A <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" target="_blank">MEAN</a> social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.</p>
+
+					<button id="icdmMore" type="button" class="more btn-primary">
+						Details <span class="icon-plus-square"></span>
+					</button>
+					<p hidden class="moreTxt" id="icdmMoreTxt"></p>
+				</div>
+
+				<!-- Crawler -->
+				<div class="gridSquare">	
+					<h3 class="alignCenter"><a href="https://github.com/Metsuryu/Crawler">Crawler</a></h3>
+					<div class="alignCenter">
+						<a href="http://crawler.cloudno.de/" target="_blank"> <img class="screenshots" src="img/screenshots/CrawlerScreen.jpg" alt="Crawler"></a>
+					</div>
+					<br>
+					<div class="skillTags">
+						<p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript" title="Javascript"></p>
+						<p class="skillTag"><img src="img/icons/html5.png" alt="HTML5" title="HTML5"></p>
+						<p class="skillTag"><img src="img/icons/css3.png" alt="CSS3" title="CSS3"></p>
+						<p class="skillTag"><img src="img/icons/jquery.png" alt="jQuery" title="JQuery"></p>
+						<p class="skillTag"><img src="img/icons/mean.png" alt="MEAN" title="MongoDB Express AngularJS NodeJS"></p>
+					</div>
+					<br>
+					<p class="alignCenter" id="crawlerDescID">A clone of the game Snake. I made this to demonstrate the <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" target="_blank">MEAN stack</a> technologies.</p>
+
+					<button id="crawlerMore" type="button" class="more btn-primary">
+						Details <span id="crawlerSPAN" class="icon-plus-square"></span>
+					</button>
+					<p hidden class="moreTxt" id="crawlerMoreTxt"></p>
+				</div>
+
+				<!-- Solar System -->
+				<div class="gridSquare">
+					<h3 class="alignCenter"><a href="https://github.com/Metsuryu/Solar_System">Solar System</a></h3>
+					<div class="alignCenter">
+						<a href="http://solsys.co.nf/" target="_blank"> <img class="screenshots" src="img/screenshots/solsys.jpg" alt="Solar System"></a>
+					</div>
+					<br>
+					<div class="skillTags">
+						<p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript" title="Javascript"></p>
+						<p class="skillTag"><img src="img/icons/html5.png" alt="HTML5" title="HTML5"></p>
+						<p class="skillTag"><img src="img/icons/css3.png" alt="CSS3" title="CSS3"></p>
+					</div>
+					<br>
+					<p class="alignCenter" id="SolSysDescID">Animation of the Solar system I made using Phaser.</p>
+
+					<button id="solsysMore" type="button" class="more btn-primary">
+						Details <span class="icon-plus-square"></span>
+					</button>
+					<p hidden class="moreTxt" id="solsysMoreTxt"></p>
+				</div>
+
+				<!-- Star Stuff -->
+				<div class="gridSquare">
+					<h3 class="alignCenter"><a href="https://github.com/Metsuryu/Star_Stuff">Star Stuff</a></h3>
+					<div class="alignCenter">
+						<a href="https://github.com/Metsuryu/Star_Stuff" target="_blank"> <img class="screenshots" src="img/screenshots/starStuff.jpg" alt="Star Stuff"></a>
+					</div>
+					<br>
+					<div class="skillTags">
+						<p class="skillTag"><img src="img/icons/cpp.jpg" alt="C++" title="C++"></p>
+						<p class="skillTag"><img src="img/icons/qt.png" alt="Qt" title="Qt"></p>
+					</div>
+					<br>
+					<p class="alignCenter" id="StStfDescID">A game made in C++ with Qt. Still incomplete and on hold for the moment.</p>
+
+					<button id="starStuffMore" type="button" class="more btn-primary">
+						Details <span class="icon-plus-square"></span>
+					</button>
+					<p hidden class="moreTxt" id="starStuffMoreTxt"></p>
+				</div>
+
+			</div>
+		</div>
 	</div>
-
-<br>
-
-
-	<div id="grid">
-
-		<!-- I Cecchini Del Mare -->
-		<div class="gridSquare">	
-			<h3 class="alignCenter"><a href="https://github.com/Metsuryu/ICDM">I Cecchini Del Mare </a></h3> 
-			<div class="alignCenter">
-				<a href="https://icecchinidelmare.herokuapp.com" target="_blank"> <img class="screenshots" src="img/screenshots/ICDMScreen.jpg" alt="I Cecchini Del Mare"></a>
-			</div>
-			<br>
-			<div class="skillTags">
-				<p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript" title="Javascript"></p>
-				<p class="skillTag"><img src="img/icons/html5.png" alt="HTML5" title="HTML5"></p>
-				<p class="skillTag"><img src="img/icons/css3.png" alt="CSS3" title="CSS3"></p>
-				<p class="skillTag"><img src="img/icons/jquery.png" alt="jQuery" title="JQuery"></p>
-				<p class="skillTag"><img src="img/icons/mean.png" alt="MEAN" title="MongoDB Express AngularJS NodeJS"></p>
-			</div>
-			<br>
-			<p class="alignCenter" id="ICDMDescID">A <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" target="_blank">MEAN</a> social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.</p>
-
-			<button id="icdmMore" type="button" class="more btn-primary">
-			Details <span class="icon-plus-square"></span></button>
-			<p hidden class="moreTxt" id="icdmMoreTxt"></p>
-		</div>
-
-		<!-- Crawler -->
-		<div class="gridSquare">	
-			<h3 class="alignCenter"><a href="https://github.com/Metsuryu/Crawler">Crawler</a></h3>
-			<div class="alignCenter">
-				<a href="http://crawler.cloudno.de/" target="_blank"> <img class="screenshots" src="img/screenshots/CrawlerScreen.jpg" alt="Crawler"></a>
-			</div>
-			<br>
-			<div class="skillTags">
-				<p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript" title="Javascript"></p>
-				<p class="skillTag"><img src="img/icons/html5.png" alt="HTML5" title="HTML5"></p>
-				<p class="skillTag"><img src="img/icons/css3.png" alt="CSS3" title="CSS3"></p>
-				<p class="skillTag"><img src="img/icons/jquery.png" alt="jQuery" title="JQuery"></p>
-				<p class="skillTag"><img src="img/icons/mean.png" alt="MEAN" title="MongoDB Express AngularJS NodeJS"></p>
-			</div>
-			<br>
-			<p class="alignCenter" id="crawlerDescID">A clone of the game Snake. I made this to demonstrate the <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" target="_blank">MEAN stack</a> technologies.</p>
-
-			<button id="crawlerMore" type="button" class="more btn-primary">
-			Details <span id="crawlerSPAN" class="icon-plus-square"></span></button>
-			<p hidden class="moreTxt" id="crawlerMoreTxt"></p>
-		</div>
-
-		<!-- Solar System -->
-		<div class="gridSquare">
-			<h3 class="alignCenter"><a href="https://github.com/Metsuryu/Solar_System">Solar System</a></h3>
-			<div class="alignCenter">
-				<a href="http://solsys.co.nf/" target="_blank"> <img class="screenshots" src="img/screenshots/solsys.jpg" alt="Solar System"></a>
-			</div>
-			<br>
-			<div class="skillTags">
-				<p class="skillTag"><img src="img/icons/javascript.jpg" alt="Javascript" title="Javascript"></p>
-				<p class="skillTag"><img src="img/icons/html5.png" alt="HTML5" title="HTML5"></p>
-				<p class="skillTag"><img src="img/icons/css3.png" alt="CSS3" title="CSS3"></p>
-			</div>
-			<br>
-			<p class="alignCenter" id="SolSysDescID">Animation of the Solar system I made using Phaser.</p>
-
-			<button id="solsysMore" type="button" class="more btn-primary">
-			Details <span class="icon-plus-square"></span></button>
-			<p hidden class="moreTxt" id="solsysMoreTxt"></p>
-		</div>
-
-		<!-- Star Stuff -->
-		<div class="gridSquare">
-			<h3 class="alignCenter"><a href="https://github.com/Metsuryu/Star_Stuff">Star Stuff</a></h3>
-			<div class="alignCenter">
-				<a href="https://github.com/Metsuryu/Star_Stuff" target="_blank"> <img class="screenshots" src="img/screenshots/starStuff.jpg" alt="Star Stuff"></a>
-			</div>
-			<br>
-			<div class="skillTags">
-				<p class="skillTag"><img src="img/icons/cpp.jpg" alt="C++" title="C++"></p>
-				<p class="skillTag"><img src="img/icons/qt.png" alt="Qt" title="Qt"></p>
-			</div>
-			<br>
-			<p class="alignCenter" id="StStfDescID">A game made in C++ with Qt. Still incomplete and on hold for the moment.</p>
-		
-			<button id="starStuffMore" type="button" class="more btn-primary">
-			Details <span class="icon-plus-square"></span></button>
-			<p hidden class="moreTxt" id="starStuffMoreTxt"></p>
-		</div>
-
-	</div>
-</div>
-
-</div>
-
-</body></html>
+</body>
+</html>
