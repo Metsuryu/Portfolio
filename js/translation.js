@@ -96,6 +96,7 @@ function toItalian(){
   trTxt("StStfDescID","Un gioco realizzato in C++ con Qt. Ancora incompleto e non in sviluppo attivo per il momento.");
   trTxt("crawlerDescID","Un clone del gioco Snake. Ho sviluppato questa pagina per dimostrare le tecnologie <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a>.")
   trTxt("ICDMDescID","Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a> per pescatori subacquei. Permette di condividere la propria posizine tramite geolocalizzazione, e di chattare.");
+  trTxt("LanteaDescID","Una piattaforma per scrittori.<br>Permette agli autori di guadagnare soldi scrivendo articoli.");
 };
 
 //Translates to English
@@ -161,4 +162,5 @@ function toEnglish(){
   trTxt("StStfDescID","A game made in C++ with Qt. Still incomplete and on hold for the moment.");
   trTxt("crawlerDescID","A clone of the game Snake. I made this to demonstrate the <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN stack</a> technologies.");
   trTxt("ICDMDescID","A <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN</a> social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.");
+  trTxt("LanteaDescID","A platform for writers.<br>It allows authors to earn money by writing articles.");
 };
