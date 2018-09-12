@@ -32,13 +32,13 @@ function trTxt(id, string){
   $("#"+id).html(string);
 };
 
-//Translates to Italian
+/** Translates to Italian */
 function toItalian(){
   $(".more").html('Dettagli <span class="icon-plus-square"></span>');
   trTxt("downloadID","<a title='Scarica una versione leggera del portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer e \
     Programmatore - Portfolio.html'>Scarica il mio Portfolio <span class='icon-download'></span></a>");
   trTxt("htitleID","Mario Cannistrà - Web Developer e Programmatore - Portfolio");
-  trTxt("profileID","Sono un programmatore e sviluppatore di siti Web di 26 anni. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Ho esperienza \
+  trTxt("profileID","Sono un programmatore e sviluppatore di siti Web. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Ho esperienza \
     di sviluppo front-end, back-end, e di applicazioni per computer.");
   trTxt("skillsID","Abilità");
   trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>");
@@ -99,12 +99,12 @@ function toItalian(){
   trTxt("LanteaDescID","Una piattaforma per scrittori.<br>Permette agli autori di guadagnare soldi scrivendo articoli.");
 };
 
-//Translates to English
+/** Translates to English */
 function toEnglish(){
   $(".more").html('Details <span class="icon-plus-square"></span>');
   trTxt("downloadID","<a title='Downloads a light version of the portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer and Programmer - portfolio.html'>Download my Portfolio <span class='icon-download'></span></a>");
   trTxt("htitleID","Mario Cannistrà - Web Developer and Programmer - Portfolio");
-  trTxt("profileID","I'm a 26 year old Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I have experience with front-end and back-end web development, and software development.");
+  trTxt("profileID","I'm a Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I focus on front-end and back-end web development, and I have experience in software development.");
   trTxt("skillsID","Skills");
   trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>");
   trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> My GitHub profile');
