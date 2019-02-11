@@ -79,8 +79,7 @@ function toItalian(){
     Ho risolto il problema aggiornando periodicamente un array con la posizione di ogni \
     sezione del serpente, e permettendo al cibo di comparire solo nelle sezioni della mappa non occupate dal serpente.");
   trTxt("solsysMoreTxt",
-    "Questa è un che ho fatto inizialmente per imparare a usare la <code>canvas</code> di HTML5, ma in seguito ho deciso di rifare tutto con Phaser.<br>\
-    Ho iniziato a farla quando stavo ancora imparando Javascript, quindi era molto basilare, ma adesso ho aggiunto più cose.");
+    "Un sistema solare animato sviluppato con Phaser.");
   trTxt("starStuffMoreTxt",
     "Ho iniziato a sviluppare questo gioco per imparare a usare Qt, ma ho acquisito molta esperienza di programmazione\
     in generale grazie a questo progetto.<br>\
@@ -146,8 +145,7 @@ function toEnglish(){
     updating an array with the position of each piece of the snake, \
     and allowing the food to spawn only on coordinates that are not occupied by the snake.");
   trTxt("solsysMoreTxt",
-    "This is an animation that I made initially in order to learn how to use HTML5's <code>canvas</code>, but then I remade it using Phaser.<br>\
-    I started making it when I was first learning Javascript, so it was initially very simple, but now I've added a few more things.");
+    "Animated solar system made using Phaser.");
   trTxt("starStuffMoreTxt",
     "I started making this game to try my hand at Qt, but I've gained a lot of programming experience from this project.<br>\
     I suspended development for the foreseeable future, when I decided to focus on web development, but I might \
