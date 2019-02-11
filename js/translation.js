@@ -79,7 +79,7 @@ function toItalian(){
     Ho risolto il problema aggiornando periodicamente un array con la posizione di ogni \
     sezione del serpente, e permettendo al cibo di comparire solo nelle sezioni della mappa non occupate dal serpente.");
   trTxt("solsysMoreTxt",
-    "Un sistema solare animato sviluppato con Phaser.");
+    "Un semplice 'gioco' che dimostra le orbite dei pianeti e le loro lune, permette di cambiarne la velocità, e permette di esplorare il sistema solare con un astronave.");
   trTxt("starStuffMoreTxt",
     "Ho iniziato a sviluppare questo gioco per imparare a usare Qt, ma ho acquisito molta esperienza di programmazione\
     in generale grazie a questo progetto.<br>\
@@ -91,7 +91,7 @@ function toItalian(){
   trTxt("otherID","Altro");
   trTxt("titleID","Sviluppatore Web e Programmatore");
   trTxt("projectsID","Progetti");
-  trTxt("SolSysDescID","Un semplice 'gioco' che dimostra le orbite dei pianeti e le loro lune, permette di cambiarne la velocità, e permette di esplorare il sistema solare con un astronave.");
+  trTxt("SolSysDescID","Un sistema solare animato sviluppato con Phaser.");
   trTxt("StStfDescID","Un gioco realizzato in C++ con Qt. Ancora incompleto e non in sviluppo attivo per il momento.");
   trTxt("crawlerDescID","Un clone del gioco Snake. Ho sviluppato questa pagina per dimostrare le tecnologie <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a>.")
   trTxt("ICDMDescID","Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a> per pescatori subacquei. Permette di condividere la propria posizine tramite geolocalizzazione, e di chattare.");
@@ -145,7 +145,7 @@ function toEnglish(){
     updating an array with the position of each piece of the snake, \
     and allowing the food to spawn only on coordinates that are not occupied by the snake.");
   trTxt("solsysMoreTxt",
-    "Animated solar system made using Phaser.");
+    "A simple 'game' where you can see the orbits of the planets and their moons, change their speed, and use a starship to explore the solar system.");
   trTxt("starStuffMoreTxt",
     "I started making this game to try my hand at Qt, but I've gained a lot of programming experience from this project.<br>\
     I suspended development for the foreseeable future, when I decided to focus on web development, but I might \
@@ -156,7 +156,7 @@ function toEnglish(){
   trTxt("otherID","Other");
   trTxt("titleID","Web Developer and Programmer");
   trTxt("projectsID","Projects");
-  trTxt("SolSysDescID","A simple 'game' where you can see the orbits of the planets and their moons, change their speed, and use a starship to explore the solar system.");
+  trTxt("SolSysDescID","Animated solar system made using Phaser.");
   trTxt("StStfDescID","A game made in C++ with Qt. Still incomplete and on hold for the moment.");
   trTxt("crawlerDescID","A clone of the game Snake. I made this to demonstrate the <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN stack</a> technologies.");
   trTxt("ICDMDescID","A <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN</a> social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.");
