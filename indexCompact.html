@@ -318,137 +318,135 @@ function trTxt(id, string){
 	$("#"+id).html(string);
 };
 
-//Translates to Italian
+/** Translates to Italian */
 function toItalian(){
-	$(".more").html('Dettagli <span class="icon-plus-square"></span>');
-	trTxt("downloadID","<a title='Scarica una versione leggera del portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer e \
-		Programmatore - Portfolio.html'>Scarica il mio Portfolio <span class='icon-download'></span></a>");
-	trTxt("htitleID","Mario Cannistrà - Web Developer e Programmatore - Portfolio");
-	trTxt("profileID","Sono un programmatore e sviluppatore di siti Web. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Ho esperienza \
-		di sviluppo front-end, back-end, e di applicazioni per computer.");
-	trTxt("skillsID","Abilità");
-	trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>");
-	trTxt("githubID",'Il mio profilo GitHub');
-	trTxt("lanteaMoreTxt",
-		"Ho iniziato a lavorare su Lantea il 2017-09-12, e ci stò lavorando correntemente.<br>\
-		Lantea è una piattaforma che permette agli autori di scrivere e postare articoli, e guadagnare soldi condividendo il reddito ricavato dalle inserzioni.<br>\
-		Quando ho iniziato, Lantea era in uno stato iniziale di sviluppo, alcune funzionalità erano già parzialmente implementate,\
-		ma abbiamo deciso che sarebbe stato meglio ricominciare da capo, dato che lo sviluppatore precedente non era più disponibile,\
-		e che per trovare e sistemare tutti i bug ci potrebbe essere voluto più tempo che a rifare tutto.<br>\
-		Per questo motivo, la maggior parte di questa versione del sito è stata sviluppata da me, con l'eccezzione di risorse grafiche,\
-		parte dell' HTML e CSS adattai dalla versione precedente, e del codice di altri due sviluppatori che ci lavorano occasionalmente.<br>\
-		Funzionalità che ho implementato includono, ma non sono limitate a: funzionalità <a href='https://it.wikipedia.org/wiki/Tavola_CRUD'>CRUD</a> per gli articoli,\
-		chat di messaggistica istantanea che permette l'upload di immagini, commenti, strumenti per amministratori, bozze, notificazioni, funzione di ricerca per articoli, \
-		statistiche, impostazioni varie, amici (followers), medaglie (achievements), e verifica dei token da server per la sicurezza delle azioni sensibili.<br>\
-		Per ora non condivido il link al sito, dato che non è ancora stato pubblicato ufficialmente.");  
-	trTxt("icdmMoreTxt",
-		"I Cecchini Del Mare è stato commissionato dall'\
-		<a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>omonimo gruppo di Facebook.</a><br>\
-		Il sito permete agli utenti di trasmettere la propria posizione e chattare con tutti gli utenti connessi.\
-		Per fare queso, le coordinate e altre informazioni (nome, immagine del profilo...) di ogni utente sono aggiunte\
-		a un database Mongo, e sono vengono in seguito utilizzate da ogni client per mostrare gli utenti sulla mappa\
-		e nella lista di utenti online.<br>\
-		La chat è fatta con Socket.IO, ed è abbastanza leggera e veloce. Permette agli utenti di inviare messaggi privati, \
-		salva la cronologia della chat nei Cookies, ha funzionalità per controllare se il messaggio è stato inviato\
-		correttamente, e quando viene aperta, mostra la distanza tra i due utenti se possibile.<br>\
-		Lo sviluppo non ha presentato molti problemi tecnici, ma mi ha aiutato comunque a migliorare le mie abilità.");
-	trTxt("crawlerMoreTxt","Crawler usa poco HTML e CSS, dato che la maggior parte del lavoro si è concetrato sulla \
-		realizzazione del gioco.<br>\
-		Ho iniziato con l'intenzione di realizzare una web-app su pagina singola molto semplice, ma in seguito\
-		ho deciso di incentrare il sito sul gioco.<br>\
-		Ho usato la funzionalità <code>ng-repeat</code> di Angular per realizzare la tabbella dei punteggi dinamicamente, \
-		utilizzando i risultati ricevuti da MongoDB, e mostrare 10 risultati per ogni pagina che è anche generata dinamicamente \
-		in base al numero totale di punteggi. \
-		Uso anche <code>filter</code> di Angular per implementare una funzionalità di ricerca.<br>\
-		Il gioco è sviluppato con la libreria p5js, ed è per la maggior parte una basilare versione di snake.\
-		Una delle parti più complicate dello sviluppo è stata fare si che il cibo non comparisse sul serpente.\
-		Ho risolto il problema aggiornando periodicamente un array con la posizione di ogni \
-		sezione del serpente, e permettendo al cibo di comparire solo nelle sezioni della mappa non occupate dal serpente.");
-	trTxt("solsysMoreTxt",
-		"Questa è un che ho fatto inizialmente per imparare a usare la <code>canvas</code> di HTML5, ma in seguito ho deciso di rifare tutto con Phaser.<br>\
-		Ho iniziato a farla quando stavo ancora imparando Javascript, quindi era molto basilare, ma adesso ho aggiunto più cose.");
-	trTxt("starStuffMoreTxt",
-		"Ho iniziato a sviluppare questo gioco per imparare a usare Qt, ma ho acquisito molta esperienza di programmazione\
-		in generale grazie a questo progetto.<br>\
-		Ho sospeso lo sviluppo per il momento, da quando ho deciso di concentrarmi principalmente sullo sviluppo web\
-		ma potrei continuare a lavorarci eventualmente.");
-	trTxt("servicesID","Servizi");
-	trTxt("wbID","Tecnologie web");
-	trTxt("swID","Tecnologie Software");
-	trTxt("otherID","Altro");
-	trTxt("titleID","Sviluppatore Web e Programmatore");
-	trTxt("projectsID","Progetti");
-	trTxt("SolSysDescID","Animazione del Sistema Solare che ho realizzato usando Phaser.");
-	trTxt("StStfDescID","Un gioco realizzato in C++ con Qt. Ancora incompleto e non in sviluppo attivo per il momento.");
-	trTxt("crawlerDescID","Un clone del gioco Snake. Ho sviluppato questa pagina per dimostrare le tecnologie <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a>.")
-	trTxt("ICDMDescID","Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a> per pescatori subacquei. Permette di condividere la propria posizine tramite geolocalizzazione, e di chattare.");
-	trTxt("LanteaDescID","Una piattaforma per scrittori.<br>Permette agli autori di guadagnare soldi scrivendo articoli.");
+  $(".more").html('Dettagli <span class="icon-plus-square"></span>');
+  trTxt("downloadID","<a title='Scarica una versione leggera del portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer e \
+    Programmatore - Portfolio.html'>Scarica il mio Portfolio <span class='icon-download'></span></a>");
+  trTxt("htitleID","Mario Cannistrà - Web Developer e Programmatore - Portfolio");
+  trTxt("profileID","Sono un programmatore e sviluppatore di siti Web. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Ho esperienza \
+    di sviluppo front-end, back-end, e di applicazioni per computer.");
+  trTxt("skillsID","Abilità");
+  trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>");
+  trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> Il mio profilo GitHub');
+  trTxt("lanteaMoreTxt",
+    "Ho iniziato a lavorare su Lantea il 2017-09-12, e ci stò lavorando correntemente.<br>\
+    Lantea è una piattaforma che permette agli autori di scrivere e postare articoli, e guadagnare soldi condividendo il reddito ricavato dalle inserzioni.<br>\
+    Quando ho iniziato, Lantea era in uno stato iniziale di sviluppo, alcune funzionalità erano già parzialmente implementate,\
+    ma abbiamo deciso che sarebbe stato meglio ricominciare da capo, dato che lo sviluppatore precedente non era più disponibile,\
+    e che per trovare e sistemare tutti i bug ci potrebbe essere voluto più tempo che a rifare tutto.<br>\
+    Per questo motivo, la maggior parte di questa versione del sito è stata sviluppata da me, con l'eccezzione di risorse grafiche,\
+    parte dell' HTML e CSS adattai dalla versione precedente, e del codice di altri due sviluppatori che ci lavorano occasionalmente.<br>\
+    Funzionalità che ho implementato includono, ma non sono limitate a: funzionalità <a href='https://it.wikipedia.org/wiki/Tavola_CRUD'>CRUD</a> per gli articoli,\
+    chat di messaggistica istantanea che permette l'upload di immagini, commenti, strumenti per amministratori, bozze, notificazioni, funzione di ricerca per articoli, \
+    statistiche, impostazioni varie, amici (followers), medaglie (achievements), e verifica dei token da server per la sicurezza delle azioni sensibili.<br>\
+    Per ora non condivido il link al sito, dato che non è ancora stato pubblicato ufficialmente.");  
+  trTxt("icdmMoreTxt",
+    "I Cecchini Del Mare è stato commissionato dall'\
+    <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>omonimo gruppo di Facebook.</a><br>\
+    Il sito permete agli utenti di trasmettere la propria posizione e chattare con tutti gli utenti connessi.\
+    Per fare queso, le coordinate e altre informazioni (nome, immagine del profilo...) di ogni utente sono aggiunte\
+    a un database Mongo, e sono vengono in seguito utilizzate da ogni client per mostrare gli utenti sulla mappa\
+    e nella lista di utenti online.<br>\
+    La chat è fatta con Socket.IO, ed è abbastanza leggera e veloce. Permette agli utenti di inviare messaggi privati, \
+    salva la cronologia della chat nei Cookies, ha funzionalità per controllare se il messaggio è stato inviato\
+    correttamente, e quando viene aperta, mostra la distanza tra i due utenti se possibile.<br>\
+    Lo sviluppo non ha presentato molti problemi tecnici, ma mi ha aiutato comunque a migliorare le mie abilità.");
+  trTxt("crawlerMoreTxt","Crawler usa poco HTML e CSS, dato che la maggior parte del lavoro si è concetrato sulla \
+    realizzazione del gioco.<br>\
+    Ho iniziato con l'intenzione di realizzare una web-app su pagina singola molto semplice, ma in seguito\
+    ho deciso di incentrare il sito sul gioco.<br>\
+    Ho usato la funzionalità <code>ng-repeat</code> di Angular per realizzare la tabbella dei punteggi dinamicamente, \
+    utilizzando i risultati ricevuti da MongoDB, e mostrare 10 risultati per ogni pagina che è anche generata dinamicamente \
+    in base al numero totale di punteggi. \
+    Uso anche <code>filter</code> di Angular per implementare una funzionalità di ricerca.<br>\
+    Il gioco è sviluppato con la libreria p5js, ed è per la maggior parte una basilare versione di snake.\
+    Una delle parti più complicate dello sviluppo è stata fare si che il cibo non comparisse sul serpente.\
+    Ho risolto il problema aggiornando periodicamente un array con la posizione di ogni \
+    sezione del serpente, e permettendo al cibo di comparire solo nelle sezioni della mappa non occupate dal serpente.");
+  trTxt("solsysMoreTxt",
+    "Un semplice 'gioco' che dimostra le orbite dei pianeti e le loro lune, permette di cambiarne la velocità, e permette di esplorare il sistema solare con un astronave.");
+  trTxt("starStuffMoreTxt",
+    "Ho iniziato a sviluppare questo gioco per imparare a usare Qt, ma ho acquisito molta esperienza di programmazione\
+    in generale grazie a questo progetto.<br>\
+    Ho sospeso lo sviluppo per il momento, da quando ho deciso di concentrarmi principalmente sullo sviluppo web\
+    ma potrei continuare a lavorarci eventualmente.");
+  trTxt("servicesID","Servizi");
+  trTxt("wbID","Tecnologie web");
+  trTxt("swID","Tecnologie Software");
+  trTxt("otherID","Altro");
+  trTxt("titleID","Sviluppatore Web e Programmatore");
+  trTxt("projectsID","Progetti");
+  trTxt("SolSysDescID","Un sistema solare animato sviluppato con Phaser.");
+  trTxt("StStfDescID","Un gioco realizzato in C++ con Qt. Ancora incompleto e non in sviluppo attivo per il momento.");
+  trTxt("crawlerDescID","Un clone del gioco Snake. Ho sviluppato questa pagina per dimostrare le tecnologie <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a>.")
+  trTxt("ICDMDescID","Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a> per pescatori subacquei. Permette di condividere la propria posizine tramite geolocalizzazione, e di chattare.");
+  trTxt("LanteaDescID","Una piattaforma per scrittori.<br>Permette agli autori di guadagnare soldi scrivendo articoli.");
 };
 
-//Translates to English
+/** Translates to English */
 function toEnglish(){
-	$(".more").html('Details <span class="icon-plus-square"></span>');
-	trTxt("downloadID","<a title='Downloads a light version of the portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer and Programmer - portfolio.html'>Download my Portfolio <span class='icon-download'></span></a>");
-	trTxt("htitleID","Mario Cannistrà - Web Developer and Programmer - Portfolio");
-	trTxt("profileID","I'm a Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I focus on front-end and back-end web development, and I have experience in software development.");
-	trTxt("skillsID","Skills");
-	trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>");
-	trTxt("githubID",'My GitHub profile');
-	trTxt("lanteaMoreTxt",
-		"I started working on Lantea on 2017-09-12, and I'm currently working on it.<br>\
-		Lantea is a platform that lets authors write and post articles, and earn money with revenue sharing from advertisement.<br>\
-		When I joined, Lantea was on early stages of development, some of the features were already partially implemented,\
-		but we decided it was better to start from scratch, since the previous developer wasn't available anymore,\
-		and finding and fixing all the bugs might have taken more time than remaking everything.<br>\
-		Because of that, most of the current version of the site was developed by me, with the exception of the art assets,\
-		some of the HTML and CSS adapted from the previous version of the site, and some code by two other developers that work on it occasionally.<br>\
-		Features that I implemented include, but are not limited to: <a href='https://en.wikipedia.org/wiki/Create,_read,_update_and_delete'>CRUD</a> functionalities for articles,\
-		instant messaging chat that also allows the upload of pictures, a comment system, admin tools, drafts, notifications, search for articles, \
-		statistics, various settings, followers, achievements, and securing sensitive operations with server-side token verification.<br>\
-		For now I'm not providing the link to the website because we didn't officially publish it yet.");
-	trTxt("icdmMoreTxt",
-		"I Cecchini Del Mare (Snipers of the Sea in Italian) was commissioned by \
-		<a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>the Facebook group of the same name.</a><br>\
-		The website allows people to share their current location, so that everyone connected will be able \
-		to see them on the map, and chat with them.\
-		To do this, the coordinates and other data (name, profile picture...) of each user are added to a Mongo database, \
-		and they are retrived by each client to be displayed on the map, and in the list of online users.<br>\
-		The chat is made with Socket.IO, and is fairly lightweight. It allows users to send private messages to eachother, \
-		it saves the chat history in the cookies, has functionality to check if the message was sent correctly,\
-		and when opened, shows the distance between the two users if possible.<br>\
-		The development didn't present too many technical problems, but it helped me gain quite a lot of experience.");
-	trTxt("crawlerMoreTxt",
-		"Crawler uses little HTML and CSS, as most of the work went into the game, that's why it might not look very fancy.<br>\
-		I started with the intention to make a very simple single-page web application, but \
-		then I decided to make the game the focus of the page.<br>\
-		I used Angular's <code>ng-repeat</code> functionality to build the highscores table dynamically, by retriving the \
-		entries from a Mongo server, and displaying 10 entries for each page that is also generated dynamically \
-		based on the total number of highscores.\
-		I also use Angular's <code>filter</code> to implement a search function.<br>\
-		The game is built with the p5js library, and is mostly a standard version of snake.\
-		One of the most challenging parts of development was making it so when food spawned, it wouldn't spawn on \
-		top of the snake, mostly because I was trying to find a clever solution. \
-		I finally realized that sometimes, the best solution is the most obvious one, so I did it by periodically \
-		updating an array with the position of each piece of the snake, \
-		and allowing the food to spawn only on coordinates that are not occupied by the snake.");
-	trTxt("solsysMoreTxt",
-		"This is an animation that I made initially in order to learn how to use HTML5's <code>canvas</code>, but then I remade it using Phaser.<br>\
-		I started making it when I was first learning Javascript, so it was initially very simple, but now I've added a few more things.");
-	trTxt("starStuffMoreTxt",
-		"I started making this game to try my hand at Qt, but I've gained a lot of programming experience from this project.<br>\
-		I suspended development for the foreseeable future, when I decided to focus on web development, but I might \
-		resume working on this project at some point.");
-	trTxt("servicesID","Services");
-	trTxt("wbID","Website development");
-	trTxt("swID","Software development");
-	trTxt("otherID","Other");
-	trTxt("titleID","Web Developer and Programmer");
-	trTxt("projectsID","Projects");
-	trTxt("SolSysDescID","Animation of the Solar system I made using Phaser.");
-	trTxt("StStfDescID","A game made in C++ with Qt. Still incomplete and on hold for the moment.");
-	trTxt("crawlerDescID","A clone of the game Snake. I made this to demonstrate the <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN stack</a> technologies.");
-	trTxt("ICDMDescID","A <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN</a> social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.");
-	trTxt("LanteaDescID","A platform for writers.<br>It allows authors to earn money by writing articles.");
+  $(".more").html('Details <span class="icon-plus-square"></span>');
+  trTxt("downloadID","<a title='Downloads a light version of the portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer and Programmer - portfolio.html'>Download my Portfolio <span class='icon-download'></span></a>");
+  trTxt("htitleID","Mario Cannistrà - Web Developer and Programmer - Portfolio");
+  trTxt("profileID","I'm a Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I focus on front-end and back-end web development, and I have experience in software development.");
+  trTxt("skillsID","Skills");
+  trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>");
+  trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> My GitHub profile');
+  trTxt("lanteaMoreTxt",
+    "I started working on Lantea on 2017-09-12, and I'm currently working on it.<br>\
+    Lantea is a platform that lets authors write and post articles, and earn money with revenue sharing from advertisement.<br>\
+    When I joined, Lantea was on early stages of development, some of the features were already partially implemented,\
+    but we decided it was better to start from scratch, since the previous developer wasn't available anymore,\
+    and finding and fixing all the bugs might have taken more time than remaking everything.<br>\
+    Because of that, most of the current version of the site was developed by me, with the exception of the art assets,\
+    some of the HTML and CSS adapted from the previous version of the site, and some code by two other developers that work on it occasionally.<br>\
+    Features that I implemented include, but are not limited to: <a href='https://en.wikipedia.org/wiki/Create,_read,_update_and_delete'>CRUD</a> functionalities for articles,\
+    instant messaging chat that also allows the upload of pictures, a comment system, admin tools, drafts, notifications, search for articles, \
+    statistics, various settings, followers, achievements, and securing sensitive operations with server-side token verification.<br>\
+    For now I'm not providing the link to the website because we didn't officially publish it yet.");
+  trTxt("icdmMoreTxt",
+    "I Cecchini Del Mare (Snipers of the Sea in Italian) was commissioned by \
+    <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>the Facebook group of the same name.</a><br>\
+    The website allows people to share their current location, so that everyone connected will be able \
+    to see them on the map, and chat with them.\
+    To do this, the coordinates and other data (name, profile picture...) of each user are added to a Mongo database, \
+    and they are retrived by each client to be displayed on the map, and in the list of online users.<br>\
+    The chat is made with Socket.IO, and is fairly lightweight. It allows users to send private messages to eachother, \
+    it saves the chat history in the cookies, has functionality to check if the message was sent correctly,\
+    and when opened, shows the distance between the two users if possible.<br>\
+    The development didn't present too many technical problems, but it helped me gain quite a lot of experience.");
+  trTxt("crawlerMoreTxt",
+    "Crawler uses little HTML and CSS, as most of the work went into the game, that's why it might not look very fancy.<br>\
+    I started with the intention to make a very simple single-page web application, but \
+    then I decided to make the game the focus of the page.<br>\
+    I used Angular's <code>ng-repeat</code> functionality to build the highscores table dynamically, by retriving the \
+    entries from a Mongo server, and displaying 10 entries for each page that is also generated dynamically \
+    based on the total number of highscores.\
+    I also use Angular's <code>filter</code> to implement a search function.<br>\
+    The game is built with the p5js library, and is mostly a standard version of snake.\
+    One of the most challenging parts of development was making it so when food spawned, it wouldn't spawn on \
+    top of the snake, mostly because I was trying to find a clever solution. \
+    I finally realized that sometimes, the best solution is the most obvious one, so I did it by periodically \
+    updating an array with the position of each piece of the snake, \
+    and allowing the food to spawn only on coordinates that are not occupied by the snake.");
+  trTxt("solsysMoreTxt",
+    "A simple 'game' where you can see the orbits of the planets and their moons, change their speed, and use a starship to explore the solar system.");
+  trTxt("starStuffMoreTxt",
+    "I started making this game to try my hand at Qt, but I've gained a lot of programming experience from this project.<br>\
+    I suspended development for the foreseeable future, when I decided to focus on web development, but I might \
+    resume working on this project at some point.");
+  trTxt("servicesID","Services");
+  trTxt("wbID","Website development");
+  trTxt("swID","Software development");
+  trTxt("otherID","Other");
+  trTxt("titleID","Web Developer and Programmer");
+  trTxt("projectsID","Projects");
+  trTxt("SolSysDescID","Animated solar system made using Phaser.");
+  trTxt("StStfDescID","A game made in C++ with Qt. Still incomplete and on hold for the moment.");
+  trTxt("crawlerDescID","A clone of the game Snake. I made this to demonstrate the <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN stack</a> technologies.");
+  trTxt("ICDMDescID","A <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN</a> social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.");
+  trTxt("LanteaDescID","A platform for writers.<br>It allows authors to earn money by writing articles.");
 };
 </script>
 </head>
@@ -496,7 +494,7 @@ function toEnglish(){
 					<h4 id="wbID">Web Development</h4> 
 					<ul>
 						<li>JavaScript - jQuery, Node.js, AngularJS, Express.js, Socket.IO</li>
-						<li>Typescript - Angular 2/4/5</li>
+						<li>Typescript - Angular 2-7</li>
 						<li>Firebase</li>
 						<li>Nginx</li>
 						<li>HTML5 / CSS3 - Bootstrap, Less, Sass</li>
@@ -535,10 +533,9 @@ function toEnglish(){
 			<div id="grid">
 				<!-- Lantea -->
 				<div class="gridSquare">	
-					<h3 class="alignCenter"><a href="#">Lantea </a></h3> 
+					<h3 class="alignCenter"><a href="https://lantea.nl" target="_blank">Lantea </a></h3> 
 					<div class="alignCenter">
-						<!-- TODO: Add link to Lantea, with target="_blank" -->
-						<a href="#"><img class="screenshots" src="
+						<a href="https://lantea.nl" target="_blank"><img class="screenshots" src="
 							data:image/jpeg;base64,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" 
 							alt="Lantea"></a>
 						</div>
