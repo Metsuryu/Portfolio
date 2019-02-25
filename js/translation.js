@@ -38,8 +38,11 @@ function toItalian(){
   trTxt("downloadID","<a title='Scarica una versione leggera del portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer e \
     Programmatore - Portfolio.html'>Scarica il mio Portfolio <span class='icon-download'></span></a>");
   trTxt("htitleID","Mario Cannistrà - Web Developer e Programmatore - Portfolio");
-  trTxt("profileID","Sono un programmatore e sviluppatore di siti Web. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Ho esperienza \
-    di sviluppo front-end, back-end, e di applicazioni per computer.");
+  trTxt("profileID","Sono un programmatore e sviluppatore di siti Web. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Sono specializzato \
+    nello sviluppo front-end, e back-end,<br>e ho esperienza nello sviluppo di applicazioni per computer.<br>\
+    Occasionalmente, aiuto clienti con problemi di programmazione\
+    su codementor, <a target='_blank' href='https://www.codementor.io/mariocannistrawork'>questo è il mio profilo</a>.<br>\
+    Sentitevi liberi di contattarmi per eventuali domande");
   trTxt("skillsID","Abilità");
   trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>");
   trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> Il mio profilo GitHub');
@@ -103,7 +106,13 @@ function toEnglish(){
   $(".more").html('Details <span class="icon-plus-square"></span>');
   trTxt("downloadID","<a title='Downloads a light version of the portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer and Programmer - portfolio.html'>Download my Portfolio <span class='icon-download'></span></a>");
   trTxt("htitleID","Mario Cannistrà - Web Developer and Programmer - Portfolio");
-  trTxt("profileID","I'm a Web Developer and Programmer. <br>I live in Italy, and I speak English fluently.<br>I focus on front-end and back-end web development, and I have experience in software development.");
+  trTxt("profileID","I'm a Web Developer and Programmer.<br>\
+    I live in Italy, and I speak English and Italian fluently.<br>\
+    I focus on front-end and back-end web development,<br>\
+    and I have experience in software development.<br>\
+    Occasionally, I help people with their programming<br>\
+    problems on codementor, here's <a target='_blank' href='https://www.codementor.io/mariocannistrawork'>my profile</a>.<br>\
+    Feel free to contact me if you have questions.");
   trTxt("skillsID","Skills");
   trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>");
   trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> My GitHub profile');

@@ -103,6 +103,10 @@ li{
 	word-wrap: break-word;
 	display: inline-block;
 }
+#profileID {
+	padding: 0em 5em 0em 5em;
+}
+
 #skillsSection {
 	width: 40%;
 	display: inline-block;
