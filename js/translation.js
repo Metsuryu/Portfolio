@@ -35,13 +35,14 @@ function trTxt(id, string){
 /** Translates to Italian */
 function toItalian(){
   $(".more").html('Dettagli <span class="icon-plus-square"></span>');
-  trTxt("downloadID","<a title='Scarica una versione leggera del portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer e \
-    Programmatore - Portfolio.html'>Scarica il mio Portfolio <span class='icon-download'></span></a>");
-  trTxt("htitleID","Mario Cannistrà - Web Developer e Programmatore - Portfolio");
-  trTxt("profileID","Sono un programmatore e sviluppatore di siti Web. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Sono specializzato \
+  trTxt("downloadID","<a title='Scarica una versione leggera del portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer \
+    Full Stack - Portfolio.html'>Scarica il mio Portfolio <span class='icon-download'></span></a>");
+  trTxt("htitleID","Mario Cannistrà - Web Developer Full Stack - Portfolio");
+  trTxt("profileID","Sono uno sviluppatore di siti Web. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Sono specializzato \
     nello sviluppo front-end, e back-end,<br>e ho esperienza nello sviluppo di applicazioni per computer.<br>\
-    Occasionalmente, aiuto clienti con problemi di programmazione\
-    su codementor, <a target='_blank' href='https://www.codementor.io/mariocannistrawork'>questo è il mio profilo</a>.<br>\
+    Occasionalmente, lavoro come freelancer, aiutando<br>\
+    clienti con problemi di programmazione su codementor,\
+    <a target='_blank' href='https://www.codementor.io/mariocannistrawork'>questo è il mio profilo</a>.<br>\
     Sentitevi liberi di contattarmi per eventuali domande");
   trTxt("skillsID","Abilità");
   trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>");
@@ -92,7 +93,7 @@ function toItalian(){
   trTxt("wbID","Tecnologie web");
   trTxt("swID","Tecnologie Software");
   trTxt("otherID","Altro");
-  trTxt("titleID","Sviluppatore Web e Programmatore");
+  trTxt("titleID","Sviluppatore Web");
   trTxt("projectsID","Progetti");
   trTxt("SolSysDescID","Un sistema solare animato sviluppato con Phaser.");
   trTxt("StStfDescID","Un gioco realizzato in C++ con Qt. Ancora incompleto e non in sviluppo attivo per il momento.");
@@ -104,14 +105,15 @@ function toItalian(){
 /** Translates to English */
 function toEnglish(){
   $(".more").html('Details <span class="icon-plus-square"></span>');
-  trTxt("downloadID","<a title='Downloads a light version of the portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer and Programmer - portfolio.html'>Download my Portfolio <span class='icon-download'></span></a>");
-  trTxt("htitleID","Mario Cannistrà - Web Developer and Programmer - Portfolio");
-  trTxt("profileID","I'm a Web Developer and Programmer.<br>\
+  trTxt("downloadID","<a title='Downloads a light version of the portfolio.' href='indexCompact.html' download='Mario Cannistrà - Full Stack Web Developer - portfolio.html'>Download my Portfolio <span class='icon-download'></span></a>");
+  trTxt("htitleID","Mario Cannistrà - Full Stack Web Developer - Portfolio");
+  trTxt("profileID","I'm a Full Stack Web Developer.<br>\
     I live in Italy, and I speak English and Italian fluently.<br>\
     I focus on front-end and back-end web development,<br>\
-    and I have experience in software development.<br>\
-    Occasionally, I help people with their programming<br>\
-    problems on codementor, here's <a target='_blank' href='https://www.codementor.io/mariocannistrawork'>my profile</a>.<br>\
+    and I have some experience in software development.<br>\
+    Occasionally, I work as a freelancer, helping \
+    people with their programming problems on codementor,\
+    here's <a target='_blank' href='https://www.codementor.io/mariocannistrawork'>my profile</a>.<br>\
     Feel free to contact me if you have questions.");
   trTxt("skillsID","Skills");
   trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>");
@@ -163,7 +165,7 @@ function toEnglish(){
   trTxt("wbID","Website development");
   trTxt("swID","Software development");
   trTxt("otherID","Other");
-  trTxt("titleID","Web Developer and Programmer");
+  trTxt("titleID","Full Stack Web Developer");
   trTxt("projectsID","Projects");
   trTxt("SolSysDescID","Animated solar system made using Phaser.");
   trTxt("StStfDescID","A game made in C++ with Qt. Still incomplete and on hold for the moment.");
