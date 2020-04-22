@@ -1,11 +1,3 @@
-.skillTag {
-	display:inline;
-}
-
-.skillTag img {
-	max-height: 40px;
-}
-
 body{
 	font-family: Verdana, Arial;
 	padding-top: 5px;
@@ -15,6 +7,14 @@ body{
 
 h1 {
 	font-family: Cambria, Verdana, Arial;
+}
+
+.skillTag {
+	display:inline;
+}
+
+.skillTag img {
+	max-height: 40px;
 }
 
 #themes {
@@ -81,24 +81,24 @@ hr{
 	margin: 5px;
 }
 
-#downloadDiv{
+#downloadDiv {
 	clear: both;
 	text-align: right;
 }
 
-ul{
+ul {
 	padding: 0;
 	padding-top: .2em;
 }
 
-li{
+li {
 	list-style-position: inside;
 }
 
 .progress {
 	height: 1.67em;
 }
-#bio{
+#bio {
 	text-align: center;
 	word-wrap: break-word;
 	display: inline-block;
@@ -111,23 +111,26 @@ li{
 	width: 40%;
 	display: inline-block;
 }
+
+#skillsSection h3 {
+	font-size: 18px;
+}
+
 /*This makes it so the services section becomes centered on smaller screens*/
 @media screen and (min-width: 768px) {
-    #servicesSection {
-    	width: 50%;
-    	float: right;
-    }
+	#servicesSection {
+		width: 50%;
+		float: right;
+	}
 }
 
 @media screen and (min-width: 1000px) {
-    #skillsSection {
-    }
-    #bio{
-    	float: left;
-    	width: 50%;
-    	margin-right: 5em;
+	#bio {
+		float: left;
+		width: 50%;
+		margin-right: 5em;
 	}
-
+	
 }
 
 #projectsSection {
@@ -152,11 +155,12 @@ li{
 	margin: 10px;
 	padding-top: 1px;
 	text-align: left;
-
+	
 	word-break: break-all;
 	word-wrap: break-word;
 }
-.field a p,.field p {
+.field a p,
+.field p {
 	text-align: left;
 	font-size: 1.3em;
 	display: inline; 
@@ -173,15 +177,15 @@ li{
 
 .gridSquare {
 	width: 550px;
-    height: 590px;
-    max-height: 590px;
-    max-width: 550px;
-    min-height: 550px;
-    min-width: 500px;
-    padding: 0.5em;
-    margin: 10px;
-    background-color: #fff;
-    overflow: auto;
+	height: 605px;
+	max-height: 605px;
+	max-width: 550px;
+	min-height: 550px;
+	min-width: 500px;
+	padding: 0.5em;
+	margin: 10px;
+	background-color: #fff;
+	overflow: auto;
 }
 
 .gridSquare a img {
@@ -192,7 +196,11 @@ li{
 	color: rgb(51, 122, 183);
 }
 
-.skillTags{
+.gridSquare h4 {
+	font-size: 14px;
+}
+
+.skillTags {
 	background-color: #fff;
 	border-radius: 10px;
 	width: 55%;
@@ -206,12 +214,14 @@ li{
 	#grid {
 		justify-content: center;
 	}
+
 	#skillsSection {
 		display: flex;
 		justify-content: center;
 		width: 100%;
 	}
-	#bio{
+
+	#bio {
 		width: 100%;
 	}
 }
@@ -220,28 +230,28 @@ li{
 @media screen and (max-width: 600px) {
 	.gridSquare {
 		width: 95%;
-    	min-width: 200px;
-    	height: auto;
-    	overflow: auto;
+		min-width: 200px;
+		height: auto;
+		overflow: auto;
 	}
-	.screenshots{
+
+	.screenshots {
 		width: 90%;
 	}
 }
 
-#gitHub{
-	clear: both;
+#gitHub {
+	margin: 0 auto;
 	text-align: center;
 }
 
-.alignCenter{
+.alignCenter {
 	text-align: center;
 }
 
-
-#titleID{
+#titleID {
 	font-size: 1.5em;
 }
-#bio img{
+#bio img {
 	border-radius: 60px;
 }

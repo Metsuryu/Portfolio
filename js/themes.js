@@ -1,4 +1,4 @@
-function toLight(){
+function toLight() {
 	$("#toggleLights").attr("onclick","toDark()");
 	$("body").css({
 		"color":"#2d2e2e",
@@ -18,7 +18,7 @@ function toLight(){
 	$("li").css("color","#2d2e2e");
 }
 
-function toDark(){
+function toDark() {
 	$("#toggleLights").attr("onclick","toLight()");
 	$("body").css({
 		"color":"rgb(0, 216, 255)",
