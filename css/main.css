@@ -178,9 +178,7 @@ li{
     max-width: 550px;
     min-height: 550px;
     min-width: 500px;
-    border: 2px solid black;
-    padding: 1em;
-    border-radius: 15px;
+    padding: 0.5em;
     margin: 10px;
     background-color: #fff;
     overflow: auto;
