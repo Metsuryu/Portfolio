@@ -48,17 +48,16 @@ function toItalian(){
   trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>");
   trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> Il mio profilo GitHub');
   trTxt("lanteaMoreTxt",
-    "Ho iniziato a lavorare su Lantea il 2017-09-12, e ci stò lavorando correntemente.<br>\
-    Lantea è una piattaforma che permette agli autori di scrivere e postare articoli, e guadagnare soldi condividendo il reddito ricavato dalle inserzioni.<br>\
+    "Ho lavorato su Lantea dal 2017-09-12 al 2019-02-01, quando il progetto è stato sospeso.<br>\
+    Lantea è una piattaforma che permette agli autori di scrivere e postare articoli, e guadagnare condividendo il reddito ricavato dalle inserzioni.<br>\
     Quando ho iniziato, Lantea era in uno stato iniziale di sviluppo, alcune funzionalità erano già parzialmente implementate,\
-    ma abbiamo deciso che sarebbe stato meglio ricominciare da capo, dato che lo sviluppatore precedente non era più disponibile,\
-    e che per trovare e sistemare tutti i bug ci potrebbe essere voluto più tempo che a rifare tutto.<br>\
+    ma a quel punto si è deciso che sarebbe stato meglio rifattorizzare quasi tutto, passando da AngularJS a Angular 2+.<br>\
     Per questo motivo, la maggior parte di questa versione del sito è stata sviluppata da me, con l'eccezzione di risorse grafiche,\
-    parte dell' HTML e CSS adattai dalla versione precedente, e del codice di altri due sviluppatori che ci lavorano occasionalmente.<br>\
+    parte dell' HTML e CSS adattai dalla versione precedente, e del codice di altri due sviluppatori che ci lavoravano occasionalmente.<br>\
     Funzionalità che ho implementato includono, ma non sono limitate a: funzionalità <a href='https://it.wikipedia.org/wiki/Tavola_CRUD'>CRUD</a> per gli articoli,\
     chat di messaggistica istantanea che permette l'upload di immagini, commenti, strumenti per amministratori, bozze, notificazioni, funzione di ricerca per articoli, \
-    statistiche, impostazioni varie, amici (followers), medaglie (achievements), e verifica dei token da server per la sicurezza delle azioni sensibili.<br>\
-    Per ora non condivido il link al sito, dato che non è ancora stato pubblicato ufficialmente.");  
+    statistiche, impostazioni varie, amici (followers), medaglie (achievements), e verifica dei token da server per la sicurezza delle operazioni sensibili.<br>\
+    Il sito non è mai stato rilasciato ufficialmente, ma una versione per la maggior parte funzionale è disponibile <a href='https://new-lantea.web.app/'>online qui.</a>.");  
   trTxt("icdmMoreTxt",
     "I Cecchini Del Mare è stato commissionato dall'\
     <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>omonimo gruppo di Facebook.</a><br>\
@@ -119,17 +118,16 @@ function toEnglish(){
   trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>");
   trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> My GitHub profile');
   trTxt("lanteaMoreTxt",
-    "I started working on Lantea on 2017-09-12, and I'm currently working on it.<br>\
+    "I worked on Lantea from 2017-09-12 to 2019-02-01, when the project was suspended.<br>\
     Lantea is a platform that lets authors write and post articles, and earn money with revenue sharing from advertisement.<br>\
     When I joined, Lantea was on early stages of development, some of the features were already partially implemented,\
-    but we decided it was better to start from scratch, since the previous developer wasn't available anymore,\
-    and finding and fixing all the bugs might have taken more time than remaking everything.<br>\
+    but it was decided to make a large refactor and rework almost everything, moving from AngularJS to Angular 2+.<br>\
     Because of that, most of the current version of the site was developed by me, with the exception of the art assets,\
-    some of the HTML and CSS adapted from the previous version of the site, and some code by two other developers that work on it occasionally.<br>\
+    some of the HTML and CSS adapted from the previous version of the site, and some code by two other developers that worked on it occasionally.<br>\
     Features that I implemented include, but are not limited to: <a href='https://en.wikipedia.org/wiki/Create,_read,_update_and_delete'>CRUD</a> functionalities for articles,\
     instant messaging chat that also allows the upload of pictures, a comment system, admin tools, drafts, notifications, search for articles, \
     statistics, various settings, followers, achievements, and securing sensitive operations with server-side token verification.<br>\
-    For now I'm not providing the link to the website because we didn't officially publish it yet.");
+    The website was never officially launched, but a mostly functional live version is available <a href='https://new-lantea.web.app/'>online here.</a>");
   trTxt("icdmMoreTxt",
     "I Cecchini Del Mare (Snipers of the Sea in Italian) was commissioned by \
     <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>the Facebook group of the same name.</a><br>\
