@@ -6,6 +6,15 @@ $(document).ready(function(){
   }else {
     toEnglish();
   };
+
+  /* Add tag highlighting */
+  const tags = $(".tag");
+  tags.click(el => {
+    tags.each(i => {
+      const tag = tags[i];
+      $(tag).html() === $(el.target).html() && $(tag).toggleClass("selected");
+    });
+  });
   
   /** When the button with "btn" id is clicked, toggles the text with "desc" id */
   function toggleDesc(btn, desc) {
@@ -39,11 +48,11 @@ function toItalian() {
   Full Stack - Portfolio.html'>Scarica il mio Portfolio <span class='icon-download'></span></a>");
   trTxt("htitleID","Mario Cannistrà - Web Developer Full Stack - Portfolio");
   trTxt("profileID","Sono uno sviluppatore di siti Web. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Sono specializzato \
-  nello sviluppo front-end, e back-end,<br>e ho esperienza nello sviluppo di applicazioni per computer.<br>\
-  Occasionalmente, lavoro come freelancer, aiutando<br>\
+  nello sviluppo front-end e back-end,<br>e ho esperienza nello sviluppo di applicazioni per computer.<br>\
+  Lavoro occasionalmente come freelancer, aiutando<br>\
   clienti con problemi di programmazione su codementor,\
   <a target='_blank' href='https://www.codementor.io/mariocannistrawork'>questo è il mio profilo</a>.<br>\
-  Sentitevi liberi di contattarmi per eventuali domande");
+  Sentitevi liberi di contattarmi per eventuali domande.");
   trTxt("skillsID","Abilità");
   trTxt("locationID","<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>");
   trTxt("githubID",'<img src="img/GitHub-Mark-32px.png"> Il mio profilo GitHub');
@@ -110,7 +119,7 @@ function toEnglish() {
   I live in Italy, and I speak English and Italian fluently.<br>\
   I focus on front-end and back-end web development,<br>\
   and I have some experience in software development.<br>\
-  Occasionally, I work as a freelancer, helping \
+  I occasionally work as a freelancer, helping \
   people with their programming problems on codementor,\
   here's <a target='_blank' href='https://www.codementor.io/mariocannistrawork'>my profile</a>.<br>\
   Feel free to contact me if you have questions.");
