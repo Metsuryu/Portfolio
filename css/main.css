@@ -61,7 +61,6 @@ h1 {
 	.webDevSkills {
 		column-count: 1;
 	}
-	660px
 }
 
 .btn {
@@ -196,17 +195,14 @@ li {
 
 #grid {
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	text-align: center;
 }
 
 .gridSquare {
 	width: 550px;
-	height: 605px;
-	max-height: 605px;
 	max-width: 550px;
-	min-height: 550px;
 	min-width: 500px;
 	padding: 0.5em;
 	margin: 10px;
@@ -238,7 +234,7 @@ li {
 /*Show projects in a single column if screen is too small.*/
 @media screen and (max-width: 1199px) {
 	#grid {
-		justify-content: center;
+		grid-template-columns: 1fr;
 	}
 	
 	#skillsSection {
@@ -259,7 +255,6 @@ li {
 		min-width: 200px;
 		height: auto;
 		overflow: auto;
-		min-height: 660px;
 	}
 	
 	.screenshots {
