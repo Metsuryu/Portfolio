@@ -44,8 +44,8 @@ function trTxt(id, string) {
 /** Translates to Italian */
 function toItalian() {
   $(".more").html('Dettagli <span class="icon-plus-square"></span>');
-  trTxt("downloadID","<a title='Scarica una versione leggera del portfolio.' href='indexCompact.html' download='Mario Cannistrà - Web Developer \
-  Full Stack - Portfolio.html'>Scarica il mio Portfolio <span class='icon-download'></span></a>");
+  trTxt("downloadID","<a title='Scarica il mio CV' href='Resume Mario Cannistrà - Web Developer.pdf' download='Mario Cannistrà - \
+  Full Stack Web Developer - Resume.pdf' target='_blank'>Scarica il mio CV <span class='icon-download'></span></a>");
   trTxt("htitleID","Mario Cannistrà - Web Developer Full Stack - Portfolio");
   trTxt("profileID","Sono uno sviluppatore di siti Web. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Sono specializzato \
   nello sviluppo front-end e back-end,<br>e ho esperienza nello sviluppo di applicazioni per computer.<br>\
@@ -113,7 +113,7 @@ function toItalian() {
 /** Translates to English */
 function toEnglish() {
   $(".more").html('Details <span class="icon-plus-square"></span>');
-  trTxt("downloadID","<a title='Downloads a light version of the portfolio.' href='indexCompact.html' download='Mario Cannistrà - Full Stack Web Developer - portfolio.html'>Download my Portfolio <span class='icon-download'></span></a>");
+  trTxt("downloadID", "<a title='Download my resume' href='Resume Mario Cannistrà - Web Developer.pdf' download='Mario Cannistrà - Full Stack Web Developer - Resume.pdf' target='_blank'>Download my resume <span class='icon-download'></span></a>");
   trTxt("htitleID","Mario Cannistrà - Full Stack Web Developer - Portfolio");
   trTxt("profileID","I'm a Full Stack Web Developer.<br>\
   I live in Italy, and I speak English and Italian fluently.<br>\
