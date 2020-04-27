@@ -25,14 +25,19 @@
 </head>
 <body>
 	<div class="container">
-		<div id="themes">
-			<button id="toggleLights" class="icon-lightbulb-o" title="Toggle lights" onclick= "toDark();"> </button>
+		<div class="themesAndButtons">
+			<div id="themes">
+				<button id="toggleLights" class="icon-lightbulb-o" title="Toggle lights" onclick="toDark();"> </button>
+			</div>
+			
+			<div id="buttons">
+				<button id="Italiano" class="btn btn-primary" title="Traduce questa pagina in Italiano."
+				onclick="toItalian();">Italiano</button>
+				<button id="English" class="btn btn-primary" title="Translates this page to English."
+				onclick="toEnglish();">English</button>
+			</div>
 		</div>
-		
-		<div id="buttons">
-			<button id="English" class="btn btn-primary" title="Translates this page to English." onclick="toEnglish();">English</button>
-			<button id="Italiano" class="btn btn-primary" title="Traduce questa pagina in Italiano." onclick="toItalian();">Italiano</button>
-		</div>
+
 		<div id="downloadDiv">
 			<p id="downloadID" class="text-right">
 				<a title="Download my resume" href="Resume Mario Cannistrà - Web Developer.pdf" download="Mario Cannistrà - Full Stack Web Developer - Resume.pdf">Download my resume
@@ -166,7 +171,7 @@
 					</button>
 					<p hidden class="moreTxt" id="lanteaMoreTxt"></p>
 				</div>
-
+				
 				<div class="gridSquare">
 					<h3 class="alignCenter"><a href="https://github.com/Metsuryu/ICDM" rel="noopener noreferrer">I Cecchini Del Mare </a></h3>
 					<h4>2017-03 | 2017-05</h4>
@@ -194,7 +199,7 @@
 					</button>
 					<p hidden class="moreTxt" id="icdmMoreTxt"></p>
 				</div>
-
+				
 				<div class="gridSquare">
 					<h3 class="alignCenter"><a href="https://github.com/Metsuryu/Crawler" rel="noopener noreferrer">Crawler</a></h3>
 					<h4>2016-11 | 2017-01</h4>
@@ -222,7 +227,7 @@
 					</button>
 					<p hidden class="moreTxt" id="crawlerMoreTxt"></p>
 				</div>
-
+				
 				<div class="gridSquare">
 					<h3 class="alignCenter"><a href="https://github.com/Metsuryu/Solar_System" rel="noopener noreferrer">Solar System</a></h3>
 					<h4>2017-07 | 2017-11</h4>
