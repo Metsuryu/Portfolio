@@ -51,10 +51,10 @@ function toItalian() {
   nello sviluppo front-end e back-end,<br>e ho esperienza nello sviluppo di applicazioni per computer.<br>
   Lavoro occasionalmente come freelancer, aiutando<br>
   clienti con problemi di programmazione su codementor,
-  <a target='_blank' href='https://www.codementor.io/mariocannistrawork'>questo è il mio profilo</a>.<br>
+  <a target='_blank' href='https://www.codementor.io/mariocannistrawork' rel="noopener noreferrer">questo è il mio profilo</a>.<br>
   Sentitevi liberi di contattarmi per eventuali domande.`);
   trTxt("locationID", `<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>`);
-  trTxt("githubID", `<img src="img/GitHub-Mark-32px.png"> Il mio profilo GitHub`);
+  trTxt("githubID", `<img src="img/GitHub-Mark-32px.png" alt="GitHub"> Il mio profilo GitHub`);
   trTxt("lanteaMoreTxt",
   `Ho lavorato su Lantea dal 2017-09-12 al 2019-02-01, quando il progetto è stato sospeso.<br>
   Lantea è una piattaforma che permette agli autori di scrivere e postare articoli, e guadagnare condividendo il reddito ricavato dalle inserzioni.<br>
@@ -63,16 +63,16 @@ function toItalian() {
   Per questo motivo, la maggior parte di questa versione del sito è stata sviluppata da me, con l'eccezzione di risorse grafiche,
   parte dell' HTML e CSS adattai dalla versione precedente, e del codice di altri due sviluppatori che ci lavoravano occasionalmente.<br>
   Funzionalità che ho implementato includono, ma non sono limitate a: funzionalità 
-  <a href='https://it.wikipedia.org/wiki/Tavola_CRUD'>CRUD</a> per gli articoli,
+  <a href='https://it.wikipedia.org/wiki/Tavola_CRUD' rel="noopener noreferrer">CRUD</a> per gli articoli,
   chat di messaggistica istantanea che permette l'upload di immagini, commenti, strumenti 
   per amministratori, bozze, notificazioni, funzione di ricerca per articoli, 
   statistiche, impostazioni varie, amici (followers), medaglie (achievements), e verifica 
   dei token da server per la sicurezza delle operazioni sensibili.<br>
   Il sito non è mai stato rilasciato ufficialmente, ma una versione per la maggior 
-  parte funzionale è disponibile <a href='https://new-lantea.web.app/'>online qui.</a>.`);
+  parte funzionale è disponibile <a href='https://new-lantea.web.app/' rel="noopener noreferrer">online qui.</a>.`);
   trTxt("icdmMoreTxt",
   `I Cecchini Del Mare è stato commissionato dall'
-  <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>omonimo gruppo di Facebook.</a><br>
+  <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/' rel="noopener noreferrer">omonimo gruppo di Facebook.</a><br>
   Il sito permete agli utenti di trasmettere la propria posizione e chattare con tutti gli utenti connessi.
   Per fare queso, le coordinate e altre informazioni (nome, immagine del profilo...) di ogni utente sono aggiunte
   a un database Mongo, e sono vengono in seguito utilizzate da ogni client per mostrare gli utenti sulla mappa
@@ -112,8 +112,8 @@ function toItalian() {
   trTxt("SolSysDescID", `Un sistema solare animato sviluppato con Phaser.`);
   trTxt("StStfDescID", `Un gioco realizzato in C++ con Qt. Ancora incompleto e non in sviluppo attivo per il momento.`);
   trTxt("crawlerDescID", `Un clone del gioco Snake. Ho sviluppato questa pagina per dimostrare le tecnologie 
-  <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> MEAN</a>.`)
-  trTxt("ICDMDescID", `Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'> 
+  <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank' rel="noopener noreferrer"> MEAN</a>.`)
+  trTxt("ICDMDescID", `Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' rel="noopener noreferrer" target='_blank'> 
   MEAN</a> per pescatori subacquei. Permette di condividere la propria posizine tramite geolocalizzazione, e di chattare.`);
   trTxt("LanteaDescID", `Una piattaforma per scrittori.<br>Permette agli autori di guadagnare soldi scrivendo articoli.`);
 };
@@ -130,10 +130,10 @@ function toEnglish() {
   and I have some experience in software development.<br>
   I occasionally work as a freelancer, helping 
   people with their programming problems on codementor,
-  here's <a target='_blank' href='https://www.codementor.io/mariocannistrawork'>my profile</a>.<br>
+  here's <a target='_blank' href='https://www.codementor.io/mariocannistrawork' rel="noopener noreferrer">my profile</a>.<br>
   Feel free to contact me if you have questions.`);
   trTxt("locationID", `<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>`);
-  trTxt("githubID", `<img src="img/GitHub-Mark-32px.png"> My GitHub profile`);
+  trTxt("githubID", `<img src="img/GitHub-Mark-32px.png" alt="GitHub"> My GitHub profile`);
   trTxt("lanteaMoreTxt",
   `I worked on Lantea from 2017-09-12 to 2019-02-01, when the project was suspended.<br>
   Lantea is a platform that lets authors write and post articles, and earn money with revenue sharing from advertisement.<br>
@@ -142,13 +142,13 @@ function toEnglish() {
   Because of that, most of the current version of the site was developed by me, with the exception of the art assets,
   some of the HTML and CSS adapted from the previous version of the site, and some code by two other developers that worked on it occasionally.<br>
   Features that I implemented include, but are not limited to: 
-  <a href='https://en.wikipedia.org/wiki/Create,_read,_update_and_delete'>CRUD</a> functionalities for articles,
+  <a href='https://en.wikipedia.org/wiki/Create,_read,_update_and_delete' rel="noopener noreferrer">CRUD</a> functionalities for articles,
   instant messaging chat that also allows the upload of pictures, a comment system, admin tools, drafts, notifications, search for articles, 
   statistics, various settings, followers, achievements, and securing sensitive operations with server-side token verification.<br>
-  The website was never officially launched, but a mostly functional live version is available <a href='https://new-lantea.web.app/'>online here.</a>`);
+  The website was never officially launched, but a mostly functional live version is available <a href='https://new-lantea.web.app/' rel="noopener noreferrer">online here.</a>`);
   trTxt("icdmMoreTxt",
   `I Cecchini Del Mare (Snipers of the Sea in Italian) was commissioned by 
-  <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/'>the Facebook group of the same name.</a><br>
+  <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/' rel="noopener noreferrer">the Facebook group of the same name.</a><br>
   The website allows people to share their current location, so that everyone connected will be able 
   to see them on the map, and chat with them.
   To do this, the coordinates and other data (name, profile picture...) of each user are added to a Mongo database, 
@@ -188,7 +188,7 @@ function toEnglish() {
   trTxt("StStfDescID", `A game made in C++ with Qt. Still incomplete and on hold for the moment.`);
   trTxt("crawlerDescID", `A clone of the game Snake. I made this to demonstrate the 
   <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN stack</a> technologies.`);
-  trTxt("ICDMDescID", `A <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN</a> 
+  trTxt("ICDMDescID", `A <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' rel="noopener noreferrer" target='_blank'>MEAN</a> 
   social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.`);
   trTxt("LanteaDescID", `A platform for writers.<br>It allows authors to earn money by writing articles.`);
 };
