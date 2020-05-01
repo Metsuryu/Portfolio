@@ -113,7 +113,7 @@ hr {
 .more {
 	border: 0px; 
 	font-style: italic;
-	color: gray;
+	color: #595959;
 	font-weight: bold;
 	background-color: transparent;
 	outline: none;
@@ -127,7 +127,7 @@ hr {
 .more p {
 	line-height: 0px;
 	margin: 0;
-	color: grey;
+	color: #595959;
 }
 
 .darkMode .more {
