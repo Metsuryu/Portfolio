@@ -1,8 +1,34 @@
-body{
+:root {
+	--lightModeLink: rgb(51, 122, 183);
+	--darkModeLink: rgb(0, 216, 255);
+}
+
+body {
 	font-family: Verdana, Arial;
 	padding-top: 5px;
 	background-color: #fff;
 	color: #2d2e2e;
+}
+
+body.darkMode {
+	color: var(--darkModeLink);
+	background-color: rgb(21, 21, 21);
+}
+
+p {
+	color: black;
+}
+
+.darkMode p {
+	color: #fff;
+}
+
+a {
+	color: var(--lightModeLink);
+}
+
+.darkMode a {
+	color: var(--darkModeLink);
 }
 
 h1 {
@@ -41,7 +67,7 @@ h1 {
 #themes button {
 	border: 0px; 
 	position: static;
-	color: white;
+	color: #fff;
 	margin: 0 auto;
 	display: inline-block;
 	background-color: rgb(70, 70, 70);
@@ -70,18 +96,53 @@ h1 {
 	color: #2d2e2e;
 }
 
+#downloadID {
+	padding: 10px 0 18px;
+	margin: 0;
+}
+
+hr {
+	margin-top: 0;
+	border-color: #2d2e2e;
+}
+
+.darkMode hr {
+	border-color: var(--darkModeLink);
+}
+
 .more {
 	border: 0px; 
+	font-style: italic;
+	color: gray;
+	font-weight: bold;
+	background-color: transparent;
+	outline: none;
+}
+
+.more:hover,
+.more p:hover {
+	color: black;
+}
+
+.more p {
+	line-height: 0px;
+	margin: 0;
+	color: grey;
+}
+
+.darkMode .more {
+	color: #bbb;
+}
+
+.darkMode .more:hover,
+.darkMode .more p:hover {
+	color: #fff;
 }
 
 .moreTxt{
 	margin-top: 2em;
 	padding: 1em;
 	text-align: left;
-}
-
-hr{
-	border-color: #2d2e2e;
 }
 
 #githubID {
@@ -91,8 +152,12 @@ hr{
 	color: #000;
 }
 
+#githubID:hover {
+	background-color: grey;
+}
+
 #buttons .btn {
-	color: white;
+	color: #fff;
 	margin: 5px;
 }
 
@@ -108,6 +173,11 @@ ul {
 li {
 	list-style-position: inside;
 	margin-bottom: 4px;
+	color: #2d2e2e;
+}
+
+.darkMode li {
+	color: #fff;
 }
 
 .progress {
@@ -153,8 +223,17 @@ li {
 	margin-top: 2em;
 }
 
+.darkMode #contacts {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
 #contacts a p {
 	color: #2F6FA7;
+}
+
+.darkMode #contacts a p {
+	color: var(--darkModeLink);
 }
 
 .field {
@@ -187,16 +266,11 @@ li {
 	min-width: 500px;
 	padding: 0.5em;
 	margin: 10px;
-	background-color: #fff;
 	overflow: auto;
 }
 
 .gridSquare a img {
 	border: 1px solid black;
-}
-
-.gridSquare h3 a {
-	color: rgb(51, 122, 183);
 }
 
 .gridSquare h4 {
@@ -210,6 +284,10 @@ li {
 	margin: 0 auto;
 	padding: 5px;
 	box-shadow: 0px 2px 5px black;
+}
+
+.darkMode .skillTags .tag {
+	color: #000;
 }
 
 /*Show projects in a single column if screen is too small.*/
@@ -257,4 +335,53 @@ li {
 }
 #bio img {
 	border-radius: 60px;
+}
+
+/* Icons */
+@font-face {
+	font-family: 'icomoon';
+	src: url('fonts/icomoon.eot?ng3luv');
+	src: url('fonts/icomoon.eot?ng3luv#iefix') format('embedded-opentype'),
+	url('fonts/icomoon.ttf?ng3luv') format('truetype'),
+	url('fonts/icomoon.woff?ng3luv') format('woff'),
+	url('fonts/icomoon.svg?ng3luv#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-up-arrow:before {
+	content: "∧";
+}
+.icon-down-arrow:before {
+	content: "∨";
+}
+.icon-map-marker:before {
+	content: "\e903";
+}
+.icon-envelope-o:before {
+	content: "\e904";
+}
+.icon-envelope:before {
+	content: "\e905";
+}
+.icon-lightbulb-o:before {
+	content: "\e906";
+}
+.icon-download:before {
+	content: "\e900";
 }

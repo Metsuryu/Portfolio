@@ -16,19 +16,17 @@
 	<meta name="author" content="Mario Cannistrà">
 	<title id="htitleID">Mario Cannistrà - Full Stack Web Developer - Portfolio</title>
 	<link rel="icon" type="image/png" href="img/favicon.ico"/>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/classic/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/classic/main.css">
 	<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
-	<script src="js/translation.js"></script>
-	<script src="js/themes.js"></script>
+	<script src="js/index.js"></script>
 </head>
 
 <body>
 	<div class="container">
 		<div class="themesAndButtons">
 			<div id="themes">
-				<button id="toggleLights" class="icon-lightbulb-o" title="Toggle lights" onclick="toDark();"> </button>
+				<button id="toggleLights" class="icon-lightbulb-o" title="Toggle lights" onclick="toggleDarkMode();"> </button>
 			</div>
 			
 			<div id="buttons">
@@ -167,7 +165,7 @@
 					<br>
 					<p class="alignCenter" id="LanteaDescID">A platform for writers.<br>It allows authors to earn money by writing articles.</p>
 					
-					<button id="lanteaMore" type="button" class="more btn-primary">
+					<button id="lanteaMore" type="button" class="more">
 						Details <span class="icon-plus-square"></span>
 					</button>
 					<p hidden class="moreTxt" id="lanteaMoreTxt"></p>
@@ -195,7 +193,7 @@
 					<br>
 					<p class="alignCenter" id="ICDMDescID">A <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" rel="noopener noreferrer" target="_blank">MEAN</a> social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.</p>
 					
-					<button id="icdmMore" type="button" class="more btn-primary">
+					<button id="icdmMore" type="button" class="more">
 						Details <span class="icon-plus-square"></span>
 					</button>
 					<p hidden class="moreTxt" id="icdmMoreTxt"></p>
@@ -223,7 +221,7 @@
 					<br>
 					<p class="alignCenter" id="crawlerDescID">A clone of the game Snake. I made this to demonstrate the <a href="https://en.wikipedia.org/wiki/MEAN_(software_bundle)" rel="noopener noreferrer" target="_blank">MEAN stack</a> technologies.</p>
 					
-					<button id="crawlerMore" type="button" class="more btn-primary">
+					<button id="crawlerMore" type="button" class="more">
 						Details <span id="crawlerSPAN" class="icon-plus-square"></span>
 					</button>
 					<p hidden class="moreTxt" id="crawlerMoreTxt"></p>
@@ -246,7 +244,7 @@
 					<br>
 					<p class="alignCenter" id="SolSysDescID">Animation of the Solar system I made using Phaser.</p>
 					
-					<button id="solsysMore" type="button" class="more btn-primary">
+					<button id="solsysMore" type="button" class="more">
 						Details <span class="icon-plus-square"></span>
 					</button>
 					<p hidden class="moreTxt" id="solsysMoreTxt"></p>

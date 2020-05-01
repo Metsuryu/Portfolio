@@ -6,7 +6,7 @@ $(document).ready(function(){
   }else {
     toEnglish();
   };
-
+  
   /* Add tag highlighting */
   const tags = $(".tag");
   tags.click(el => {
@@ -25,7 +25,7 @@ $(document).ready(function(){
         project.scrollTop( project.height() );
       });
       
-      $(btn).find("span").toggleClass("icon-plus-square icon-minus-square");
+      $(btn).find("p").toggleClass("icon-down-arrow icon-up-arrow");
     });
   };
   
@@ -41,9 +41,13 @@ function trTxt(id, string) {
   $("#" + id).html(string);
 };
 
+function toggleDarkMode() {
+  $("body").toggleClass("darkMode");
+}
+
 /** Translates to Italian */
 function toItalian() {
-  $(".more").html(`Dettagli <span class="icon-plus-square"></span>`);
+  $(".more").html(`Dettagli <p class="icon-down-arrow"></p>`);
   trTxt("downloadID", `<a title="Scarica il mio CV" href="Resume Mario Cannistrà - Web Developer.pdf" download="Mario Cannistrà - 
   Full Stack Web Developer - Resume.pdf">Scarica il mio CV <span class="icon-download"></span></a>`);
   trTxt("htitleID", `Mario Cannistrà - Web Developer Full Stack - Portfolio`);
@@ -69,7 +73,7 @@ function toItalian() {
   statistiche, impostazioni varie, amici (followers), medaglie (achievements), e verifica 
   dei token da server per la sicurezza delle operazioni sensibili.<br>
   Il sito non è mai stato rilasciato ufficialmente, ma una versione per la maggior 
-  parte funzionale è disponibile <a href='https://new-lantea.web.app/' rel="noopener noreferrer">online qui.</a>.`);
+  parte funzionale è disponibile <a href='https://new-lantea.web.app/' rel="noopener noreferrer">online qui.</a>`);
   trTxt("icdmMoreTxt",
   `I Cecchini Del Mare è stato commissionato dall'
   <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/' rel="noopener noreferrer">omonimo gruppo di Facebook.</a><br>
@@ -101,14 +105,14 @@ function toItalian() {
   in generale grazie a questo progetto.<br>
   Ho sospeso lo sviluppo per il momento, da quando ho deciso di concentrarmi principalmente sullo sviluppo web
   ma potrei continuare a lavorarci eventualmente.`);
-
+  
   trTxt("skillsID", `Abilità`);
   trTxt("wbID", `Tecnologie web`);
   trTxt("swID", `Tecnologie Software`);
   trTxt("otherID", `Altro`);
   trTxt("titleID", `Sviluppatore Web`);
   trTxt("projectsID", `Progetti`);
-
+  
   trTxt("SolSysDescID", `Un sistema solare animato sviluppato con Phaser.`);
   trTxt("StStfDescID", `Un gioco realizzato in C++ con Qt. Ancora incompleto e non in sviluppo attivo per il momento.`);
   trTxt("crawlerDescID", `Un clone del gioco Snake. Ho sviluppato questa pagina per dimostrare le tecnologie 
@@ -120,7 +124,7 @@ function toItalian() {
 
 /** Translates to English */
 function toEnglish() {
-  $(".more").html(`Details <span class="icon-plus-square"></span>`);
+  $(".more").html(`Details <p class="icon-down-arrow"></p>`);
   trTxt("downloadID", `<a title='Download my resume' href='Resume Mario Cannistrà - Web Developer.pdf' 
   download='Mario Cannistrà - Full Stack Web Developer - Resume.pdf' target='_blank'>Download my resume <span class='icon-download'></span></a>`);
   trTxt("htitleID", `Mario Cannistrà - Full Stack Web Developer - Portfolio`);
@@ -176,14 +180,14 @@ function toEnglish() {
   `I started making this game to try my hand at Qt, but I've gained a lot of programming experience from this project.<br>
   I suspended development for the foreseeable future, when I decided to focus on web development, but I might 
   resume working on this project at some point.`);
-
+  
   trTxt("skillsID", `Skills`);
   trTxt("wbID", `Website development`);
   trTxt("swID", `Software development`);
   trTxt("otherID", `Other`);
   trTxt("titleID", `Full Stack Web Developer`);
   trTxt("projectsID", `Projects`);
-
+  
   trTxt("SolSysDescID", `Animated solar system made using Phaser.`);
   trTxt("StStfDescID", `A game made in C++ with Qt. Still incomplete and on hold for the moment.`);
   trTxt("crawlerDescID", `A clone of the game Snake. I made this to demonstrate the 
