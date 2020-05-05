@@ -1,22 +1,58 @@
 :root {
 	--lightModeLink: rgb(51, 122, 183);
 	--darkModeLink: rgb(0, 216, 255);
+	--darkModeBg: rgb(21, 21, 21);
+	--darkGrey: #2d2e2e;
+	--themeGray: rgb(70, 70, 70);
+	--more: #595959;
+	--darkMore: #bbb;
+	--contactsBg: #eee;
+	--contactsText: #2F6FA7;
+	--darkContacts: rgba(0, 0, 0, 0.9);
+}
+
+html {
+	box-sizing: border-box;
 }
 
 body {
+	font-size: 14px;
+	line-height: 1.42857143;
 	font-family: Verdana, Arial;
 	padding-top: 5px;
 	background-color: #fff;
-	color: #2d2e2e;
+	color: var(--darkGrey);
+	margin: 0;
 }
 
 body.darkMode {
 	color: var(--darkModeLink);
-	background-color: rgb(21, 21, 21);
+	background-color: var(--darkModeBg);
+}
+
+.container{
+	margin-right:auto;
+	margin-left:auto;
+	padding-left:15px;
+	padding-right:15px
+}
+@media (min-width: 768px) {
+	.container{
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.container{width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
 }
 
 p {
-	color: black;
+	color: #000;
 }
 
 .darkMode p {
@@ -25,14 +61,41 @@ p {
 
 a {
 	color: var(--lightModeLink);
+	text-decoration: none;
+}
+
+a:hover {
+	color: #23527c;
+	text-decoration: underline;
 }
 
 .darkMode a {
 	color: var(--darkModeLink);
 }
 
+h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
+
 h1 {
 	font-family: Cambria, Verdana, Arial;
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
 }
 
 .hidden {
@@ -60,12 +123,16 @@ h1 {
 
 .tag.selected {
 	background-color: yellow;
-	color: black !important;
+	color: #000 !important;
 	border: 1px solid gray;
 }
 
 .tag:hover {
 	border: 1px solid gray;
+}
+
+img {
+	vertical-align: middle;
 }
 
 #themes button {
@@ -74,10 +141,16 @@ h1 {
 	color: #fff;
 	margin: 0 auto;
 	display: inline-block;
-	background-color: rgb(70, 70, 70);
+	background-color: var(--themeGray);
 	border-radius: 5px;
 	margin: 5px;
 	padding: 5px 7px 5px 7px;
+	cursor: pointer;
+	outline: none;
+}
+
+#themes button:hover {
+	background-color: var(--more);
 }
 
 .webDevSkills {
@@ -97,7 +170,7 @@ h1 {
 .btn {
 	font-size: 1em;
 	border: 0px; 
-	color: #2d2e2e;
+	color: var(--darkGrey);
 }
 
 #downloadID {
@@ -106,8 +179,9 @@ h1 {
 }
 
 hr {
-	margin-top: 0;
-	border-color: #2d2e2e;
+	margin: 0 0 20px 0;
+	border: 0;
+	border-top: 1px solid var(--darkGrey);
 }
 
 .darkMode hr {
@@ -115,27 +189,29 @@ hr {
 }
 
 .more {
+	font: inherit;
 	border: 0px; 
 	font-style: italic;
-	color: #595959;
+	color: var(--more);
 	font-weight: bold;
 	background-color: transparent;
 	outline: none;
+	cursor: pointer;
 }
 
 .more:hover,
 .more p:hover {
-	color: black;
+	color: #000;
 }
 
 .more p {
 	line-height: 0px;
 	margin: 0;
-	color: #595959;
+	color: var(--more);
 }
 
 .darkMode .more {
-	color: #bbb;
+	color: var(--darkMore);
 }
 
 .darkMode .more:hover,
@@ -154,6 +230,11 @@ hr {
 	position: static; 
 	font-weight: bold;
 	color: #000;
+	display: inline-block;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px 7px 5px 7px;
+	text-decoration: none;
 }
 
 #githubID:hover {
@@ -161,8 +242,22 @@ hr {
 }
 
 #buttons .btn {
+	font-family: Verdana, Arial;
+	background-color: var(--lightModeLink);
 	color: #fff;
 	margin: 5px;
+	cursor: pointer;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	border-radius: 4px;
+	user-select: none;
+	outline: none;
+}
+
+#buttons .btn:hover {
+	background-color: #286090;
+	border-color: #204d74;
 }
 
 #downloadDiv {
@@ -177,7 +272,7 @@ ul {
 li {
 	list-style-position: inside;
 	line-height: 24px;
-	color: #2d2e2e;
+	color: var(--darkGrey);
 }
 
 .darkMode li {
@@ -219,21 +314,21 @@ li {
 
 #contacts {
 	margin: 0 auto;
-	background-color: #eeeeee;
+	background-color: var(--contactsBg);
 	max-width: 25em;
 	border: 2px solid gray;
 	border-radius: 5px;
-	color: #2d2e2e;
+	color: var(--darkGrey);
 	margin-top: 2em;
 }
 
 .darkMode #contacts {
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: var(--darkContacts);
 }
 
 #contacts a p {
-	color: #2F6FA7;
+	color: var(--contactsText);
 }
 
 .darkMode #contacts a p {
@@ -274,7 +369,7 @@ li {
 }
 
 .gridSquare a img {
-	border: 1px solid black;
+	border: 1px solid #000;
 }
 
 .gridSquare h4 {
@@ -287,7 +382,7 @@ li {
 	width: 55%;
 	margin: 0 auto;
 	padding: 5px;
-	box-shadow: 0px 2px 5px black;
+	box-shadow: 0px 2px 5px #000;
 }
 
 .darkMode .skillTags .tag {
