@@ -34,6 +34,9 @@ $(document).ready(function(){
   toggleDesc("#icdmMore", "#icdmMoreTxt");
   toggleDesc("#solsysMore", "#solsysMoreTxt");
   toggleDesc("#starStuffMore", "#starStuffMoreTxt");
+  toggleDesc("#missoniMore", "#missoniMoreTxt");
+  toggleDesc("#stone30More", "#stone30MoreTxt");
+  toggleDesc("#stoneIslandMore", "#stoneIslandMoreTxt");
 });
 
 /** Changes content of "id" to "string" */
@@ -48,7 +51,7 @@ function toggleDarkMode() {
 /** Translates to Italian */
 function toItalian() {
   $(".more").html(`Dettagli <p class="icon-down-arrow"></p>`);
-  trTxt("downloadID", `<a title="Scarica il mio CV" href="Resume Mario Cannistrà - Web Developer.pdf" download="Mario Cannistrà - 
+  trTxt("downloadID", `<a title="Scarica il mio CV" href="Resume%20Mario%20Cannistr%C3%A0%20-%20Web%20Developer.pdf" download="Mario Cannistrà - 
   Full Stack Web Developer - Resume.pdf">Scarica il mio CV <span class="icon-download"></span></a>`);
   trTxt("htitleID", `Mario Cannistrà - Web Developer Full Stack - Portfolio`);
   trTxt("profileID", `Sono uno sviluppatore di siti Web. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Sono specializzato 
@@ -59,6 +62,29 @@ function toItalian() {
   Sentitevi liberi di contattarmi per eventuali domande.`);
   trTxt("locationID", `<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>`);
   trTxt("githubID", `<img src="img/GitHub-Mark-32px.png" alt="GitHub"> Il mio profilo GitHub`);
+
+  trTxt("stoneIslandMoreTxt",
+    `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho 
+    lavorato con il mio team, insieme a Stone Island 30 e Missoni.<br>
+    Quando ho iniziato, la maggior parte del lavoro per Stone Island era incentrata sull'accessibilità, 
+    dato che il sito era nel mezzo di una grande rinnovazione per soddisfare le norme previste.<br>
+    Oltre all'accessibilità, abbiamo sviluppato nuove funzionalità come notifiche e nuove pagine, e risolto bug esistenti.<br>
+    Stone Island ha due parti, una principale che usa C# come linguaggio per le viste (cshtml) 
+    e per la logica di back-end, e un altra che usa PHP.`);
+  trTxt("stone30MoreTxt",
+    `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho 
+    lavorato con il mio team, insieme a Stone Island e Missoni.<br>
+    Questo progetto è iniziato verso la fine della mia permanenza a YNAP, dopo il completamento della versione accessibile di Stone Island,
+    e per questo ho lavorato a Stone Island 30 per soli due mesi.<br>
+    Questo è un completo rinnovamento di Stone Island 30 iniziato da zero, usando React con Gatsby, e incentrato sull'accessibilità.`);
+  trTxt("missoniMoreTxt",
+    `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho 
+    lavorato con il mio team, insieme a Stone Island e Stone Island 30.<br>
+    Quando ho iniziato, Missoni era già accessibile, quindi il team era concentrato principalmente sulla versione accessibile di Stone Island.<br>
+    Quando nuove funzionalità venivano richieste, venivano sviluppate con in mente l'accessibilità, e il tempo rimanente era usato per manutenzione
+    e per risolvere bug esistenti.<br>
+    Missoni ha due parti, una principale che usa C# come linguaggio per le viste (cshtml) 
+    e per la logica di back-end, e un altra che usa PHP.`);
   trTxt("lanteaMoreTxt",
   `Ho lavorato su Lantea dal 2017-09-12 al 2019-02-01, quando il progetto è stato sospeso.<br>
   Lantea è una piattaforma che permette agli autori di scrivere e postare articoli, e guadagnare condividendo il reddito ricavato dalle inserzioni.<br>
@@ -120,12 +146,15 @@ function toItalian() {
   trTxt("ICDMDescID", `Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' rel="noopener noreferrer" target='_blank'> 
   MEAN</a> per pescatori subacquei. Permette di condividere la propria posizine tramite geolocalizzazione, e di chattare.`);
   trTxt("LanteaDescID", `Una piattaforma per scrittori.<br>Permette agli autori di guadagnare soldi scrivendo articoli.`);
+  trTxt("MissoniDescID", `Il sito E-commerce di Missoni, una casa di moda Italiana.`);
+  trTxt("Stone30DescID", `Un sito sviluppato per un evento speciale per Stone Island.`);
+  trTxt("StoneIslandDescID", `Il sito E-commerce di Stone Island, una casa di moda Italiana.`);
 };
 
 /** Translates to English */
 function toEnglish() {
   $(".more").html(`Details <p class="icon-down-arrow"></p>`);
-  trTxt("downloadID", `<a title='Download my resume' href='Resume Mario Cannistrà - Web Developer.pdf' 
+  trTxt("downloadID", `<a title='Download my resume' href='Resume%20Mario%20Cannistr%C3%A0%20-%20Web%20Developer.pdf' 
   download='Mario Cannistrà - Full Stack Web Developer - Resume.pdf' target='_blank'>Download my resume <span class='icon-download'></span></a>`);
   trTxt("htitleID", `Mario Cannistrà - Full Stack Web Developer - Portfolio`);
   trTxt("profileID", `I'm a Full Stack Web Developer.<br>
@@ -138,6 +167,24 @@ function toEnglish() {
   Feel free to contact me if you have questions.`);
   trTxt("locationID", `<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>`);
   trTxt("githubID", `<img src="img/GitHub-Mark-32px.png" alt="GitHub"> My GitHub profile`);
+  trTxt("stoneIslandMoreTxt", 
+  `In my time at YNAP as a Front-end developer this was one of the three websites I worked on with my team, along with Stone Island 30, and Missoni.<br>
+  When I joined, the majority of the work on this site revolved around accessibility, as the site was in the middle of a
+  major overhaul to comply with better standards.<br>
+  Additionally to the accessibility, we developed new features, such as push notifications and new pages, and fixed existing bugs.<br>
+  Stone Island has two parts, a main one that uses C# as language for the views (cshtml) and back-end logic, and another that uses PHP.`);
+  trTxt("stone30MoreTxt", 
+  `In my time at YNAP as a Front-end developer this was one of the three websites I worked on with my team, along with Stone Island, and Missoni.<br>
+  This project started near the end of my time at YNAP, when we completed the accessibility release of Stone Island, because of that I only worked
+  on this for two months.<br>
+  This is a complete overhaul of Stone Island 30 starting from zero using React with Gatsby, and focusing on accessibility.`);
+  trTxt("missoniMoreTxt", 
+  `In my time at YNAP as a Front-end developer this was one of the three websites 
+  I worked on with my team, along with Stone Island, and Stone Island 30.<br>
+  When I joined, this site was already accessible, so the focus for our team was implementing the accessibility release for Stone Island.<br>
+  When new features were requested we implemented them with accessibility in mind, 
+  and the remaining time was spent on maintanance and fixing existing bugs.<br>
+  Missoni has two parts, a main one that uses C# as language for the views (cshtml) and back-end logic, and another that uses PHP.`);
   trTxt("lanteaMoreTxt",
   `I worked on Lantea from 2017-09-12 to 2019-02-01, when the project was suspended.<br>
   Lantea is a platform that lets authors write and post articles, and earn money with revenue sharing from advertisement.<br>
@@ -149,7 +196,8 @@ function toEnglish() {
   <a href='https://en.wikipedia.org/wiki/Create,_read,_update_and_delete' rel="noopener noreferrer">CRUD</a> functionalities for articles,
   instant messaging chat that also allows the upload of pictures, a comment system, admin tools, drafts, notifications, search for articles, 
   statistics, various settings, followers, achievements, and securing sensitive operations with server-side token verification.<br>
-  The website was never officially launched, but a mostly functional live version is available <a href='https://new-lantea.web.app/' rel="noopener noreferrer">online here.</a>`);
+  The website was never officially launched, but a mostly functional live version is available 
+  <a href='https://new-lantea.web.app/' rel="noopener noreferrer">online here.</a>`);
   trTxt("icdmMoreTxt",
   `I Cecchini Del Mare (Snipers of the Sea in Italian) was commissioned by 
   <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/' rel="noopener noreferrer">the Facebook group of the same name.</a><br>
@@ -195,4 +243,7 @@ function toEnglish() {
   trTxt("ICDMDescID", `A <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' rel="noopener noreferrer" target='_blank'>MEAN</a> 
   social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.`);
   trTxt("LanteaDescID", `A platform for writers.<br>It allows authors to earn money by writing articles.`);
+  trTxt("MissoniDescID", `The E-commerce website for Missoni, a high-end Italian fashion house.`);
+  trTxt("Stone30DescID", `A site developed for a special event for Stone Island.`);
+  trTxt("StoneIslandDescID", `The E-commerce website for Stone Island, a high-end Italian fashion house.`);
 };

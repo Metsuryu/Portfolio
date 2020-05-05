@@ -172,7 +172,7 @@ ul {
 
 li {
 	list-style-position: inside;
-	margin-bottom: 4px;
+	line-height: 24px;
 	color: #2d2e2e;
 }
 
