@@ -35,6 +35,10 @@ h1 {
 	font-family: Cambria, Verdana, Arial;
 }
 
+.hidden {
+	display: none;
+}
+
 .skillTag {
 	display:inline;
 }

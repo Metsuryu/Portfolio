@@ -1,56 +1,60 @@
-$(document).ready(function(){
-  // Find browser language, and translate on load
-  const userLang = navigator.language || navigator.userLanguage;
-  if(userLang == "it-IT" || userLang == "it") {
-    toItalian();
-  }else {
-    toEnglish();
-  };
-  
-  /* Add tag highlighting */
-  const tags = $(".tag");
-  tags.click(el => {
-    tags.each(i => {
-      const tag = tags[i];
-      $(tag).html() === $(el.target).html() && $(tag).toggleClass("selected");
+/** Find browser language, and translate on load */
+const userLang = navigator.language || navigator.userLanguage;
+if(userLang == "it-IT" || userLang == "it") {
+  toItalian();
+}else {
+  toEnglish();
+};
+
+/* Add tag highlighting */
+const tags = document.querySelectorAll(".tag");
+tags.forEach(el => {
+  el.addEventListener("click", () => {
+    tags.forEach(i => {
+      i.innerHTML === el.innerHTML && i.classList.toggle("selected");
     });
   });
-  
-  /** When the button with "btn" id is clicked, toggles the text with "desc" id */
-  function toggleDesc(btn, desc) {
-    $(btn).click(() => {
-      const project = $(btn).parent();
-      
-      $(desc).toggle("fast", () => {
-        project.scrollTop( project.height() );
-      });
-      
-      $(btn).find("p").toggleClass("icon-down-arrow icon-up-arrow");
-    });
-  };
-  
-  toggleDesc("#lanteaMore", "#lanteaMoreTxt");
-  toggleDesc("#crawlerMore", "#crawlerMoreTxt");
-  toggleDesc("#icdmMore", "#icdmMoreTxt");
-  toggleDesc("#solsysMore", "#solsysMoreTxt");
-  toggleDesc("#starStuffMore", "#starStuffMoreTxt");
-  toggleDesc("#missoniMore", "#missoniMoreTxt");
-  toggleDesc("#stone30More", "#stone30MoreTxt");
-  toggleDesc("#stoneIslandMore", "#stoneIslandMoreTxt");
 });
 
+/** When the button with "btn" id is clicked, toggles the text with "desc" id */
+function toggleDesc(btn, desc) {
+  const button = document.querySelector(btn);
+  const description = document.querySelector(desc);
+
+  button.addEventListener("click", () => {
+    description.classList.toggle("hidden");
+    button.firstElementChild.classList.toggle("icon-down-arrow");
+    button.firstElementChild.classList.toggle("icon-up-arrow");
+  });
+};
+
+toggleDesc("#lanteaMore", "#lanteaMoreTxt");
+toggleDesc("#crawlerMore", "#crawlerMoreTxt");
+toggleDesc("#icdmMore", "#icdmMoreTxt");
+toggleDesc("#solsysMore", "#solsysMoreTxt");
+toggleDesc("#missoniMore", "#missoniMoreTxt");
+toggleDesc("#stone30More", "#stone30MoreTxt");
+toggleDesc("#stoneIslandMore", "#stoneIslandMoreTxt");
+
 /** Changes content of "id" to "string" */
-function trTxt(id, string) {
-  $("#" + id).html(string);
+function trTxt(selector, string, isClass = false) {
+  if (isClass) {
+    const els = document.querySelectorAll("." + selector);
+    els.forEach(el => {
+      el.innerHTML = string;
+    });
+  } else {
+    document.querySelector("#" + selector).innerHTML = string;
+  }
 };
 
 function toggleDarkMode() {
-  $("body").toggleClass("darkMode");
+  document.querySelector("body").classList.toggle("darkMode");
 }
 
 /** Translates to Italian */
 function toItalian() {
-  $(".more").html(`Dettagli <p class="icon-down-arrow"></p>`);
+  trTxt("more", `Dettagli <p class="icon-down-arrow"></p>`, true);
   trTxt("downloadID", `<a title="Scarica il mio CV" href="Resume%20Mario%20Cannistr%C3%A0%20-%20Web%20Developer.pdf" download="Mario Cannistrà - 
   Full Stack Web Developer - Resume.pdf">Scarica il mio CV <span class="icon-download"></span></a>`);
   trTxt("htitleID", `Mario Cannistrà - Web Developer Full Stack - Portfolio`);
@@ -62,29 +66,29 @@ function toItalian() {
   Sentitevi liberi di contattarmi per eventuali domande.`);
   trTxt("locationID", `<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>`);
   trTxt("githubID", `<img src="img/GitHub-Mark-32px.png" alt="GitHub"> Il mio profilo GitHub`);
-
+  
   trTxt("stoneIslandMoreTxt",
-    `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho 
-    lavorato con il mio team, insieme a Stone Island 30 e Missoni.<br>
-    Quando ho iniziato, la maggior parte del lavoro per Stone Island era incentrata sull'accessibilità, 
-    dato che il sito era nel mezzo di una grande rinnovazione per soddisfare le norme previste.<br>
-    Oltre all'accessibilità, abbiamo sviluppato nuove funzionalità come notifiche e nuove pagine, e risolto bug esistenti.<br>
-    Stone Island ha due parti, una principale che usa C# come linguaggio per le viste (cshtml) 
-    e per la logica di back-end, e un altra che usa PHP.`);
+  `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho 
+  lavorato con il mio team, insieme a Stone Island 30 e Missoni.<br>
+  Quando ho iniziato, la maggior parte del lavoro per Stone Island era incentrata sull'accessibilità, 
+  dato che il sito era nel mezzo di una grande rinnovazione per soddisfare le norme previste.<br>
+  Oltre all'accessibilità, abbiamo sviluppato nuove funzionalità come notifiche e nuove pagine, e risolto bug esistenti.<br>
+  Stone Island ha due parti, una principale che usa C# come linguaggio per le viste (cshtml) 
+  e per la logica di back-end, e un altra che usa PHP.`);
   trTxt("stone30MoreTxt",
-    `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho 
-    lavorato con il mio team, insieme a Stone Island e Missoni.<br>
-    Questo progetto è iniziato verso la fine della mia permanenza a YNAP, dopo il completamento della versione accessibile di Stone Island,
-    e per questo ho lavorato a Stone Island 30 per soli due mesi.<br>
-    Questo è un completo rinnovamento di Stone Island 30 iniziato da zero, usando React con Gatsby, e incentrato sull'accessibilità.`);
+  `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho 
+  lavorato con il mio team, insieme a Stone Island e Missoni.<br>
+  Questo progetto è iniziato verso la fine della mia permanenza a YNAP, dopo il completamento della versione accessibile di Stone Island,
+  e per questo ho lavorato a Stone Island 30 per soli due mesi.<br>
+  Questo è un completo rinnovamento di Stone Island 30 iniziato da zero, usando React con Gatsby, e incentrato sull'accessibilità.`);
   trTxt("missoniMoreTxt",
-    `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho 
-    lavorato con il mio team, insieme a Stone Island e Stone Island 30.<br>
-    Quando ho iniziato, Missoni era già accessibile, quindi il team era concentrato principalmente sulla versione accessibile di Stone Island.<br>
-    Quando nuove funzionalità venivano richieste, venivano sviluppate con in mente l'accessibilità, e il tempo rimanente era usato per manutenzione
-    e per risolvere bug esistenti.<br>
-    Missoni ha due parti, una principale che usa C# come linguaggio per le viste (cshtml) 
-    e per la logica di back-end, e un altra che usa PHP.`);
+  `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho 
+  lavorato con il mio team, insieme a Stone Island e Stone Island 30.<br>
+  Quando ho iniziato, Missoni era già accessibile, quindi il team era concentrato principalmente sulla versione accessibile di Stone Island.<br>
+  Quando nuove funzionalità venivano richieste, venivano sviluppate con in mente l'accessibilità, e il tempo rimanente era usato per manutenzione
+  e per risolvere bug esistenti.<br>
+  Missoni ha due parti, una principale che usa C# come linguaggio per le viste (cshtml) 
+  e per la logica di back-end, e un altra che usa PHP.`);
   trTxt("lanteaMoreTxt",
   `Ho lavorato su Lantea dal 2017-09-12 al 2019-02-01, quando il progetto è stato sospeso.<br>
   Lantea è una piattaforma che permette agli autori di scrivere e postare articoli, e guadagnare condividendo il reddito ricavato dalle inserzioni.<br>
@@ -126,11 +130,6 @@ function toItalian() {
   trTxt("solsysMoreTxt",
   `Un semplice 'gioco' che dimostra le orbite dei pianeti e le loro lune, permette di cambiarne la velocità, 
   e permette di esplorare il sistema solare con un astronave.`);
-  trTxt("starStuffMoreTxt",
-  `Ho iniziato a sviluppare questo gioco per imparare a usare Qt, ma ho acquisito molta esperienza di programmazione
-  in generale grazie a questo progetto.<br>
-  Ho sospeso lo sviluppo per il momento, da quando ho deciso di concentrarmi principalmente sullo sviluppo web
-  ma potrei continuare a lavorarci eventualmente.`);
   
   trTxt("skillsID", `Abilità`);
   trTxt("wbID", `Tecnologie web`);
@@ -140,7 +139,6 @@ function toItalian() {
   trTxt("projectsID", `Progetti`);
   
   trTxt("SolSysDescID", `Un sistema solare animato sviluppato con Phaser.`);
-  trTxt("StStfDescID", `Un gioco realizzato in C++ con Qt. Ancora incompleto e non in sviluppo attivo per il momento.`);
   trTxt("crawlerDescID", `Un clone del gioco Snake. Ho sviluppato questa pagina per dimostrare le tecnologie 
   <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank' rel="noopener noreferrer"> MEAN</a>.`)
   trTxt("ICDMDescID", `Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' rel="noopener noreferrer" target='_blank'> 
@@ -153,7 +151,7 @@ function toItalian() {
 
 /** Translates to English */
 function toEnglish() {
-  $(".more").html(`Details <p class="icon-down-arrow"></p>`);
+  trTxt("more", `Details <p class="icon-down-arrow"></p>`, true);
   trTxt("downloadID", `<a title='Download my resume' href='Resume%20Mario%20Cannistr%C3%A0%20-%20Web%20Developer.pdf' 
   download='Mario Cannistrà - Full Stack Web Developer - Resume.pdf' target='_blank'>Download my resume <span class='icon-download'></span></a>`);
   trTxt("htitleID", `Mario Cannistrà - Full Stack Web Developer - Portfolio`);
@@ -224,10 +222,6 @@ function toEnglish() {
   and performance is not always a priority, especially when differences are insignificant.`);
   trTxt("solsysMoreTxt",
   `A simple 'game' where you can see the orbits of the planets and their moons, change their speed, and use a starship to explore the solar system.`);
-  trTxt("starStuffMoreTxt",
-  `I started making this game to try my hand at Qt, but I've gained a lot of programming experience from this project.<br>
-  I suspended development for the foreseeable future, when I decided to focus on web development, but I might 
-  resume working on this project at some point.`);
   
   trTxt("skillsID", `Skills`);
   trTxt("wbID", `Website development`);
@@ -237,7 +231,6 @@ function toEnglish() {
   trTxt("projectsID", `Projects`);
   
   trTxt("SolSysDescID", `Animated solar system made using Phaser.`);
-  trTxt("StStfDescID", `A game made in C++ with Qt. Still incomplete and on hold for the moment.`);
   trTxt("crawlerDescID", `A clone of the game Snake. I made this to demonstrate the 
   <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN stack</a> technologies.`);
   trTxt("ICDMDescID", `A <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' rel="noopener noreferrer" target='_blank'>MEAN</a> 
