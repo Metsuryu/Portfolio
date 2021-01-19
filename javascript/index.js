@@ -474,10 +474,16 @@ function addClickEventListener(project) {
   and accessing them like this, and placing them in the elements below. this changes only the image
   for now, but you can add different text for the title and the description too, or modify any other element. */
   const img = element.dataset.imgBig;
-  // TODO: Navigate to project URL
+  const desc = element.dataset.desc;
+  const projURL = element.dataset.url;
+  const githubURL = element.dataset.github;
+  const projTags = element.querySelector('.proj-tags')?.innerText || '';
+  const projTitle = element.querySelector('.proj-title')?.innerText || '';
   const navigateToURL = () => {
-    // console.log("Navigating to URL");
-    window.open("https://www.google.com", "_blank");
+    window.open(projURL, "_blank");
+  };
+  const navigateToGithubURL = () => {
+    window.open(githubURL, "_blank");
   };
 
   // Create new project window, and append all elements to it
@@ -501,13 +507,16 @@ function addClickEventListener(project) {
   const tags = document.createElement("span");
   tags.id = "tags";
   tags.className = "tagText";
-  tags.innerHTML = "#Some #tags #here";
+  tags.innerHTML = projTags;
 
   const title = document.createElement("h1");
-  title.innerHTML = "Title";
+  title.className = "link";
+  title.onclick = navigateToGithubURL;
+  title.innerHTML = projTitle;
 
   const description = document.createElement("p");
-  description.innerHTML = "Description...";
+  description.className = "projDesc";
+  description.innerHTML = desc;
 
   const animatedBTN = document.createElement("a");
   animatedBTN.className = "animatedBTN projectVisitBTN";
