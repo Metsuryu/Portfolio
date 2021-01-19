@@ -476,7 +476,7 @@ function addClickEventListener(project) {
   const img = element.dataset.imgBig;
   // TODO: Navigate to project URL
   const navigateToURL = () => {
-    console.log("Navigating to URL");
+    // console.log("Navigating to URL");
     window.open("https://www.google.com", "_blank");
   };
 
