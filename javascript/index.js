@@ -42,7 +42,6 @@ function onLoad() {
   particlesJS("intro", particleJSParams);
   addNavigation();
   addAbout();
-  // TODO: Use document.querySelector, and add nullcheck
   const sections = {
     intro: document.getElementById("intro"),
     projects: document.getElementById("projects"),
@@ -61,7 +60,7 @@ onLoad();
 
 function isInViewport(el) {
   const distance = el.getBoundingClientRect();
-  
+
   return (distance.top + distance.height >= 1 && distance.bottom - distance.height <= 1);
 }
 
@@ -69,7 +68,7 @@ function sectionsInViewport(sections, sectionsNavs) {
   for (const key of Object.keys(sections)) {
     const el = sections[key];
     const navEl = sectionsNavs[key][0];
-    
+
     if (isInViewport(el)) {
       navEl.className = key + " active";
     }else {
@@ -78,7 +77,7 @@ function sectionsInViewport(sections, sectionsNavs) {
   }
 }
 
-/** TODO: Programmatically generate and add about section in code-editor style. */
+/** Programmatically generate and add about section in code-editor style. */
 function addAbout() {
   const nbsp = String.fromCharCode(160);
   const skillsWeb = [
@@ -93,12 +92,12 @@ function addAbout() {
     "jQuery",
     "AngularJS",
     "Express.js",
-    "Socket.IO" 
+    "Socket.IO"
   ];
   const skillsSoft = [
     "C++",
     "Python",
-    "C#" 
+    "C#"
   ];
   const skillsOther = [
     "MongoDB",
@@ -106,13 +105,41 @@ function addAbout() {
     "Qt",
     "Visual Studio",
     "Unity",
-    "Linux server" 
+    "Linux server"
+  ];
+  const employment = [
+    {
+      "name": "ICDM",
+      "role": "Full stack web developer",
+      "duration": "2017-03 | 2017-05"
+    },
+    {
+      "name": "Lantea",
+      "role": "Full stack web developer",
+      "duration": "2017-09 | 2019-02"
+    },
+    {
+      "name": "Freelance work",
+      "role": "Full stack web developer",
+      "duration": "2019-02 | 2019-07"
+    },
+    {
+      "name": "YNAP",
+      "role": "Interface developer (Frontend)",
+      "duration": "2019-07 | 2020-04"
+    },
+    {
+      "name": "Vidiemme",
+      "role": "Senior Front End Developer",
+      "duration": "2020-05 | 2020-12"
+    },
+
   ];
   const editorEl = document.querySelector("#codeEditor");
   if (!editorEl) {
     return;
   }
-  
+
   const cEnum = {
     dot: "dot",
     methods: "methods",
@@ -125,7 +152,7 @@ function addAbout() {
     plainText: "plainText",
     collapsable: "collapsable"
   }
-  
+
   let linesCount = 1;
 
   const toggleCollapse = (line) => {
@@ -161,40 +188,79 @@ function addAbout() {
     if (isCollapsable) {
       line.onclick = toggleCollapse;
     }
-    
+
     if (innerEls && innerEls.length) {
       innerEls.forEach(args => {
         const generated = genEl(args[0] || undefined, args[1] || undefined, args[2] || undefined)
         line.append(generated);
       });
     }
-    
+
     editorEl.append(line);
   }
-  
+
   const dots2 = "·· ";
   const dots4 = "···· ";
   const dots6 = "······ ";
   const dots8 = "········ ";
+  const dots10 = "·········· ";
   const genEl = (content = dots8, className = cEnum.dot, tag = "div") => {
     if (tag === "text") {
       return document.createTextNode(content);
     }
-    
+
     const el = document.createElement(tag);
-    
+
     el.className = className;
     el.innerText = content;
-    
+
     return el;
   };
-  
-  const addSkill = (skill) => {
-    addLine([
-      [],
-      [`"${skill}"`, cEnum.string, "span"],
-      [",", cEnum.plainText, "text"]
-    ]);
+
+  const addSkills = (skills, lastComma = false) => {
+    for (let i = 0; i < skills.length; i++) {
+      const skill = skills[i];
+      const line = [
+        [],
+        [`"${skill}"`, cEnum.string, "span"]
+      ];
+      if (i < skills.length - 1 || lastComma) {
+        line.push([",", cEnum.plainText, "text"]);
+      }
+      addLine(line);
+    }
+  };
+
+  const addEmployment = () => {
+    for (let i = 0; i < employment.length; i++) {
+      const job = employment[i];
+      const line = [
+        [],
+        [`"${job.name}"`, cEnum.string, "span"],
+        [": {", cEnum.plainText, "text"],
+      ];
+      const line2 = [
+        [dots10],
+        [`"role"`, cEnum.string, "span"],
+        [": ", cEnum.plainText, "text"],
+        [`"${job.role}"`, cEnum.string, "span"],
+        [",", cEnum.plainText, "text"],
+      ];
+      const line3 = [
+        [dots10],
+        [`"duration"`, cEnum.string, "span"],
+        [": ", cEnum.plainText, "text"],
+        [`"${job.duration}"`, cEnum.string, "span"],
+      ];
+      const line4 = [
+        [dots8],
+        ["},", cEnum.plainText, "text"],
+      ];
+      addLine(line);
+      addLine(line2);
+      addLine(line3);
+      addLine(line4);
+    }
   };
 
   addLine([
@@ -239,11 +305,35 @@ function addAbout() {
     ["employmentStatus", cEnum.methods, "span"],
     ["() {", cEnum.plainText, "span"]
   ], true);
+
+
+
   addLine([
     [dots4],
-    ["return ", cEnum.scope, "span"],
-    ["\"Currently employed at: YNAP in Bologna\"", cEnum.string, "span"],
-    [";", cEnum.plainText, "span"]
+    ["return", cEnum.scope, "span"],
+    [" {", cEnum.plainText, "text"]
+  ]);
+  addLine([
+    [dots6],
+    ["\"Current\"", cEnum.string, "span"],
+    [": ", cEnum.plainText, "text"],
+    ["\"Looking for a new job\"", cEnum.string, "span"],
+    [",", cEnum.plainText, "text"],
+  ], true);
+  addLine([
+    [dots6],
+    ["\"Past\"", cEnum.string, "span"],
+    [": [", cEnum.plainText, "text"],
+  ], true);
+  addEmployment();
+
+  addLine([
+    [dots6],
+    ["]};", cEnum.plainText, "text"]
+  ]);
+  addLine([
+    [dots4],
+    ["}", cEnum.plainText, "text"]
   ]);
   addLine([
     [dots2],
@@ -265,12 +355,10 @@ function addAbout() {
   ]);
   addLine([
     [dots6],
-    ["Web Development", cEnum.string, "span"],
+    ["\"Web Development\"", cEnum.string, "span"],
     [": [", cEnum.plainText, "text"]
   ], true);
-  skillsWeb.forEach(skill => {
-    addSkill(skill);
-  });
+  addSkills(skillsWeb, true);
   addLine([
     [dots8],
     ["\"", cEnum.string, "span"],
@@ -283,24 +371,20 @@ function addAbout() {
   ]);
   addLine([
     [dots6],
-    ["Software development", cEnum.string, "span"],
+    ["\"Software development\"", cEnum.string, "span"],
     [": [", cEnum.plainText, "text"]
   ], true);
-  skillsSoft.forEach(skill => {
-    addSkill(skill);
-  });
+  addSkills(skillsSoft);
   addLine([
     [dots6],
     ["],", cEnum.plainText, "text"]
   ]);
   addLine([
     [dots6],
-    ["Other", cEnum.string, "span"],
+    ["\"Other\"", cEnum.string, "span"],
     [": [", cEnum.plainText, "text"]
   ], true);
-  skillsOther.forEach(skill => {
-    addSkill(skill);
-  });
+  addSkills(skillsOther);
   addLine([
     [dots4],
     ["]};", cEnum.plainText, "text"]
@@ -322,7 +406,7 @@ function addNavigation() {
     ".about": "#about",
     ".contact": "#contactTarget"
   };
-  
+
   const body = document.querySelector("body");
   const assignScrollEvent = (clicked, destination) => {
     clicked.addEventListener("click", () => {
@@ -330,7 +414,7 @@ function addNavigation() {
       destination.scrollIntoView(true, {behavior: "smooth"});
     });
   };
-  
+
   for (scrollCl of Object.keys(scrollClasses)) {
     const elements = document.querySelectorAll(scrollCl);
     const targetEl = document.querySelector(scrollClasses[scrollCl]);
@@ -375,9 +459,16 @@ function closeProjectWindow() {
   if (projectWindow) { projectWindow.remove(); }
 }
 
+document.addEventListener('keydown', (e) => {
+  console.log('Event', e);
+  if (e.key === "Escape") {
+    closeProjectWindow();
+  }
+});
+
 function addClickEventListener(project) {
   const element = document.getElementById(project);
-  
+
   // This is taken from the project's data-img-big attribute
   /* Like with this custom attribute, you can customize all your projects by adding data- attributes,
   and accessing them like this, and placing them in the elements below. this changes only the image
@@ -388,7 +479,7 @@ function addClickEventListener(project) {
     console.log("Navigating to URL");
     window.open("https://www.google.com", "_blank");
   };
-  
+
   // Create new project window, and append all elements to it
   const body = document.querySelector("body");
   const projectWindow = document.createElement("div");
@@ -397,27 +488,27 @@ function addClickEventListener(project) {
   const imgHolder = document.createElement("div");
   imgHolder.id = "imgHolder";
   imgHolder.className = "revealEl revealElAnimation";
-  
+
   const sidebar = document.createElement("div");
   sidebar.id = "sidebar";
   sidebar.className = "revealEl revealElAnimation";
-  
+
   const backButton = document.createElement("span");
   backButton.id = "backButton";
   backButton.innerHTML = "← Back";
   backButton.onclick = closeProjectWindow;
-  
+
   const tags = document.createElement("span");
   tags.id = "tags";
   tags.className = "tagText";
   tags.innerHTML = "#Some #tags #here";
-  
+
   const title = document.createElement("h1");
   title.innerHTML = "Title";
-  
+
   const description = document.createElement("p");
   description.innerHTML = "Description...";
-  
+
   const animatedBTN = document.createElement("a");
   animatedBTN.className = "animatedBTN projectVisitBTN";
   animatedBTN.innerHTML = "VISIT";
@@ -427,17 +518,17 @@ function addClickEventListener(project) {
   sidebar.append(title);
   sidebar.append(description);
   sidebar.append(animatedBTN);
-  
+
   const imgEl = document.createElement("img");
   imgEl.onclick = navigateToURL;
   imgHolder.append(imgEl);
   projectWindow.append(imgHolder);
-  
+
   projectWindow.append(sidebar);
   const coverSpan = document.createElement("span");
   coverSpan.className = "coverSpan projectRevealDurationCover coverSpanAnimation";
   projectWindow.append(coverSpan);
-  
+
   // append the project window to the body, when the project is clicked
   element.addEventListener("click", ev => {
     body.append(projectWindow);
@@ -482,7 +573,7 @@ function changeText() {
     "JavaScript",
     "C#"
   ];
-  
+
   let index = 0;
   let oldText = changingText.innerText;
   setInterval(() => {

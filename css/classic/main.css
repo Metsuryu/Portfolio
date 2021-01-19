@@ -136,7 +136,7 @@ img {
 }
 
 #themes button {
-	border: 0px; 
+	border: 0px;
 	position: static;
 	color: #fff;
 	margin: 0 auto;
@@ -160,8 +160,8 @@ img {
 @media screen and (max-width: 500px) {
 	#themes button {
 		display: block;
-	}	
-	
+	}
+
 	.webDevSkills {
 		column-count: 1;
 	}
@@ -169,7 +169,7 @@ img {
 
 .btn {
 	font-size: 1em;
-	border: 0px; 
+	border: 0px;
 	color: var(--darkGrey);
 }
 
@@ -190,7 +190,7 @@ hr {
 
 .more {
 	font: inherit;
-	border: 0px; 
+	border: 0px;
 	font-style: italic;
 	color: var(--more);
 	font-weight: bold;
@@ -227,7 +227,7 @@ hr {
 
 #githubID {
 	background-color: lightgrey;
-	position: static; 
+	position: static;
 	font-weight: bold;
 	color: #000;
 	display: inline-block;
@@ -247,7 +247,7 @@ hr {
 	color: #fff;
 	margin: 5px;
 	cursor: pointer;
-	padding: 6px 12px;
+	padding: 3px 5px;
 	font-size: 14px;
 	line-height: 1.42857143;
 	border-radius: 4px;
@@ -339,7 +339,7 @@ li {
 	margin: 10px;
 	padding-top: 1px;
 	text-align: left;
-	
+
 	word-break: break-all;
 	word-wrap: break-word;
 }
@@ -347,7 +347,7 @@ li {
 .field p {
 	text-align: left;
 	font-size: 1.3em;
-	display: inline; 
+	display: inline;
 	word-break: break-all;
 	word-wrap: break-word;
 }
@@ -394,13 +394,13 @@ li {
 	#grid {
 		grid-template-columns: 1fr;
 	}
-	
+
 	#skillsSection {
 		display: flex;
 		justify-content: center;
 		width: 100%;
 	}
-	
+
 	#bio {
 		width: 100%;
 	}
@@ -414,7 +414,7 @@ li {
 		height: auto;
 		overflow: auto;
 	}
-	
+
 	.screenshots {
 		width: 65%;
 	}
@@ -457,7 +457,7 @@ li {
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	
+
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

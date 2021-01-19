@@ -24,7 +24,7 @@
   src: url(./../fonts/ArameRegular.otf);
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)*/
 html, body, div, span, applet, object, iframe,
@@ -36,8 +36,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -47,7 +47,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -205,6 +205,10 @@ body {
   margin-bottom: 1em;
 }
 .subtitleBR {
+  margin-top: 1em;
+}
+.resumeBTN {
+  display: block;
   margin-top: 1em;
 }
 .link {
@@ -419,7 +423,7 @@ body {
   transform: translateZ(35px);
   line-height: 1.1;
   width: 60%;
-  
+
   text-shadow: black 0px 0px 1px;
   font-size: 1.4em;
 }
