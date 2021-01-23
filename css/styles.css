@@ -88,7 +88,7 @@ body {
   scroll-behavior: smooth;
 }
 .section {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 /** Nav bar **/
 #mainNav {
@@ -292,13 +292,14 @@ body {
 /** Scroll line **/
 #scrollLine {
   width: 1px;
-  height: 2200%;
+  height: 2100%;
   left: -26px;
   top: 7px;
   z-index: 9;
   position: absolute;
   background-color: #5918df;
 }
+
 .bullet {
   content: "";
   left: -5px;
@@ -412,9 +413,17 @@ body {
 .projectIcon > img {
   width: 80px;
 }
-.proj2 {
+.projOdd {
   margin-top: 17em;
 }
+.firstProj {
+  margin: 6em;
+}
+.duration {
+  color: #BBB;
+  display: block;
+}
+
 .textContainer {
   position: absolute;
   top: 30%;
@@ -657,9 +666,7 @@ body {
 /** Footer **/
 #contact {
   background-color: #141414;
-  min-height: 100vh;
   overflow: hidden;
-  position: relative;
 }
 #contact > .contentContainer {
   padding-top: 5em;
@@ -727,4 +734,80 @@ body {
   margin-right: 9px;
   margin-top: -4px;
   height: 22px;
+}
+
+/* iPad */
+@media only screen and (max-width: 768px) {
+  .title1 {
+    font-size: 0.8em;
+  }
+  .title2 {
+    font-size: 0.7em;
+  }
+  .contacts>a,
+  .contacts>div {
+    scale: 70%;
+  }
+  #mainNav {
+    scale: 80%;
+    padding: 1.2em 2em;
+  }
+  .section {
+    min-height: 65vh;
+  }
+  #scrollLine {
+    height: 2380%;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 550px) {
+  .contacts {
+    display: block;
+    margin-right: 2em;
+  }
+  #introContent {
+    margin: 10%;
+  }
+  .contentContainer {
+    margin-left: 11%;
+  }
+  .projectContainer {
+    margin: 1em;
+  }
+  .project {
+    scale: 65%;
+    height: 230px;
+  }
+  #projectWindow {
+    flex-direction: column-reverse;
+  }
+  #sidebar {
+    overflow: auto;
+  }
+  #imgHolder {
+    overflow: initial;
+  }
+  #codeEditor,
+  .line:after {
+    font-size: 9px;
+  }
+  .line:after {
+    left: -55px;
+  }
+  .line.collapsable:hover:after,
+  .line.collapsedContent:hover:after {
+    left: -58px;
+  }
+
+  .contacts>div {
+    margin: 1em;
+  }
+
+  .section {
+    min-height: 65vh;
+  }
+  #scrollLine {
+    height: 1110%;
+  }
 }

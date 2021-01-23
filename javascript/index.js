@@ -1,4 +1,3 @@
-// TODO: Add translations
 const particleJSParams = {
   "particles": {
     "number": {"value": 80, "density": {"enable": true, "value_area": 800}},
@@ -27,11 +26,82 @@ const particleJSParams = {
   "background_position": "50% 50%", "background_repeat": "no-repeat", "background_size": "cover"}
 };
 
+// TODO: Add translations
+const descriptions = {
+  "Stone Island": `In my time at YNAP as a Front-end developer this was one of the
+three websites I worked on with my team, along with Stone Island 30, and Missoni.
+When I joined, the majority of the work on this site revolved around accessibility,
+as the site was in the middle of a major overhaul to comply with better standards.
+Additionally to the accessibility, we developed new features, such as push
+notifications and new pages, and fixed existing bugs.
+Stone Island has two parts, a main one that uses C# as language for
+the views (cshtml) and back-end logic, and another that uses PHP.`,
+
+  "Stone Island 30": `In my time at YNAP as a Front-end developer this was one
+of the three websites I worked on with my team, along with Stone Island, and Missoni.
+This project started near the end of my time at YNAP, when we completed the accessibility
+release of Stone Island, because of that I only worked on this for two months.
+This is a complete overhaul of Stone Island 30 starting from
+zero using React with Gatsby, and focusing on accessibility.`,
+
+  "Missoni": `In my time at YNAP as a Front-end developer this was one of the three
+websites I worked on with my team, along with Stone Island, and Stone Island 30.
+When I joined, this site was already accessible, so the focus for our team was
+implementing the accessibility release for Stone Island.
+When new features were requested we implemented them with accessibility in mind,
+and the remaining time was spent on maintanance and fixing existing bugs.
+Missoni has two parts, a main one that uses C# as language for the views (cshtml)
+and back-end logic, and another that uses PHP.`,
+
+  "Lantea": `I worked on Lantea from 2017-09-12 to 2019-02-01, when the project was suspended.<br>
+Lantea is a platform that lets authors write and post articles, and earn money with revenue sharing from advertisement.<br>
+When I joined, Lantea was on early stages of development, some of the features were already partially implemented,
+but it was decided to make a large refactor and rework almost everything, moving from AngularJS to Angular 2+.<br>
+Because of that, most of the current version of the site was developed by me, with the exception of the art assets,
+some of the HTML and CSS adapted from the previous version of the site,
+and some code by two other developers that worked on it occasionally.<br>
+Features that I implemented include, but are not limited to:
+<a class="link" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete" rel="noopener noreferrer">CRUD</a
+> functionalities for articles, instant messaging chat that also allows the upload of pictures,
+a comment system, admin tools, drafts, notifications, search for articles, statistics, various settings,
+followers, achievements, and securing sensitive operations with server-side token verification.<br>
+The website was never officially launched, but a mostly functional live version is available
+<a class="link" href="https://new-lantea.web.app/" rel="noopener noreferrer">online here.</a>`,
+
+  "I Cecchini Del Mare": `I Cecchini Del Mare (Snipers of the Sea in Italian) was commissioned by
+<a class="link" target="_blank" href="https://www.facebook.com/groups/cecchinidelmare/"
+rel="noopener noreferrer">the Facebook group of the same name.</a><br>
+The website allows people to share their current location, so that everyone connected will be able
+to see them on the map, and chat with them.
+To do this, the coordinates and other data (name, profile picture...) of each user are added to a Mongo database,
+and they are retrived by each client to be displayed on the map, and in the list of online users.<br>
+The chat is made with Socket.IO, and is fairly lightweight. It allows users to send private messages to eachother,
+it saves the chat history in the cookies, has functionality to check if the message was sent correctly,
+and when opened, shows the distance between the two users if possible.<br>
+The development didn't present too many technical problems, but it helped me gain quite a lot of experience.`,
+
+  "Crawler": `Crawler uses little HTML and CSS, as most of the work went into the game, I opted for a simple look for the page.<br>
+I started with the intention to make a very simple single-page web application, but
+then I decided to make the game the focus of the page.<br>
+I used Angular's <code>ng-repeat</code> functionality to build the highscores table dynamically, by retriving the
+entries from a Mongo server, and displaying 10 entries for each page that is also generated dynamically
+based on the total number of highscores.
+I also use Angular's <code>filter</code> to implement a search function.<br>
+The game is built with the p5.js library, and is mostly a standard version of snake.
+One of the most challenging parts of development was making it so when food spawned, it wouldn't spawn on
+top of the snake, mostly because I was trying to find a clever solution.
+I finally realized that sometimes, the best solution is the most obvious one,
+and performance is not always a priority, especially when differences are insignificant.`,
+
+  "Solar System": `A simple 'game' where you can see the orbits of the planets and their moons,
+change their speed, and use a starship to explore the solar system.`
+};
+
 function onLoad() {
   changeText();
-  const s = skrollr.init();
+  AOS.init();
   // Add any additional ID for waypoints here.
-  const projectsIDs = ["proj1", "proj2", "proj3", "proj4"];
+  const projectsIDs = ["proj1", "proj2", "proj3", "proj4", "proj5", "proj6", "proj7"];
   projectsIDs.forEach(proj => {
     addWaypoint(proj, {
       ".revealEl": "revealProjAni"
@@ -80,32 +150,48 @@ function sectionsInViewport(sections, sectionsNavs) {
 /** Programmatically generate and add about section in code-editor style. */
 function addAbout() {
   const nbsp = String.fromCharCode(160);
+
   const skillsWeb = [
-    "HTML5 / CSS3",
-    "LESS / SASS",
     "JavaScript",
+    "HTML5 | CSS3",
+    "jQuery",
     "Typescript",
-    "Angular 2-7",
+    "Angular 2 - 7",
     "Firebase",
     "Node.js",
-    "Nginx",
-    "jQuery",
-    "AngularJS",
     "Express.js",
-    "Socket.IO"
+    "AngularJS",
+    "Less",
+    "Sass",
+    "React | Gatsby",
+    "ASP.NET | Razor",
+    "CSHTML",
+    "Socket.IO",
+    "Wordpress",
+    "Phaser",
+    "Nginx",
+    "Jasmine",
+    "Jest",
+    "Karma",
+    "p5.js"
   ];
   const skillsSoft = [
     "C++",
     "Python",
+    "PHP",
     "C#"
   ];
   const skillsOther = [
+    "Behavior Driven Development",
+    "Test Driven Development",
+    "Agile Fundamentals",
+    "E-commerce",
+    "Linux server",
+    "Accessibility",
     "MongoDB",
-    "SQL",
-    "Qt",
-    "Visual Studio",
     "Unity",
-    "Linux server"
+    "SQL",
+    "Qt"
   ];
   const employment = [
     {
@@ -460,7 +546,6 @@ function closeProjectWindow() {
 }
 
 document.addEventListener('keydown', (e) => {
-  console.log('Event', e);
   if (e.key === "Escape") {
     closeProjectWindow();
   }
@@ -474,11 +559,11 @@ function addClickEventListener(project) {
   and accessing them like this, and placing them in the elements below. this changes only the image
   for now, but you can add different text for the title and the description too, or modify any other element. */
   const img = element.dataset.imgBig;
-  const desc = element.dataset.desc;
   const projURL = element.dataset.url;
-  const githubURL = element.dataset.github;
-  const projTags = element.querySelector('.proj-tags')?.innerText || '';
-  const projTitle = element.querySelector('.proj-title')?.innerText || '';
+  const githubURL = element.dataset?.github || projURL;
+  const projTags = element.querySelector('.proj-tags')?.innerHTML;
+  const projTitle = element.querySelector('.proj-title')?.innerHTML;
+  const desc = descriptions[projTitle];
   const navigateToURL = () => {
     window.open(projURL, "_blank");
   };
