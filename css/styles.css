@@ -288,6 +288,7 @@ body {
 }
 #about {
   overflow: hidden;
+  height: 2180px;
 }
 /** Scroll line **/
 #scrollLine {
@@ -648,6 +649,7 @@ body {
 }
 #imgHolder > img {
   cursor: pointer;
+  max-width: 100%;
 }
 #sidebar {
   flex-grow: 0;
@@ -786,7 +788,7 @@ body {
     overflow: auto;
   }
   #imgHolder {
-    overflow: initial;
+    overflow: auto;
   }
   #codeEditor,
   .line:after {
@@ -809,5 +811,8 @@ body {
   }
   #scrollLine {
     height: 1110%;
+  }
+  #about {
+    height: 1270px;
   }
 }

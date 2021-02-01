@@ -26,7 +26,6 @@ const particleJSParams = {
   "background_position": "50% 50%", "background_repeat": "no-repeat", "background_size": "cover"}
 };
 
-// TODO: Add translations
 const descriptions = {
   "Stone Island": `In my time at YNAP as a Front-end developer this was one of the
 three websites I worked on with my team, along with Stone Island 30, and Missoni.
@@ -97,11 +96,174 @@ and performance is not always a priority, especially when differences are insign
 change their speed, and use a starship to explore the solar system.`
 };
 
-function onLoad() {
-  changeText();
-  AOS.init();
+const descriptionsIt = {
+  "Stone Island": `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho
+lavorato con il mio team, insieme a Stone Island 30 e Missoni.<br>
+Quando ho iniziato, la maggior parte del lavoro per Stone Island era incentrata sull'accessibilità,
+dato che il sito era nel mezzo di una grande rinnovazione per soddisfare le norme previste.<br>
+Oltre all'accessibilità, abbiamo sviluppato nuove funzionalità come notifiche e nuove pagine, e risolto bug esistenti.<br>
+Stone Island ha due parti, una principale che usa C# come linguaggio per le viste (cshtml)
+e per la logica di back-end, e un altra che usa PHP.`,
+
+  "Stone Island 30": `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho
+lavorato con il mio team, insieme a Stone Island e Missoni.<br>
+Questo progetto è iniziato verso la fine della mia permanenza a YNAP, dopo il completamento della versione accessibile di Stone Island,
+e per questo ho lavorato a Stone Island 30 per soli due mesi.<br>
+Questo è un completo rinnovamento di Stone Island 30 iniziato da zero, usando React con Gatsby, e incentrato sull'accessibilità.`,
+
+  "Missoni": `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho
+lavorato con il mio team, insieme a Stone Island e Stone Island 30.<br>
+Quando ho iniziato, Missoni era già accessibile, quindi il team era concentrato principalmente sulla versione accessibile di Stone Island.<br>
+Quando nuove funzionalità venivano richieste, venivano sviluppate con in mente l'accessibilità, e il tempo rimanente era usato per manutenzione
+e per risolvere bug esistenti.<br>
+Missoni ha due parti, una principale che usa C# come linguaggio per le viste (cshtml)
+e per la logica di back-end, e un altra che usa PHP.`,
+
+  "Lantea": `Ho lavorato su Lantea dal 2017-09-12 al 2019-02-01, quando il progetto è stato sospeso.<br>
+Lantea è una piattaforma che permette agli autori di scrivere e postare articoli, e guadagnare condividendo il reddito ricavato dalle inserzioni.<br>
+Quando ho iniziato, Lantea era in uno stato iniziale di sviluppo, alcune funzionalità erano già parzialmente implementate,
+ma a quel punto si è deciso che sarebbe stato meglio rifattorizzare quasi tutto, passando da AngularJS a Angular 2+.<br>
+Per questo motivo, la maggior parte di questa versione del sito è stata sviluppata da me, con l'eccezzione di risorse grafiche,
+parte dell' HTML e CSS adattai dalla versione precedente, e del codice di altri due sviluppatori che ci lavoravano occasionalmente.<br>
+Funzionalità che ho implementato includono, ma non sono limitate a: funzionalità
+<a class="link" href='https://it.wikipedia.org/wiki/Tavola_CRUD' rel="noopener noreferrer">CRUD</a> per gli articoli,
+chat di messaggistica istantanea che permette l'upload di immagini, commenti, strumenti
+per amministratori, bozze, notificazioni, funzione di ricerca per articoli,
+statistiche, impostazioni varie, amici (followers), medaglie (achievements), e verifica
+dei token da server per la sicurezza delle operazioni sensibili.<br>
+Il sito non è mai stato rilasciato ufficialmente, ma una versione per la maggior
+parte funzionale è disponibile <a class="link" href='https://new-lantea.web.app/' rel="noopener noreferrer">online qui.</a>`,
+
+  "I Cecchini Del Mare": `I Cecchini Del Mare è stato commissionato dall'
+<a class="link" target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/' rel="noopener noreferrer">omonimo gruppo di Facebook.</a><br>
+Il sito permete agli utenti di trasmettere la propria posizione e chattare con tutti gli utenti connessi.
+Per fare queso, le coordinate e altre informazioni (nome, immagine del profilo...) di ogni utente sono aggiunte
+a un database Mongo, e sono vengono in seguito utilizzate da ogni client per mostrare gli utenti sulla mappa
+e nella lista di utenti online.<br>
+La chat è fatta con Socket.IO, ed è abbastanza leggera e veloce. Permette agli utenti di inviare messaggi privati,
+salva la cronologia della chat nei Cookies, ha funzionalità per controllare se il messaggio è stato inviato
+correttamente, e quando viene aperta, mostra la distanza tra i due utenti se possibile.<br>
+Lo sviluppo non ha presentato molti problemi tecnici, ma mi ha aiutato comunque a migliorare le mie abilità.`,
+
+  "Crawler": `Crawler usa poco HTML e CSS, dato che la maggior parte del lavoro si è concetrato sulla
+realizzazione del gioco.<br>
+Ho iniziato con l'intenzione di realizzare una web-app su pagina singola molto semplice, ma in seguito
+ho deciso di incentrare il sito sul gioco.<br>
+Ho usato la funzionalità <code>ng-repeat</code> di Angular per realizzare la tabbella dei punteggi dinamicamente,
+utilizzando i risultati ricevuti da MongoDB, e mostrare 10 risultati per ogni pagina che è anche generata dinamicamente
+in base al numero totale di punteggi.
+Uso anche <code>filter</code> di Angular per implementare una funzionalità di ricerca.<br>
+Il gioco è sviluppato con la libreria p5js, ed è per la maggior parte una semplice versione di snake.
+Una delle parti più complicate dello sviluppo è stata fare sì che il cibo non comparisse sul serpente.
+Ho risolto il problema rendendomi conto che a volte, la migliore soluzione è la più semplice, e le prestazioni
+non devono essere sempre una priorità, specialmente quando le differenze sono insignificanti.`,
+
+  "Solar System": `Un semplice 'gioco' che dimostra le orbite dei pianeti e le loro lune,
+permette di cambiarne la velocità, e permette di esplorare il sistema solare con un astronave.`
+};
+
+const wordsEng = {
+  "visit": "VISIT",
+  "back": "← Back",
+  "comment": "// I'm a Full Stack Web Developer",
+  "name": ".name",
+  "employmentStatus": "employmentStatus",
+  "current": "\"Current\"",
+  "past": "\"Past\"",
+  "role": "role",
+  "duration": "duration",
+  "lookingNewJob": "\"Looking for a new job\"",
+  "freelanceWork": "Freelance work",
+  "webDev": "\"Web Development\"",
+  "softDev": "\"Software development\"",
+  "other": "\"Other\"",
+};
+
+const wordsIta = {
+  "visit": "VAI",
+  "back": "← Indietro",
+  "comment": "// Sono un web developer Full Stack",
+  "name": ".nome",
+  "employmentStatus": "statoLavorativo",
+  "current": "\"Presente\"",
+  "past": "\"Passato\"",
+  "role": "ruolo",
+  "duration": "durata",
+  "lookingNewJob": "\"In cerca di un nuovo lavoro\"",
+  "freelanceWork": "Lavori freelance",
+  "webDev": "\"Sviluppo Web\"",
+  "softDev": "\"Sviluppo Software\"",
+  "other": "\"Altro\"",
+};
+
+let words = {};
+
+let lang = "eng";
+const projEvents = {};
+
+/** Changes content of "id" to "string" */
+function trTxt(selector, string, isClass = false) {
+  if (isClass) {
+    const els = document.querySelectorAll("." + selector);
+    els.forEach(el => {
+      el.innerHTML = string;
+    });
+  } else {
+    document.querySelector("#" + selector).innerHTML = string;
+  }
+};
+
+function toEng() {
+  console.log('To eng');
+  lang = "eng";
+  words = wordsEng;
+  initProjects();
+  addAbout();
+
+  trTxt("htitleID", `Mario Cannistrà - Full Stack Web Developer - Portfolio`);
+  trTxt("projectsNav", `Projects`, true);
+  trTxt("aboutNav", `About`, true);
+  trTxt("contactsNav", `Contact`, true);
+  trTxt("title1", `Hi, my name is `);
+  trTxt("title2", `I'm a Full Stack Web Developer,<br>proficient in`);
+  trTxt("subtitle", `I live in Italy, and I speak <button onclick="toEng()"
+class="link">English</button> and <button onclick="toIta()" class="link">Italian</button> fluently.<br>
+Feel free to <a id="contactEmail" class="link" target="_blank" rel="noreferrer"
+href="mailto:mariocannistra.work@gmail.com">contact me</a> if you have questions.`);
+  trTxt("projectsSubtitle", `Some of my projects`);
+  trTxt("downloadResume", `Download PDF resume`);
+  trTxt("contactCTA", `Get in touch`);
+}
+
+function toIta() {
+  console.log('To ita');
+  lang = "ita";
+  words = wordsIta;
+  initProjects();
+  addAbout();
+
+  trTxt("htitleID", `Mario Cannistrà - Web Developer Full Stack - Portfolio`);
+  trTxt("projectsNav", `Progetti`, true);
+  trTxt("aboutNav", `Info`, true);
+  trTxt("contactsNav", `Contatti`, true);
+  trTxt("title1", `Ciao, sono `);
+  trTxt("title2", `Sono uno sviluppatore web Full Stack,<br>virtuoso in`);
+  trTxt("subtitle", `Vivo in Italia, e parlo <button onclick="toEng()"
+class="link">Inglese</button> e <button onclick="toIta()" class="link">Italiano</button> fluentemente.<br>
+Per qualsiasi domanda <a id="contactEmail" class="link" target="_blank" rel="noreferrer"
+href="mailto:mariocannistra.work@gmail.com">contattatemi</a>.`);
+  trTxt("projectsSubtitle", `Alcuni miei progetti`);
+  trTxt("downloadResume", `Scarica curriculum (PDF)`);
+  trTxt("contactCTA", `Contattami`);
+}
+
+function initProjects() {
   // Add any additional ID for waypoints here.
-  const projectsIDs = ["proj1", "proj2", "proj3", "proj4", "proj5", "proj6", "proj7"];
+  const projectsIDs = [];
+  for (let i = 1; i <= 7; i++) {
+    projectsIDs.push("proj" + i);
+  }
+
   projectsIDs.forEach(proj => {
     addWaypoint(proj, {
       ".revealEl": "revealProjAni"
@@ -109,6 +271,18 @@ function onLoad() {
     });
     addClickEventListener(proj);
   });
+}
+
+function onLoad() {
+  /** Find browser language, and translate on load. Also calls initProjects() */
+  const userLang = navigator.language || navigator.userLanguage;
+  if (userLang == "it-IT" || userLang == "it") {
+    toIta();
+  } else {
+    toEng();
+  };
+  changeText();
+  AOS.init();
   particlesJS("intro", particleJSParams);
   addNavigation();
   addAbout();
@@ -156,7 +330,7 @@ function addAbout() {
     "HTML5 | CSS3",
     "jQuery",
     "Typescript",
-    "Angular 2 - 7",
+    "Angular 2 - 11",
     "Firebase",
     "Node.js",
     "Express.js",
@@ -205,7 +379,7 @@ function addAbout() {
       "duration": "2017-09 | 2019-02"
     },
     {
-      "name": "Freelance work",
+      "name": words.freelanceWork,
       "role": "Full stack web developer",
       "duration": "2019-02 | 2019-07"
     },
@@ -222,6 +396,7 @@ function addAbout() {
 
   ];
   const editorEl = document.querySelector("#codeEditor");
+  editorEl.innerHTML = "";
   if (!editorEl) {
     return;
   }
@@ -327,14 +502,14 @@ function addAbout() {
       ];
       const line2 = [
         [dots10],
-        [`"role"`, cEnum.string, "span"],
+        [`"${words.role}"`, cEnum.string, "span"],
         [": ", cEnum.plainText, "text"],
         [`"${job.role}"`, cEnum.string, "span"],
         [",", cEnum.plainText, "text"],
       ];
       const line3 = [
         [dots10],
-        [`"duration"`, cEnum.string, "span"],
+        [`"${words.duration}"`, cEnum.string, "span"],
         [": ", cEnum.plainText, "text"],
         [`"${job.duration}"`, cEnum.string, "span"],
       ];
@@ -356,7 +531,7 @@ function addAbout() {
   ]);
   addLine([
     [dots2],
-    ["// I'm a Full Stack Web Developer", cEnum.comment]
+    [words.comment, cEnum.comment]
   ]);
   addLine([
     [dots2],
@@ -366,7 +541,7 @@ function addAbout() {
   addLine([
     [dots4],
     ["this", cEnum.scope],
-    [".name", cEnum.plainText, "span"],
+    [words.name, cEnum.plainText, "span"],
     [" = ", cEnum.scope],
     ["\"Mario Cannistrà\"", cEnum.string, "span"],
     [";", cEnum.plainText, "span"]
@@ -388,7 +563,7 @@ function addAbout() {
   ]);
   addLine([
     [dots2],
-    ["employmentStatus", cEnum.methods, "span"],
+    [words.employmentStatus, cEnum.methods, "span"],
     ["() {", cEnum.plainText, "span"]
   ], true);
 
@@ -401,14 +576,14 @@ function addAbout() {
   ]);
   addLine([
     [dots6],
-    ["\"Current\"", cEnum.string, "span"],
+    [words.current, cEnum.string, "span"],
     [": ", cEnum.plainText, "text"],
-    ["\"Looking for a new job\"", cEnum.string, "span"],
+    [words.lookingNewJob, cEnum.string, "span"],
     [",", cEnum.plainText, "text"],
-  ], true);
+  ]);
   addLine([
     [dots6],
-    ["\"Past\"", cEnum.string, "span"],
+    [words.past, cEnum.string, "span"],
     [": [", cEnum.plainText, "text"],
   ], true);
   addEmployment();
@@ -425,7 +600,6 @@ function addAbout() {
     [dots2],
     ["}", cEnum.plainText, "text"]
   ]);
-  // TODO: Add past employment history
   addLine([
     [nbsp, cEnum.plainText, "text"]
   ]);
@@ -441,7 +615,7 @@ function addAbout() {
   ]);
   addLine([
     [dots6],
-    ["\"Web Development\"", cEnum.string, "span"],
+    [words.webDev, cEnum.string, "span"],
     [": [", cEnum.plainText, "text"]
   ], true);
   addSkills(skillsWeb, true);
@@ -457,7 +631,7 @@ function addAbout() {
   ]);
   addLine([
     [dots6],
-    ["\"Software development\"", cEnum.string, "span"],
+    [words.softDev, cEnum.string, "span"],
     [": [", cEnum.plainText, "text"]
   ], true);
   addSkills(skillsSoft);
@@ -467,7 +641,7 @@ function addAbout() {
   ]);
   addLine([
     [dots6],
-    ["\"Other\"", cEnum.string, "span"],
+    [words.other, cEnum.string, "span"],
     [": [", cEnum.plainText, "text"]
   ], true);
   addSkills(skillsOther);
@@ -563,7 +737,12 @@ function addClickEventListener(project) {
   const githubURL = element.dataset?.github || projURL;
   const projTags = element.querySelector('.proj-tags')?.innerHTML;
   const projTitle = element.querySelector('.proj-title')?.innerHTML;
-  const desc = descriptions[projTitle];
+  let desc = null;
+  if (lang === "eng") {
+    desc = descriptions[projTitle];
+  } else if (lang === "ita") {
+    desc = descriptionsIt[projTitle];
+  }
   const navigateToURL = () => {
     window.open(projURL, "_blank");
   };
@@ -586,7 +765,7 @@ function addClickEventListener(project) {
 
   const backButton = document.createElement("span");
   backButton.id = "backButton";
-  backButton.innerHTML = "← Back";
+  backButton.innerHTML = words.back;
   backButton.onclick = closeProjectWindow;
 
   const tags = document.createElement("span");
@@ -605,7 +784,7 @@ function addClickEventListener(project) {
 
   const animatedBTN = document.createElement("a");
   animatedBTN.className = "animatedBTN projectVisitBTN";
-  animatedBTN.innerHTML = "VISIT";
+  animatedBTN.innerHTML = words.visit;
   animatedBTN.onclick = navigateToURL;
   sidebar.append(backButton);
   sidebar.append(tags);
@@ -624,12 +803,18 @@ function addClickEventListener(project) {
   projectWindow.append(coverSpan);
 
   // append the project window to the body, when the project is clicked
-  element.addEventListener("click", ev => {
+  const evFn = (ev) => {
     body.append(projectWindow);
     imgEl.src = img;
     const html = document.querySelector("html");
-    if (html) { html.className = "hideOverflow"; }
-  });
+    if (html) {html.className = "hideOverflow";}
+  };
+  const boundFn = evFn.bind(this);
+  if (projEvents[element.id]) {
+    element.removeEventListener("click", projEvents[element.id]);
+  }
+  projEvents[element.id] = boundFn;
+  element.addEventListener("click", projEvents[element.id]);
 }
 
 /** The maximum is inclusive and the minimum is inclusive */

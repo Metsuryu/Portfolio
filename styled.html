@@ -20,13 +20,13 @@
 						<a class="active intro">Intro&nbsp;<span class="grey">/></span></a>
 					</li>
 					<li>
-						<a class="inactive projects">Projects&nbsp;<span class="grey">/></span></a>
+						<a class="inactive projects"><span class="projectsNav">Projects</span>&nbsp;<span class="grey">/></span></a>
 					</li>
 					<li>
-						<a class="inactive about">About&nbsp;<span class="grey">/></span></a>
+						<a class="inactive about"><span class="aboutNav">About</span>&nbsp;<span class="grey">/></span></a>
 					</li>
 					<li>
-						<a class="inactive contact">Contact&nbsp;<span class="grey">/></span></a>
+						<a class="inactive contact"><span class="contactsNav">Contact</span>&nbsp;<span class="grey">/></span></a>
 					</li>
 				</ul>
 			</div>
@@ -56,7 +56,7 @@
 				<br>
 				<div class="blockReveal" id="reveal1">
 					<span class="revealEl revealElAnimation title1">
-						<h1 class="revealEl revealElAnimation">Hi, my name is <span id="nameSpan">Mario</span></h1>
+						<h1 class="revealEl revealElAnimation"><span id="title1">Hi, my name is </span><span id="nameSpan">Mario</span></h1>
 					</span>
 					<span class="coverSpan coverSpanAnimation"></span>
 				</div>
@@ -64,8 +64,9 @@
 				<div class="blockReveal title2Block">
 					<span class="revealEl animDel05 revealElAnimation title2">
 						<h2 class="revealEl animDel05 revealElAnimation">
-							I'm a Full Stack Web Developer,<br>
-							proficient in <span id="changingText">JavaScript</span>
+							<span id="title2">I'm a Full Stack Web Developer,<br>
+							proficient in</span>
+							<span id="changingText">JavaScript</span>
 						</h2>
 					</span>
 					<span class="coverSpan animDel05 coverSpanAnimation"></span>
@@ -73,8 +74,9 @@
 				<br>
 				<div class="blockReveal subtitleBR">
 					<span class="revealEl animDel15 revealElAnimation">
-						<p class="tagText revealEl animDel15 revealElAnimation">
-							I live in Italy, and I speak <button class="link">English</button> and <button class="link">Italian</button> fluently.<br>
+						<p id="subtitle" class="tagText revealEl animDel15 revealElAnimation">
+							I live in Italy, and I speak <button onclick="toEng()"
+							class="link">English</button> and <button onclick="toIta()" class="link">Italian</button> fluently.<br>
 							Feel free to <a id="contactEmail" class="link" target="_blank" rel="noreferrer"
 							href="mailto:mariocannistra.work@gmail.com">contact me</a> if you have questions.
 						</p>
@@ -87,13 +89,13 @@
 
 	<div id="projects" class="section">
 		<div id="workContainer" class="contentContainer">
-			<p class="tagText bulletTag">Projects /></p>
-			<h1 class="tagText">Some of my projects</h1>
+			<p class="tagText bulletTag"><span class="projectsNav">Projects</span> /></p>
+			<h1 id="projectsSubtitle" class="tagText">Some of my projects</h1>
 
 			<section id="web">
 				<div id="webContent">
 
-					<div class="projectContainer projOdd" id="proj7" data-img-big="img/screenshots/StoneIsland.jpg"
+					<div class="projectContainer projOdd" id="proj7" data-img-big="img/screenshots/StoneIslandBig.jpg"
 						data-url="https://www.stoneisland.com">
 						<a>
 							<div class="project" data-tilt="" data-tilt-gyroscope="false" data-tilt-scale="1.05" data-tilt-speed="200"
@@ -121,7 +123,7 @@
 						</a>
 					</div>
 
-					<div class="projectContainer" id="proj6" data-img-big="img/screenshots/StoneIsland30.jpg"
+					<div class="projectContainer" id="proj6" data-img-big="img/screenshots/StoneIsland30Big.jpg"
 						data-url="http://www.stoneisland30.com">
 						<a>
 							<div class="project" data-tilt="" data-tilt-gyroscope="false" data-tilt-scale="1.05" data-tilt-speed="200"
@@ -148,7 +150,7 @@
 						</a>
 					</div>
 
-					<div class="projectContainer projOdd" id="proj5" data-img-big="img/screenshots/Missoni.jpg"
+					<div class="projectContainer projOdd" id="proj5" data-img-big="img/screenshots/MissoniBig.jpg"
 						data-url="https://www.missoni.com">
 						<a>
 							<div class="project" data-tilt="" data-tilt-gyroscope="false" data-tilt-scale="1.05" data-tilt-speed="200"
@@ -176,8 +178,7 @@
 						</a>
 					</div>
 
-					<div class="projectContainer" id="proj4"
-					data-img-big="images/screenshots/LanteaScreen.jpg"
+					<div class="projectContainer" id="proj4" data-img-big="img/screenshots/LanteaScreenBig.jpg"
 					data-url="https://new-lantea.web.app">
 						<a>
 							<div class="project" data-tilt="" data-tilt-gyroscope="false" data-tilt-scale="1.05" data-tilt-speed="200"
@@ -204,8 +205,7 @@
 						</a>
 					</div>
 
-					<div class="projectContainer projOdd" id="proj3"
-					data-img-big="images/screenshots/ICDMScreen.jpg"
+					<div class="projectContainer projOdd" id="proj3" data-img-big="img/screenshots/ICDMScreenBig.jpg"
 					data-github="https://github.com/Metsuryu/ICDM"
 					data-url="https://icecchinidelmare.herokuapp.com/"
 					>
@@ -234,8 +234,7 @@
 						</a>
 					</div>
 
-					<div class="projectContainer" id="proj2"
-					data-img-big="images/screenshots/CrawlerScreen.jpg"
+					<div class="projectContainer" id="proj2" data-img-big="img/screenshots/CrawlerScreenBig.jpg"
 					data-github="https://github.com/Metsuryu/Crawler"
 					data-url="http://crawler.cloudno.de/">
 						<a>
@@ -263,8 +262,7 @@
 						</a>
 					</div>
 
-					<div class="projectContainer firstProj" id="proj1"
-					data-img-big="images/screenshots/solsys.jpg"
+					<div class="projectContainer firstProj" id="proj1" data-img-big="img/screenshots/solsysBig.jpg"
 					data-github="https://github.com/Metsuryu/Solar_System"
 					data-url="http://solsys.c1.biz/">
 						<a>
@@ -299,9 +297,9 @@
 
 	<div id="about" class="section editorBG">
 		<div class="contentContainer">
-			<p class="tagText bulletTag">About /></p>
+			<p class="tagText bulletTag"><span class="aboutNav">About</span> /></p>
 
-			<a class="link resumeBTN" title="Download my resume"
+			<a id="downloadResume" class="link resumeBTN" title="Download my resume"
 			href="Resume%20Mario%20Cannistr%C3%A0%20-%20Web%20Developer.pdf"
 			download="Mario Cannistrà - Full Stack Web Developer - Resume.pdf">Download PDF resume</a>
 
@@ -313,7 +311,7 @@
 	<footer class="section" id="contact">
 		<div class="contentContainer contactsContactsContainer">
 
-			<p class="tagText bulletTag">Contact /></p>
+			<p class="tagText bulletTag"><span class="contactsNav">Contact</span> /></p>
 			<div id="contactsContainer">
 				<div class="footerAbsolute">
 					<div class="contacts">
@@ -324,7 +322,7 @@
 
 						<div
 						data-aos="fade-up">
-							<a class="animatedBTN" target="_blank" rel="noreferrer" href="mailto:mariocannistra.work@gmail.com">Get in touch</a>
+							<a id="contactCTA" class="animatedBTN" target="_blank" rel="noreferrer" href="mailto:mariocannistra.work@gmail.com">Get in touch</a>
 						</div>
 
 						<a
