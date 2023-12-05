@@ -30,7 +30,7 @@ function toggleDesc(btn, desc) {
 
 toggleDesc("#lanteaMore", "#lanteaMoreTxt");
 toggleDesc("#crawlerMore", "#crawlerMoreTxt");
-toggleDesc("#icdmMore", "#icdmMoreTxt");
+// toggleDesc("#icdmMore", "#icdmMoreTxt");
 toggleDesc("#solsysMore", "#solsysMoreTxt");
 toggleDesc("#missoniMore", "#missoniMoreTxt");
 toggleDesc("#stone30More", "#stone30MoreTxt");
@@ -107,7 +107,7 @@ function toItalian() {
   dei token da server per la sicurezza delle operazioni sensibili.<br>
   Il sito non è mai stato rilasciato ufficialmente, ma una versione per la maggior
   parte funzionale è disponibile <a href='https://new-lantea.web.app/' rel="noopener noreferrer">online qui.</a>`);
-  trTxt("icdmMoreTxt",
+  /* trTxt("icdmMoreTxt",
   `I Cecchini Del Mare è stato commissionato dall'
   <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/' rel="noopener noreferrer">omonimo gruppo di Facebook.</a><br>
   Il sito permete agli utenti di trasmettere la propria posizione e chattare con tutti gli utenti connessi.
@@ -117,7 +117,7 @@ function toItalian() {
   La chat è fatta con Socket.IO, ed è abbastanza leggera e veloce. Permette agli utenti di inviare messaggi privati,
   salva la cronologia della chat nei Cookies, ha funzionalità per controllare se il messaggio è stato inviato
   correttamente, e quando viene aperta, mostra la distanza tra i due utenti se possibile.<br>
-  Lo sviluppo non ha presentato molti problemi tecnici, ma mi ha aiutato comunque a migliorare le mie abilità.`);
+  Lo sviluppo non ha presentato molti problemi tecnici, ma mi ha aiutato comunque a migliorare le mie abilità.`); */
   trTxt("crawlerMoreTxt", `Crawler usa poco HTML e CSS, dato che la maggior parte del lavoro si è concetrato sulla
   realizzazione del gioco.<br>
   Ho iniziato con l'intenzione di realizzare una web-app su pagina singola molto semplice, ma in seguito
@@ -144,8 +144,8 @@ function toItalian() {
   trTxt("SolSysDescID", `Un sistema solare animato sviluppato con Phaser.`);
   trTxt("crawlerDescID", `Un clone del gioco Snake. Ho sviluppato questa pagina per dimostrare le tecnologie
   <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank' rel="noopener noreferrer"> MEAN</a>.`)
-  trTxt("ICDMDescID", `Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' rel="noopener noreferrer" target='_blank'>
-  MEAN</a> per pescatori subacquei. Permette di condividere la propria posizine tramite geolocalizzazione, e di chattare.`);
+  /* trTxt("ICDMDescID", `Un social network <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' rel="noopener noreferrer" target='_blank'>
+  MEAN</a> per pescatori subacquei. Permette di condividere la propria posizine tramite geolocalizzazione, e di chattare.`); */
   trTxt("LanteaDescID", `Una piattaforma per scrittori.<br>Permette agli autori di guadagnare soldi scrivendo articoli.`);
   trTxt("MissoniDescID", `Il sito E-commerce di Missoni, una casa di moda Italiana.`);
   trTxt("Stone30DescID", `Un sito sviluppato per un evento speciale per Stone Island.`);
@@ -204,7 +204,7 @@ function toEnglish() {
   statistics, various settings, followers, achievements, and securing sensitive operations with server-side token verification.<br>
   The website was never officially launched, but a mostly functional live version is available
   <a href='https://new-lantea.web.app/' rel="noopener noreferrer">online here.</a>`);
-  trTxt("icdmMoreTxt",
+  /* trTxt("icdmMoreTxt",
   `I Cecchini Del Mare (Snipers of the Sea in Italian) was commissioned by
   <a target='_blank' href='https://www.facebook.com/groups/cecchinidelmare/' rel="noopener noreferrer">the Facebook group of the same name.</a><br>
   The website allows people to share their current location, so that everyone connected will be able
@@ -214,7 +214,7 @@ function toEnglish() {
   The chat is made with Socket.IO, and is fairly lightweight. It allows users to send private messages to eachother,
   it saves the chat history in the cookies, has functionality to check if the message was sent correctly,
   and when opened, shows the distance between the two users if possible.<br>
-  The development didn't present too many technical problems, but it helped me gain quite a lot of experience.`);
+  The development didn't present too many technical problems, but it helped me gain quite a lot of experience.`); */
   trTxt("crawlerMoreTxt",
   `Crawler uses little HTML and CSS, as most of the work went into the game, I opted for a simple look for the page.<br>
   I started with the intention to make a very simple single-page web application, but
@@ -241,8 +241,8 @@ function toEnglish() {
   trTxt("SolSysDescID", `Animated solar system made using Phaser.`);
   trTxt("crawlerDescID", `A clone of the game Snake. I made this to demonstrate the
   <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' target='_blank'>MEAN stack</a> technologies.`);
-  trTxt("ICDMDescID", `A <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' rel="noopener noreferrer" target='_blank'>MEAN</a>
-  social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.`);
+  /* trTxt("ICDMDescID", `A <a href='https://en.wikipedia.org/wiki/MEAN_(software_bundle)' rel="noopener noreferrer" target='_blank'>MEAN</a>
+  social network for spearfishers. It allows users to share their current location through geolocation, and chat with eachother.`); */
   trTxt("LanteaDescID", `A platform for writers.<br>It allows authors to earn money by writing articles.`);
   trTxt("MissoniDescID", `The E-commerce website for Missoni, a high-end Italian fashion house.`);
   trTxt("Stone30DescID", `A site developed for a special event for Stone Island.`);
