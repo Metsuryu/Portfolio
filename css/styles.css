@@ -288,7 +288,7 @@ body {
 }
 #about {
   overflow: hidden;
-  height: 2180px;
+  height: 160em;
 }
 /** Scroll line **/
 #scrollLine {
@@ -751,8 +751,7 @@ body {
     scale: 70%;
   }
   #mainNav {
-    scale: 80%;
-    padding: 1.2em 2em;
+    padding: 1em;
   }
   .section {
     min-height: 65vh;
@@ -810,9 +809,9 @@ body {
     min-height: 65vh;
   }
   #scrollLine {
-    height: 1110%;
+    height: 540vh;
   }
   #about {
-    height: 1270px;
+    height: 91em;
   }
 }

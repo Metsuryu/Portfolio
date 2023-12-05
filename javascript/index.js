@@ -220,7 +220,6 @@ function trTxt(selector, string, isClass = false) {
 };
 
 function toEng() {
-  console.log('To eng');
   lang = "eng";
   words = wordsEng;
   initProjects();
@@ -242,7 +241,6 @@ href="mailto:mariocannistra.work@gmail.com">contact me</a> if you have questions
 }
 
 function toIta() {
-  console.log('To ita');
   lang = "ita";
   words = wordsIta;
   initProjects();
@@ -399,9 +397,23 @@ function addAbout() {
     {
       "name": "Vidiemme",
       "role": "Senior Front End Developer",
-      "duration": "2020-05 | 2020-12"
+      "duration": "2020-05 | 2021-07"
     },
-
+    {
+      "name": words.freelanceWork,
+      "role": "Full stack web developer",
+      "duration": "2021-07 | 2021-10"
+    },
+    {
+      "name": "YNAP",
+      "role": "Interface developer (Frontend)",
+      "duration": "2021-11 | 2022-12"
+    },
+    {
+      "name": words.freelanceWork,
+      "role": "Full stack web developer",
+      "duration": "2022-12 | Present"
+    },
   ];
   const editorEl = document.querySelector("#codeEditor");
   editorEl.innerHTML = "";
