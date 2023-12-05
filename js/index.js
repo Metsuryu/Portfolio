@@ -35,6 +35,7 @@ toggleDesc("#solsysMore", "#solsysMoreTxt");
 toggleDesc("#missoniMore", "#missoniMoreTxt");
 toggleDesc("#stone30More", "#stone30MoreTxt");
 toggleDesc("#stoneIslandMore", "#stoneIslandMoreTxt");
+toggleDesc("#cartierMore", "#cartierMoreTxt");
 
 /** Changes content of "id" to "string" */
 function trTxt(selector, string, isClass = false) {
@@ -67,6 +68,8 @@ function toItalian() {
   trTxt("locationID", `<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>`);
   trTxt("githubID", `<img src="img/GitHub-Mark-32px.png" alt="GitHub"> Il mio profilo GitHub`);
 
+  trTxt("cartierMoreTxt",
+    `Nel 2021 sono tornato a far parte di YNAP, per lavorare con un nuovo team sul sito e-commerce di Cartier.`);
   trTxt("stoneIslandMoreTxt",
   `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho
   lavorato con il mio team, insieme a Stone Island 30 e Missoni.<br>
@@ -147,6 +150,8 @@ function toItalian() {
   trTxt("MissoniDescID", `Il sito E-commerce di Missoni, una casa di moda Italiana.`);
   trTxt("Stone30DescID", `Un sito sviluppato per un evento speciale per Stone Island.`);
   trTxt("StoneIslandDescID", `Il sito E-commerce di Stone Island, una casa di moda Italiana.`);
+  trTxt("cartierDescID", `Il sito E-commerce di Cartier, un conglomerato Francese di beni di lusso che disegna, produce, distribuisce,
+  e vende gioielleria, beni di pelle, e orologi.`);
 };
 
 /** Translates to English */
@@ -165,6 +170,9 @@ function toEnglish() {
   Feel free to contact me if you have questions.`);
   trTxt("locationID", `<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>`);
   trTxt("githubID", `<img src="img/GitHub-Mark-32px.png" alt="GitHub"> My GitHub profile`);
+
+  trTxt("cartierMoreTxt",
+    `In 2021 I returned at YNAP, to work with a new team on the Cartier e-commerce website.`);
   trTxt("stoneIslandMoreTxt",
   `In my time at YNAP as a Front-end developer this was one of the three websites I worked on with my team, along with Stone Island 30, and Missoni.<br>
   When I joined, the majority of the work on this site revolved around accessibility, as the site was in the middle of a
@@ -239,4 +247,6 @@ function toEnglish() {
   trTxt("MissoniDescID", `The E-commerce website for Missoni, a high-end Italian fashion house.`);
   trTxt("Stone30DescID", `A site developed for a special event for Stone Island.`);
   trTxt("StoneIslandDescID", `The E-commerce website for Stone Island, a high-end Italian fashion house.`);
+  trTxt("cartierDescID", `The E-commerce for Cartier, a French luxury-goods conglomerate that designs, manufactures,
+  distributes, and sells jewellery, leather goods, and watches.`);
 };

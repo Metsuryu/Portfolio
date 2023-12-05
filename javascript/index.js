@@ -27,6 +27,9 @@ const particleJSParams = {
 };
 
 const descriptions = {
+  "Cartier": `The E-commerce for Cartier, a French luxury-goods conglomerate that designs, manufactures,
+distributes, and sells jewellery, leather goods, and watches.`,
+
   "Stone Island": `In my time at YNAP as a Front-end developer this was one of the
 three websites I worked on with my team, along with Stone Island 30, and Missoni.
 When I joined, the majority of the work on this site revolved around accessibility,
@@ -97,6 +100,9 @@ change their speed, and use a starship to explore the solar system.`
 };
 
 const descriptionsIt = {
+  "Cartier": `Il sito E-commerce di Cartier, un conglomerato Francese di beni di lusso che disegna, produce, distribuisce,
+  e vende gioielleria, beni di pelle, e orologi.`,
+
   "Stone Island": `Nel tempo che ho trascorso a YNAP da sviluppatore Front-end questo è stato uno dei tre siti sul quale ho
 lavorato con il mio team, insieme a Stone Island 30 e Missoni.<br>
 Quando ho iniziato, la maggior parte del lavoro per Stone Island era incentrata sull'accessibilità,
@@ -258,9 +264,11 @@ href="mailto:mariocannistra.work@gmail.com">contattatemi</a>.`);
 }
 
 function initProjects() {
+  const allProjectsTotal = document.querySelectorAll('.projectContainer').length;
+
   // Add any additional ID for waypoints here.
   const projectsIDs = [];
-  for (let i = 1; i <= 7; i++) {
+  for (let i = 1; i <= allProjectsTotal; i++) {
     projectsIDs.push("proj" + i);
   }
 
