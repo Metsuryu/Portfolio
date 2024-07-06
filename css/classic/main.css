@@ -368,7 +368,7 @@ li {
 	overflow: auto;
 }
 
-.gridSquare a img {
+.gridSquare .screenshots {
 	border: 1px solid #000;
 }
 
@@ -404,6 +404,10 @@ li {
 	#bio {
 		width: 100%;
 	}
+}
+
+.screenshots {
+	border-radius: 10px;
 }
 
 /*Make projects smaller if screen is too small.*/
@@ -451,7 +455,7 @@ li {
 
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon' !important;
-	speak: none;
+	/* speak: none; */
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;

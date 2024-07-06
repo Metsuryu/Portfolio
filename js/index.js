@@ -62,9 +62,8 @@ function toItalian() {
   trTxt("profileID", `Sono uno sviluppatore di siti Web. <br>Vivo in Italia, e parlo Inglese fluentemente.<br>Sono specializzato
   nello sviluppo front-end e back-end,<br>e ho esperienza nello sviluppo di applicazioni per computer.<br>
   Lavoro occasionalmente come freelancer, aiutando<br>
-  clienti con problemi di programmazione su codementor,
-  <a target='_blank' href='https://www.codementor.io/@mariocannistrawork' rel="noopener noreferrer">questo è il mio profilo</a>.<br>
-  Sentitevi liberi di contattarmi per eventuali domande.`);
+  clienti con problemi di programmazione su
+  <a target='_blank' href='https://www.codementor.io/@mariocannistrawork' rel="noopener noreferrer">codementor</a>.`);
   trTxt("locationID", `<span class='icon-map-marker'></span><p> Catanzaro, Italia</p>`);
   trTxt("githubID", `<img src="img/GitHub-Mark-32px.png" alt="GitHub"> Il mio profilo GitHub`);
 
@@ -165,9 +164,8 @@ function toEnglish() {
   I focus on front-end and back-end web development,<br>
   and I have some experience in software development.<br>
   I occasionally work as a freelancer, helping
-  people with their programming problems on codementor,
-  here's <a target='_blank' href='https://www.codementor.io/@mariocannistrawork' rel="noopener noreferrer">my profile</a>.<br>
-  Feel free to contact me if you have questions.`);
+  people with their programming problems on
+  <a target='_blank' href='https://www.codementor.io/@mariocannistrawork' rel="noopener noreferrer">codementor</a>.`);
   trTxt("locationID", `<span class='icon-map-marker'></span><p> Catanzaro, Italy</p>`);
   trTxt("githubID", `<img src="img/GitHub-Mark-32px.png" alt="GitHub"> My GitHub profile`);
 
