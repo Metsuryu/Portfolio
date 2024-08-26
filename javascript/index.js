@@ -364,6 +364,7 @@ function addAbout() {
     "RxJs",
     "Jasmine",
     "Jest",
+    "CI/CD",
     "Karma",
     "p5.js"
   ];
