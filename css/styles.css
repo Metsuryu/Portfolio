@@ -288,12 +288,12 @@ body {
 }
 #about {
   overflow: hidden;
-  height: 160em;
+  height: 170em;
 }
 /** Scroll line **/
 #scrollLine {
   width: 1px;
-  height: 2100%;
+  height: 2500%;
   left: -26px;
   top: 7px;
   z-index: 9;
@@ -529,7 +529,7 @@ body {
 .line:after {
   content: attr(data-line-nr);
   position: absolute;
-  left: -60px;
+  left: -65px;
   color: #3b3553;
   font-family: RobotoMono,Courier New,Courier,monospace !important;
   font-size: 16px;
@@ -539,13 +539,13 @@ body {
 .line.collapsable:hover:after {
   content: "[-]";
   cursor: pointer;
-  left: -65px;
+  left: -70px;
   color: whitesmoke;
 }
 .line.collapsedContent:hover:after {
   content: "[+]";
   cursor: pointer;
-  left: -65px;
+  left: -70px;
   color: whitesmoke;
 }
 .line:hover:before {

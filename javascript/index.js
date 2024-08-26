@@ -27,6 +27,10 @@ const particleJSParams = {
 };
 
 const descriptions = {
+  "Recruiter Website": `A modern website for a professional recruiter, featuring job listings and an admin page. The admin can manage jobs and reviews from LinkedIn, which are displayed on the website. Built with Angular and Firebase, providing a responsive and dynamic user experience.`,
+
+  "Personal Project": `An unannounced personal project currently in development. More details will be available after the project's release.`,
+
   "Cartier": `The E-commerce for Cartier, a French luxury-goods conglomerate that designs, manufactures,
 distributes, and sells jewellery, leather goods, and watches.`,
 
@@ -100,6 +104,10 @@ change their speed, and use a starship to explore the solar system.`
 };
 
 const descriptionsIt = {
+  "Recruiter Website": `Un sito web moderno per un reclutatore professionale, con elenchi di lavori e una pagina di amministrazione. L'amministratore può gestire le offerte di lavoro e le recensioni da LinkedIn, che vengono visualizzate sul sito web. Costruito con Angular e Firebase, offre un'esperienza utente reattiva e dinamica.`,
+
+  "Personal Project": `Un progetto personale non annunciato attualmente in fase di sviluppo. Maggiori dettagli saranno disponibili dopo il rilascio del progetto.`,
+
   "Cartier": `Il sito E-commerce di Cartier, un conglomerato Francese di beni di lusso che disegna, produce, distribuisce,
   e vende gioielleria, beni di pelle, e orologi.`,
 
