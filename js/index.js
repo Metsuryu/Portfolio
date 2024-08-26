@@ -36,6 +36,8 @@ toggleDesc("#missoniMore", "#missoniMoreTxt");
 toggleDesc("#stone30More", "#stone30MoreTxt");
 toggleDesc("#stoneIslandMore", "#stoneIslandMoreTxt");
 toggleDesc("#cartierMore", "#cartierMoreTxt");
+toggleDesc("#recruiterMore", "#recruiterMoreTxt");
+toggleDesc("#unannouncedMore", "#unannouncedMoreTxt");
 
 /** Changes content of "id" to "string" */
 function trTxt(selector, string, isClass = false) {
@@ -132,6 +134,10 @@ function toItalian() {
   trTxt("solsysMoreTxt",
   `Un semplice 'gioco' che dimostra le orbite dei pianeti e le loro lune, permette di cambiarne la velocità,
   e permette di esplorare il sistema solare con un astronave.`);
+  trTxt("recruiterMoreTxt",
+  `Sviluppato un'applicazione a pagina singola reattiva utilizzando Angular e Firebase. Implementata una pagina di lavori con annunci e un'interfaccia di amministrazione per la gestione degli annunci di lavoro e delle recensioni LinkedIn. Utilizzato Angular per lo sviluppo frontend, Firebase per i servizi backend e SASS per lo styling.`);
+  trTxt("unannouncedMoreTxt",
+  `Maggiori dettagli saranno disponibili dopo il rilascio del progetto.`);
 
   trTxt("skillsID", `Abilità`);
   trTxt("wbID", `Tecnologie web`);
@@ -151,6 +157,8 @@ function toItalian() {
   trTxt("StoneIslandDescID", `Il sito E-commerce di Stone Island, una casa di moda Italiana.`);
   trTxt("cartierDescID", `Il sito E-commerce di Cartier, un conglomerato Francese di beni di lusso che disegna, produce, distribuisce,
   e vende gioielleria, beni di pelle, e orologi.`);
+  trTxt("recruiterDescID", `Un sito web moderno per un reclutatore professionale, con elenchi di lavori e una pagina di amministrazione per la gestione dei contenuti.`);
+  trTxt("unannouncedDescID", `Un progetto personale non annunciato attualmente in fase di sviluppo.`);
 };
 
 /** Translates to English */
@@ -228,6 +236,10 @@ function toEnglish() {
   and performance is not always a priority, especially when differences are insignificant.`);
   trTxt("solsysMoreTxt",
   `A simple 'game' where you can see the orbits of the planets and their moons, change their speed, and use a starship to explore the solar system.`);
+  trTxt("recruiterMoreTxt",
+  `Developed a responsive single-page application using Angular and Firebase. Implemented a jobs page with listings and an admin interface for managing job postings and LinkedIn reviews. Utilized Angular for frontend development, Firebase for backend services, and SASS for styling.`);
+  trTxt("unannouncedMoreTxt",
+  `More details will be available after the project's release.`);
 
   trTxt("skillsID", `Skills`);
   trTxt("wbID", `Website development`);
@@ -247,4 +259,6 @@ function toEnglish() {
   trTxt("StoneIslandDescID", `The E-commerce website for Stone Island, a high-end Italian fashion house.`);
   trTxt("cartierDescID", `The E-commerce for Cartier, a French luxury-goods conglomerate that designs, manufactures,
   distributes, and sells jewellery, leather goods, and watches.`);
+  trTxt("recruiterDescID", `A modern website for a professional recruiter, featuring job listings and an admin page for content management.`);
+  trTxt("unannouncedDescID", `An unannounced personal project currently in development.`);
 };

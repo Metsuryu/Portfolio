@@ -373,7 +373,10 @@ function addAbout() {
     "Linux server",
     "Accessibility",
     "MongoDB",
+    "Github",
+    "Gitlab",
     "Unity",
+    "Jira",
     "SQL",
     "Qt"
   ];
