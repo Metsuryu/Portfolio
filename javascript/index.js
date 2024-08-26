@@ -366,7 +366,8 @@ function addAbout() {
     "Jest",
     "CI/CD",
     "Karma",
-    "p5.js"
+    "p5.js",
+    "npm"
   ];
   const skillsSoft = [
     "C++",
