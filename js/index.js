@@ -158,7 +158,7 @@ function toItalian() {
   trTxt("cartierDescID", `Il sito E-commerce di Cartier, un conglomerato Francese di beni di lusso che disegna, produce, distribuisce,
   e vende gioielleria, beni di pelle, e orologi.`);
   trTxt("recruiterDescID", `Un sito web moderno per un reclutatore professionale, con elenchi di lavori e una pagina di amministrazione per la gestione dei contenuti.`);
-  trTxt("unannouncedDescID", `Un progetto personale non annunciato attualmente in fase di sviluppo.`);
+  trTxt("unannouncedDescID", `Un progetto non annunciato attualmente in fase di sviluppo.`);
 };
 
 /** Translates to English */
@@ -260,5 +260,5 @@ function toEnglish() {
   trTxt("cartierDescID", `The E-commerce for Cartier, a French luxury-goods conglomerate that designs, manufactures,
   distributes, and sells jewellery, leather goods, and watches.`);
   trTxt("recruiterDescID", `A modern website for a professional recruiter, featuring job listings and an admin page for content management.`);
-  trTxt("unannouncedDescID", `An unannounced personal project currently in development.`);
+  trTxt("unannouncedDescID", `An unannounced project currently in development.`);
 };
