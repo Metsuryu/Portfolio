@@ -343,7 +343,7 @@ function addAbout() {
     "JavaScript",
     "HTML5 | CSS3",
     "jQuery",
-    "Typescript",
+    "TypeScript",
     "Angular 2 - 11",
     "Firebase",
     "Node.js",
@@ -876,7 +876,7 @@ function changeText() {
     return this.substr(0, index) + replacement + this.substr(index + replacement.length);
   }
   const possibleTexts = [
-    "Typescript",
+    "TypeScript",
     "Node.js",
     "Angular",
     "Firebase",
