@@ -288,7 +288,7 @@ body {
 }
 #about {
   overflow: hidden;
-  height: 170em;
+  height: 190em;
 }
 /** Scroll line **/
 #scrollLine {
@@ -757,7 +757,7 @@ body {
     min-height: 65vh;
   }
   #scrollLine {
-    height: 2380%;
+    height: 2600%;
   }
 }
 

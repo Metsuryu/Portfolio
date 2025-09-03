@@ -27,6 +27,8 @@ const particleJSParams = {
 };
 
 const descriptions = {
+  "Wiz-Team": `Project for Wiz-Team for large international events.`,
+
   "Recruiter Website": `A modern website for a professional recruiter, featuring job listings and an admin page. The admin can manage jobs and reviews from LinkedIn, which are displayed on the website. Built with Angular and Firebase, providing a responsive and dynamic user experience.`,
 
   "Stealth Project": `A stealth project currently in development. More details will be available after the project's release.`,
@@ -104,6 +106,8 @@ change their speed, and use a starship to explore the solar system.`
 };
 
 const descriptionsIt = {
+  "Wiz-Team": `Progetto per Wiz-Team per eventi internazionali di grande scala.`,
+
   "Recruiter Website": `Un sito web moderno per un reclutatore professionale, con elenchi di lavori e una pagina di amministrazione. L'amministratore può gestire le offerte di lavoro e le recensioni da LinkedIn, che vengono visualizzate sul sito web. Costruito con Angular e Firebase, offre un'esperienza utente reattiva e dinamica.`,
 
   "Stealth Project": `Un progetto non annunciato attualmente in fase di sviluppo. Maggiori dettagli saranno disponibili dopo il rilascio del progetto.`,
@@ -347,6 +351,7 @@ function addAbout() {
     "Angular 2 - 19",
     "Angular Material",
     "Firebase",
+    "Primeng",
     "Node.js",
     "Express.js",
     "AngularJS",
@@ -386,12 +391,13 @@ function addAbout() {
     "Linux server",
     "Accessibility",
     "MongoDB",
+    "Docker",
     "Github",
     "Gitlab",
     "Unity",
     "Jira",
     "SQL",
-    "Qt"
+    "Qt",
   ];
   const employment = [
     {
@@ -432,8 +438,13 @@ function addAbout() {
     {
       "name": words.freelanceWork,
       "role": "Full stack web developer",
-      "duration": "2022-12 | Present"
+      "duration": "2022-12 | 2025-01"
     },
+    {
+      "name": "Wiz-Team",
+      "role": "Angular developer",
+      "duration": "2025-04 | 2025-09"
+    }
   ];
   const editorEl = document.querySelector("#codeEditor");
   editorEl.innerHTML = "";

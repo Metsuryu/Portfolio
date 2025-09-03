@@ -38,6 +38,7 @@ toggleDesc("#stoneIslandMore", "#stoneIslandMoreTxt");
 toggleDesc("#cartierMore", "#cartierMoreTxt");
 toggleDesc("#recruiterMore", "#recruiterMoreTxt");
 toggleDesc("#unannouncedMore", "#unannouncedMoreTxt");
+toggleDesc("#wizTeamMore", "#wizTeamMoreTxt");
 
 /** Changes content of "id" to "string" */
 function trTxt(selector, string, isClass = false) {
@@ -138,6 +139,7 @@ function toItalian() {
   `Sviluppato un'applicazione a pagina singola reattiva utilizzando Angular e Firebase. Implementata una pagina di lavori con annunci e un'interfaccia di amministrazione per la gestione degli annunci di lavoro e delle recensioni LinkedIn. Utilizzato Angular per lo sviluppo frontend, Firebase per i servizi backend e SASS per lo styling.`);
   trTxt("unannouncedMoreTxt",
   `Maggiori dettagli saranno disponibili dopo il rilascio del progetto.`);
+  trTxt("wizTeamMoreTxt", `Lavorato su diverse funzionalità per il sito, attualmente sotto NDA, usando Angular con TypeScript.`);
 
   trTxt("skillsID", `Abilità`);
   trTxt("wbID", `Tecnologie web`);
@@ -240,6 +242,7 @@ function toEnglish() {
   `Developed a responsive single-page application using Angular and Firebase. Implemented a jobs page with listings and an admin interface for managing job postings and LinkedIn reviews. Utilized Angular for frontend development, Firebase for backend services, and SASS for styling.`);
   trTxt("unannouncedMoreTxt",
   `More details will be available after the project's release.`);
+  trTxt("wizTeamMoreTxt", `Worked on several features for the website, currently under NDA, using Angular with TypeScript.`);
 
   trTxt("skillsID", `Skills`);
   trTxt("wbID", `Website development`);
@@ -261,4 +264,5 @@ function toEnglish() {
   distributes, and sells jewellery, leather goods, and watches.`);
   trTxt("recruiterDescID", `A modern website for a professional recruiter, featuring job listings and an admin page for content management.`);
   trTxt("unannouncedDescID", `An unannounced project currently in development.`);
+  trTxt("wizTeamDescID", `Project for Wiz-Team for large international events.`);
 };
